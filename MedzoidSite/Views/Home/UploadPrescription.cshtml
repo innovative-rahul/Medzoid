@@ -1,0 +1,211 @@
+﻿
+@{
+    ViewBag.Title = "UploadPrescription";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@section afterjs{
+
+  
+    @*<script src="~/Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/select2.js"></script>*@
+    <script>
+
+        $(document).ready(function () {
+
+            var userString = sessionStorage.getItem('details');
+            var user = JSON.parse(userString);
+
+            LoadUserAddress();
+
+
+
+            $("#btnsubmit").click(function () {
+
+                var addid = "";
+
+                if ($('#Address').val() != "") {
+
+                    $.ajax({
+                        url: 'https://api.medzoid.com/api/AddUserAddress',
+                        type: 'POST',
+                        contentType: "application/json",
+                        dataType: 'json',
+                        headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                        data: { userId: user.userDetails.Id, UserAddress: $('#Address').val(), latlong: $('#hdLatlong').val() },
+                        success: function (data) {
+                            if (data.Status == true) {
+                                addid = data.Data.id;
+                            }
+                        },
+                    });
+
+                }
+                else {
+                    addid = $('#ddlAddress').val();
+                }
+
+
+                formdata = new FormData();
+                if ($("#prescriptionfile").prop('files').length > 0) {
+                    file = $("#prescriptionfile").prop('files')[0];
+                    formdata.append( 'prescFile' , file);
+                }
+                
+                formdata.append("id" , user.userDetails.Id);
+                formdata.append("PharmacyType", $('#ddlPharmacyType').val());
+                formdata.append("DeliveryType", $('#ddlDeliveryType').val());
+                formdata.append("Description", $('#Description').val());
+                formdata.append("addressId", addid);
+                
+
+                $.ajax({
+                    url: 'https://api.medzoid.com/api/PostPrescription',
+                    type: 'POST',
+                    data: formdata,
+                    success: function (data) {
+                        if (data.Data.Status == true) {
+                            alert('Submitted Successfully');
+                        }
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            });
+
+
+            $('#Address').keyup(function () {
+                var address = $('#Address').val();
+                $.ajax({
+                    type: 'POST',
+                    contentType: "application/json",
+                    dataType: 'json',
+                    url: '/Admin/Admin/SearchAddress',
+                    data: '{searchTerm:"' + address + '"}',
+                    success: function (data) {
+                        var array = [];
+                        var arraywithPlace = [];
+                        var dd = JSON.parse(data.data);
+
+                        for (var i = 0; i < dd.predictions.length; i++) {
+                            array.push(dd.predictions[i].description);
+                            arraywithPlace.push(dd.predictions[i]);
+                        }
+                        localStorage.setItem("Predictions", JSON.stringify(arraywithPlace));
+                        $("#Address").autocomplete({
+                            source: array
+                        });
+                    },
+                    error: function (xhr) {
+                        alert(xhr.responseText)
+                    }
+                });
+            });
+
+            $('#Address').blur(function () {
+                var Predictions = JSON.parse(localStorage.getItem("Predictions") || "[]");
+
+                for (var i = 0; i < Predictions.length; i++) {
+
+                    if ($('#Address').val() == Predictions[i].description) {
+
+                        var PlaceId = Predictions[i].place_id;
+
+                        $.ajax({
+
+                            type: 'POST',
+                            contentType: "application/json",
+                            dataType: 'json',
+                            url: '/Admin/Admin/GetLatLong',
+                            data: '{placeId:"' + PlaceId + '"}',
+                            success: function (data) {
+                                var dd = JSON.parse(data.data);
+                                $('#hdLatlong').val(dd.result.geometry.location.lat + "," + dd.result.geometry.location.lng);
+                                $('#dvLatLong').html(dd.result.geometry.location.lat + "," + dd.result.geometry.location.lng);
+                            },
+                            error: function (data) {
+
+                            }
+                        });
+
+
+                        //  var dd = JSON.parse(data);
+                        //$('#hdLat').val(dd.result.geometry.location.lat);
+                        //$('#hdLong').val(dd.result.geometry.location.lng);
+                    }
+                }
+            });
+
+            function LoadUserAddress() {
+
+                $.get("https://api.medzoid.com/api/GetUserAddress/"+ user.userDetails.Id , function (data, status) {
+
+                   
+                    for (var i = 0; i < data.Data.length; i++) {
+                        $("#ddlAddress").append('<option value="' + data.Data[i].id + '">' + data.Data[i].UserAddress + '</option>');
+                    }
+                });
+            }
+        });
+
+
+    </script>
+
+}
+
+<div class="bg_color_2" style="background: #14382d url(../img/hero_bg_1.svg) repeat fixed;">
+    <div class="container margin_60_35">
+        <div id="login-2">
+            <h1>Upload Prescription!</h1>
+            <form method="post" id="formPrescription">
+                <input type="hidden" name="latlong" id="hdLatlong">
+                <div class="box_form clearfix">
+                    <div style="padding:5%">
+                        <div class="form-group">
+                            <input type="tel" id="name" name="name" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control " id="ddlPharmacyType" name="PharmacyType" style="width:100%">
+                                <option value="Allopathic">Allopathic</option>
+                                <option value="HomeoPathic">HomeoPathic</option>
+                                <option value="Ayurvedic">Ayurvedic</option>
+                                <option value="Unani">Unani</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control " id="ddlDeliveryType" name="DeliveryType" style="width:100%">
+                                <option value="Self Pickup">Self Pickup</option>
+                                <option value="Home Delivery">Home Delivery</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description" name="Description" id="Description">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control " id="ddlAddress" name="Address" style="width:100%">
+                                <option value="0">--Select Address---</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Add Address" name="Address" id="Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control" placeholder="prescription" name="prescription" id="prescriptionfile">
+                        </div>
+                        <div class="form-group">
+                            <input class="btn_1" type="button" id="btnsubmit" value="Register">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            @*<p class="text-center link_bright">Do not have an account yet? <a href="#0"><strong>Register now!</strong></a></p>*@
+        </div>
+        <!-- /login -->
+    </div>
+</div>
+
+
+
+

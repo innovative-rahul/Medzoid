@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8175cb94a7c463a9bca8791647d173e" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="MedzoidModel.AppInstalled" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.Blog" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.BlogComment" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.BloodDonorDetail" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.Calorie" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.ClinicDetail" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.clinicSchedule" Width="1.5" PointX="5.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.doc_employee_master" Width="1.5" PointX="8.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.doctor_qualification" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.DoctorDeptMaster" Width="1.5" PointX="13.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.doctorFeedBack" Width="1.5" PointX="13.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.DoctorMaster" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.DoctorQualification" Width="1.5" PointX="13.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.HealthTip" Width="1.5" PointX="15.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.make_appointment" Width="1.5" PointX="10.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.medical_store_master" Width="1.5" PointX="15.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.medicine_master" Width="1.5" PointX="15.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.OrderPayment" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.PharmacyHour" Width="1.5" PointX="3" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.PharmacyMaster" Width="1.5" PointX="3" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.PharmacyOrder" Width="1.5" PointX="17.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.PharmacyPrescription" Width="1.5" PointX="5.25" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.Prescription" Width="1.5" PointX="3" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.ReviewBank" Width="1.5" PointX="17.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.Subscription" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.UserAddress" Width="1.5" PointX="14.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.UserMaster" Width="1.5" PointX="0.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.wallet" Width="1.5" PointX="19.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.FavouriteDoctor" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.tblException" Width="1.5" PointX="7.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.carrer" Width="1.5" PointX="7.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.contact" Width="1.5" PointX="23.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.dept_master" Width="1.5" PointX="23.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.diseas_dept_list" Width="1.5" PointX="18.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.diseas_master" Width="1.5" PointX="23.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.doc_society_master" Width="1.5" PointX="25.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.doctor_comments" Width="1.5" PointX="25.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.doctor_dept_master" Width="1.5" PointX="25.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.doctor_like_dislike" Width="1.5" PointX="14.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.doctor_proc_master" Width="1.5" PointX="25.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.Employee" Width="1.5" PointX="22.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.health_history" Width="1.5" PointX="27.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.inquiry_carrer" Width="1.5" PointX="28.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.lab_result" Width="1.5" PointX="28.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.latlongtocity" Width="1.5" PointX="29.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.mail_server" Width="1.5" PointX="29.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.main_menu" Width="1.5" PointX="29.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.manage_body_symptom" Width="1.5" PointX="29.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.medical_condition_master" Width="1.5" PointX="13.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.medical_file" Width="1.5" PointX="29.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.pharmacy_comments" Width="1.5" PointX="9.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.pharmacy_like_dislike" Width="1.5" PointX="15.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.proc_master" Width="1.5" PointX="26.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.procedure_dept_list" Width="1.5" PointX="32.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.QuestionMaster" Width="1.5" PointX="32.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.refprice_master" Width="1.5" PointX="32.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.subscriber" Width="1.5" PointX="33.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.symptoms_list" Width="1.5" PointX="33.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.symptoms_master" Width="1.5" PointX="17.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.symptoms_to_dept" Width="1.5" PointX="5.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedzoidModel.testimonial" Width="1.5" PointX="22.75" PointY="34.75" IsExpanded="true" />
+        <AssociationConnector Association="MedzoidModel.FK_BloodDonorDetail_doctor_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_BloodDonorDetail_user_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_ClinicDetails_doc_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_clinicSchedule_clinicid" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_doc_employee_master_clinicId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_favouritedoctor_ClinicId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_make_appointment_clinic_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_clinicSchedule_docId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_make_appointment_scheduleId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_doc_employee_master_docId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_DoctorMaster_docid" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_make_appointment_doctor_id" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_PharmacyHours_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_favouritedoctor_userid" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_PharmacyPrescription_PharmacyId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_PharmacyPrescription_prescriptionId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_prescription_userid" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_favouritedoctor_DoctorId" ManuallyRouted="false" />
+        <AssociationConnector Association="MedzoidModel.FK_favouritedoctor_UserId1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MedzoidModel.BlogNew" Width="1.5" PointX="17.375" PointY="17.75" />
+        <EntityTypeShape EntityType="MedzoidModel.CoronaQuiz" Width="1.5" PointX="10.375" PointY="13.75" />
+        <EntityTypeShape EntityType="MedzoidModel.FAq" Width="1.5" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

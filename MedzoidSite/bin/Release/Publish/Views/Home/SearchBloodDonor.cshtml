@@ -1,0 +1,225 @@
+﻿
+@{
+    ViewBag.Title = "SearchBloodDonor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section aftercss {
+
+    <link href="~/css/chosen.min.css" rel="stylesheet" />
+}
+
+@section afterjs{
+
+    <script src="~/Scripts/chosen.jquery.min.js"></script>
+    @*<script src="~/Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/select2.js"></script>*@
+    <script>
+
+        $(document).ready(function () {
+
+            var userString = sessionStorage.getItem('details');
+            var user = JSON.parse(userString);
+
+            LoadUserAddress();
+
+
+
+            $("#btnsubmit").click(function (e) {
+
+                if ($("#PatientName").val() == "") {
+                    alert('Please enter Patient Name');
+                }
+                else if ($("#PatientAge").val() == "") {
+                    alert('Please enter Patient Age');
+                }
+                else if ($("#doctorname").val() == "") {
+                    alert('Please enter Doctor Name');
+                }
+                else if ($("#hospitalname").val() == "") {
+                    alert('Please enter Hospital Name');
+                }
+                else if ($("#ddlbloodGroup").val() == "0") {
+                    alert('Please select Blood Group');
+                }
+                else {
+                    $.ajax({
+                        type: 'POST',
+                        contentType: "application/json; charset=utf-8",
+                        dataType: 'json',
+                        url: "https://api.medzoid.com/api/BloodDonationReq",
+                        headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                        data: {
+                            user_id: user.userDetails.Id, patient_name: $("#PatientName").val(), age: $('#PatientAge').val(), gender: $("#ddlGender").val(), doctor_name: $("#doctorname").val(),
+                            hospital_name: $("#hospitalname").val(), when_required: $("#booking_date").val(), doctor_id: "1", ReqTo: $('#hdselectedDonor').val()
+                        },
+                        success: function (data) {
+                            if (data.Status == true) {
+                                alert('Request Submitted Successfully');
+                                location.reload();
+                            }
+                        },
+                        error: function (xhr) {
+                            alert(xhr.responseText)
+                        }
+                    });
+                }
+            });
+
+
+
+            $('#ddlbloodGroup').on('change', function (e) {
+
+
+
+
+                var LatLong = getCookie("lat") + "," + getCookie("lng");
+                $.ajax({
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    url: "https://api.medzoid.com/api/BloodDonor",
+                    headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                    data: { blood_group: $("#ddlbloodGroup").val(), blood_donate: "Yes", latlong: LatLong },
+                    success: function (data) {
+                        $("#ddlbloodDonor option").remove();
+                        if (data.Status == true) {
+                            if (data.Data.length > 0) {
+                                for (var i = 0; i < data.Data.length; i++) {
+                                    $("#ddlbloodDonor").append('<option value="' + data.Data[i].id + '">' + data.Data[i].name + ' (' + data.Data[i].blood_group + ')' + '</option>');
+                                }
+                                $("#ddlbloodDonor").chosen();
+                                $("#ddlbloodDonor").trigger("chosen:updated");;
+                            }
+                            else {
+                                $("#ddlbloodDonor").append('<option value="">No Nearby Donor Found </option>');
+                            }
+                        }
+                        else {
+                            $("#ddlbloodDonor").append('<option value="">No Nearby Donor Found </option>');
+                        }
+                    },
+                    error: function (xhr) {
+                        alert(xhr.responseText)
+                    }
+                });
+            });
+
+            $('#ddlbloodDonor').on('change', function (e) {
+                var data = $("#ddlbloodDonor").chosen().val();
+                var selectedvalue = "";
+                if (data != null) {
+                    for (var i = 0; i < data.length; i++) {
+                        selectedvalue += data[i] + ",";
+                    }
+                }
+                
+                $('#hdselectedDonor').val(selectedvalue.replace(/,\s*$/, ""));
+            });
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            function LoadUserAddress() {
+
+                $.get("https://api.medzoid.com/api/GetUserAddress/" + user.userDetails.Id, function (data, status) {
+
+
+                    for (var i = 0; i < data.Data.length; i++) {
+                        $("#ddlAddress").append('<option value="' + data.Data[i].id + '">' + data.Data[i].UserAddress + '</option>');
+                    }
+                });
+            }
+        });
+
+
+    </script>
+
+}
+
+<div class="bg_color_2" style="background: #14382d url(../img/hero_bg_1.svg) repeat fixed;">
+    <div class="container margin_60_35">
+        <div id="login-2">
+            <h1>Search Blood Donor!</h1>
+            <form method="post" id="formSearchDonor">
+                <div class="box_form clearfix">
+                    <div style="padding:5%">
+                        <div class="form-group">
+                            <input type="text" id="PatientName" name="Pname" class="form-control" placeholder="Patient Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="PatientAge" name="Page" class="form-control" placeholder="Patient Age" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control " id="ddlGender" name="gender" style="width:100%">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="doctorname" name="doctorname" class="form-control" placeholder="Doctor Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Hospital Name" name="hospitalname" id="hospitalname" required>
+                        </div>
+                        <div class="form-group">
+                            @*<input type="text" class="form-control" placeholder="When Required" name="whenreq" id="whenrequired">*@
+                            <input class="form-control" type="text" id="booking_date" data-lang="en" data-min-year="2017" data-max-year="2020" data-disabled-days="10/17/2017,11/18/2017" placeholder="When Required">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control select" id="ddlbloodGroup" name="ddlbloodGroup" style="width:100%">
+                                <option value="0">--Select--</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="A1+">A1+</option>
+                                <option value="A1-">A1-</option>
+                                <option value="A1B+">A1B+</option>
+                                <option value="A1B-">A1B-</option>
+                                <option value="A2+">A2+</option>
+                                <option value="A2-">A2-</option>
+                                <option value="A2B+">A2B+</option>
+                                <option value="A2B-">A2B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="Bombay">Bombay</option>
+                                <option value="INRA">INRA</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="selectedDonor" id="hdselectedDonor">
+                            <select class="form-control select" id="ddlbloodDonor" name="bloodDonor" style="width:100%" multiple data-placeholder="select donor...">
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn_1" type="button" id="btnsubmit" value="Submit Request">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            @*<p class="text-center link_bright">Do not have an account yet? <a href="#0"><strong>Register now!</strong></a></p>*@
+        </div>
+        <!-- /login -->
+    </div>
+</div>
+
+
+
+
+
+

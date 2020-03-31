@@ -1,0 +1,1068 @@
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Users\neeraj\source\repos\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Users\HP\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+D:\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CoreCompileInputs.cache
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+D:\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+D:\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+D:\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+D:\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+H:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CoreCompileInputs.cache
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+D:\Medzoid(20-02-2020)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Repository\MedzoidSite\27-02-2019\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+H:\MedzoidSite\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Repository\MedzoidSite\03-03-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Users\slayer\Downloads\MedzoidSite (2)\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Repository\MedzoidSite\07-02-2020\MedzoidSite (2)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Users\slayer\Downloads\MedzoidSite (1)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csprojAssemblyReference.cache
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Repository\MedzoidSite\13-02-2020\MedzoidSite\MedzoidSite (1)\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll.config
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\MedzoidSite.pdb
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.exe.config
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csc.rsp
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.exe.config
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\csi.rsp
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.AppContext.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Console.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Http.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.ValueTuple.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.exe.config
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\vbc.rsp
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Razorpay.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Razor.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\WebGrease.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\EntityFramework.SqlServer.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Helpers.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Mvc.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Optimization.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.Razor.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Newtonsoft.Json.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Antlr3.Runtime.pdb
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.csproj.CopyComplete
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.dll
+C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\obj\Debug\MedzoidSite.pdb

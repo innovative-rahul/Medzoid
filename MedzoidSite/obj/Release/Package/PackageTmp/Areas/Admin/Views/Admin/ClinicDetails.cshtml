@@ -1,0 +1,363 @@
+﻿@model MedzoidSite.ViewModel.ClinicDetailsViewModel
+@{
+    ViewBag.Title = "ClinicDetails";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+@section afterjs{
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            //Bind Dropdown
+            
+            var userString = sessionStorage.getItem('details');
+            var user = JSON.parse(userString);
+
+            //$("#kt_select2_3 optgroup").empty();
+            //for (var i = 0; i < user.Departments.length; i++) {
+            //    $("#kt_select2_3 optgroup").append('<option value="' + user.Departments[i].Id + '">' + user.Departments[i].DepartmentName + '</option>');
+            //}
+
+            //$('#kt_select2_3').on('change', function (e) {
+            //    $('#hfSeleted').val($(this).val());
+            //});
+
+            $('#tableData').DataTable();
+
+
+            //$('#hospital_address').keyup(function () {
+            //    var address = $('#hospital_address').val();
+            //    $.ajax({
+            //        type: 'POST',
+            //        contentType: "application/json",
+            //        dataType: 'json',
+            //        url: '/Admin/Admin/SearchAddress',
+            //        data: '{searchTerm:"' + address + '"}',
+            //        success: function (data) {
+            //            var array = [];
+            //            var arraywithPlace = [];
+            //            var dd = JSON.parse(data.data);
+
+            //            for (var i = 0; i < dd.predictions.length; i++) {
+            //                array.push(dd.predictions[i].description);
+            //                arraywithPlace.push(dd.predictions[i]);
+            //            }
+            //            localStorage.setItem("Predictions", JSON.stringify(arraywithPlace));
+            //            $("#hospital_address").autocomplete({
+            //                source: array
+            //            });
+            //        },
+            //        error: function (xhr) {
+            //            alert(xhr.responseText)
+            //        }
+            //    });
+            //});
+
+            //$('#hospital_address').blur(function () {
+            //    var Predictions = JSON.parse(localStorage.getItem("Predictions") || "[]");
+
+            //    for (var i = 0; i < Predictions.length; i++) {
+
+            //        if ($('#hospital_address').val() == Predictions[i].description) {
+
+            //            var PlaceId = Predictions[i].place_id;
+
+            //            $.ajax({
+
+            //                type: 'POST',
+            //                contentType: "application/json",
+            //                dataType: 'json',
+            //                url: '/Admin/Admin/GetLatLong',
+            //                data: '{placeId:"' + PlaceId + '"}',
+            //                success: function (data) {
+            //                    var dd = JSON.parse(data.data);
+            //                    $('#hdLatlong').val(dd.result.geometry.location.lat + "," + dd.result.geometry.location.lng);
+            //                    $('#dvLatLong').html(dd.result.geometry.location.lat + "," + dd.result.geometry.location.lng);
+            //                },
+            //                error: function (data) {
+
+            //                }
+            //            });
+
+
+            //            //  var dd = JSON.parse(data);
+            //            //$('#hdLat').val(dd.result.geometry.location.lat);
+            //            //$('#hdLong').val(dd.result.geometry.location.lng);
+            //        }
+            //    }
+            //});
+
+
+        
+
+        });
+    </script>
+}
+
+
+
+<!-- begin:: Subheader -->
+<div class="kt-subheader   kt-grid__item" id="kt_subheader">
+    <div class="kt-container  kt-container--fluid ">
+        <div class="kt-subheader__main">
+            @*<h3 class="kt-subheader__title">
+
+                    Form Widgets
+                </h3>*@
+
+            <span class="kt-subheader__separator kt-hidden"></span>
+            @*<div class="kt-subheader__breadcrumbs">
+                    <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
+                    <span class="kt-subheader__breadcrumbs-separator"></span>
+                    <a href="#" class="kt-subheader__breadcrumbs-link">
+                        Crud
+                    </a>
+                    <span class="kt-subheader__breadcrumbs-separator"></span>
+                    <a href="#" class="kt-subheader__breadcrumbs-link">
+                        Forms & Controls
+                    </a>
+                    <span class="kt-subheader__breadcrumbs-separator"></span>
+                    <a href="#" class="kt-subheader__breadcrumbs-link">
+                        Form Validation
+                    </a>
+                    <span class="kt-subheader__breadcrumbs-separator"></span>
+                    <a href="#" class="kt-subheader__breadcrumbs-link">
+                        Form Widgets
+                    </a>
+                </div>*@
+        </div>
+        <div class="kt-subheader__toolbar">
+            <div class="kt-subheader__wrapper">
+                <a href="#" class="btn kt-subheader__btn-primary">
+                    Actions &nbsp;
+                    <!--<i class="flaticon2-calendar-1"></i>-->
+                </a>
+
+                <div class="dropdown dropdown-inline" data-toggle="kt-tooltip" title="Quick actions" data-placement="left">
+                    <a href="#" class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--success kt-svg-icon--md">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <polygon points="0 0 24 0 24 24 0 24" />
+                                <path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                <path d="M11,14 L9,14 C8.44771525,14 8,13.5522847 8,13 C8,12.4477153 8.44771525,12 9,12 L11,12 L11,10 C11,9.44771525 11.4477153,9 12,9 C12.5522847,9 13,9.44771525 13,10 L13,12 L15,12 C15.5522847,12 16,12.4477153 16,13 C16,13.5522847 15.5522847,14 15,14 L13,14 L13,16 C13,16.5522847 12.5522847,17 12,17 C11.4477153,17 11,16.5522847 11,16 L11,14 Z" fill="#000000" />
+                            </g>
+                        </svg>                        <!--<i class="flaticon2-plus"></i>-->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-fit dropdown-menu-md dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="kt-nav">
+                            <li class="kt-nav__head">
+                                Add anything or jump to:
+                                <i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+                            </li>
+                            <li class="kt-nav__separator"></li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-drop"></i>
+                                    <span class="kt-nav__link-text">Order</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-calendar-8"></i>
+                                    <span class="kt-nav__link-text">Ticket</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-telegram-logo"></i>
+                                    <span class="kt-nav__link-text">Goal</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-new-email"></i>
+                                    <span class="kt-nav__link-text">Support Case</span>
+                                    <span class="kt-nav__link-badge">
+                                        <span class="kt-badge kt-badge--success">5</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__separator"></li>
+                            <li class="kt-nav__foot">
+                                <a class="btn btn-label-brand btn-bold btn-sm" href="#">Upgrade plan</a>
+                                <a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Learn more</a>
+                            </li>
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end:: Subheader -->
+<!-- begin:: Content -->
+<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+
+
+    <div class="kt-portlet">
+
+
+        <div class="kt-portlet__body kt-portlet__body--fit">
+            <div class="kt-grid">
+                <div class="kt-grid__item kt-grid__item--fluid kt-wizard-v4__wrapper">
+                    <!--begin: Form Wizard Form-->
+                    <div class="kt-form" id="kt_user_add_form">
+                        <!--begin: Form Wizard Step 1-->
+                        <div class="kt-wizard-v4__content" data-ktwizard-type="step-content" data-ktwizard-state="current">
+                            @*<div class="kt-heading kt-heading--md">Register Doctor:</div>*@
+
+                            <div class="kt-section kt-section--first">
+                                <div class="kt-wizard-v4__form" style="margin-top:0">
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="kt-section__body">
+                                                @using (Html.BeginForm("AddClinic", "Admin", FormMethod.Post))
+                                                {
+                                                    <div class="kt-portlet__body" id="dvAddress">
+
+                                                        <div class="row">
+                                                            <div class="col-xl-6">
+                                                                <div class="form-group">
+                                                                    <label>Hospital name</label>
+                                                                    @*<input type="hidden" name="latlog" id="hdLatlong">*@
+                                                                    <input type="hidden" name="doc_id" id="doc_id" value="@ViewBag.id">
+                                                                    <input type="text" class="form-control" name="hospital_name" required>
+                                                                    <span class="form-text text-muted">Please enter Hospital Name.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="form-group">
+                                                                    <label>Hospital Address</label>
+                                                                 
+                                                                    <div style="float:right" id="dvLatLong">
+                                                                        <label id="lblLatLong" style="float:right"></label>
+                                                                    </div>
+                                                                    
+                                                                    <input type="text" class="form-control" name="hospital_address" id="hospital_address" required>
+                                                                    <span class="form-text text-muted">Please enter Hospital Address.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xl-6">
+                                                                <div class="form-group">
+                                                                    <label>Contact Details</label>
+                                                                    <input type="text" class="form-control" name="contact_details">
+                                                                    <span class="form-text text-muted">Please enter Contact Details.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="form-group">
+                                                                    <label>LatLong</label>
+                                                                    <input type="text" name="latlog" id="latlog" class="form-control" required>
+                                                                    <span class="form-text text-muted">Please enter LatLong.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="kt-portlet__foot">
+                                                        <div class="row">
+                                                            <div class="col-xl-6">
+                                                                <input type="submit" class="btn btn-success" value="Save" id="btnSave" />
+                                                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div style="margin-left:2%;margin-right:2%  ">
+
+                                        <table id="tableData" class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:7%">Serial No</th>
+                                                    <th>Hospital Name</th>
+                                                    <th>Hospital Address</th>
+                                                    <th>Contact Details</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                @{ int rowNo = 0; }
+                                                @if (Model.ClinicList.Count() > 0)
+                                                {
+                                                    foreach (var item in Model.ClinicList)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                                @(rowNo += 1)<input type="hidden" value="@item.id" id="hdid@(rowNo)" />
+                                                            </td>
+                                                            <td>@item.hospital_name</td>
+                                                            <td>@item.hospital_address</td>
+                                                            <td>@item.contact_details</td>
+                                                            <td>
+                                                                @if (@item.IsActive == true)
+                                                                {
+                                                                    @:Active
+                                                                }
+                                                                else
+                                                                {
+                                                                    @:InActive
+                                                                }
+                                                            </td>
+                                                            <td>
+                                                                <span class="dropdown">
+                                                                    <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="false" id="lnkDropdown">
+                                                                        <i class="la la-ellipsis-h"></i>
+                                                                    </a>
+
+                                                                    <div class="dropdown-menu dropdown-menu-right" id="dvdropdown">
+                                                                        <a class="dropdown-item" href="@Url.Action("EditClinic","Admin", new { id = @item.id, docId = item.doc_id })"><i class="la la-print"></i> Edit</a>
+                                                                        <a class="dropdown-item" href="@Url.Action("ClinicSchedule", "Admin", new { id = @item.id })"><i class="la la-edit"></i> Add Clinic Schedule</a>
+                                                                    </div>
+                                                                </span>
+
+
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                            <tr>
+                                                <td style="width:300px">No Records Found</td>
+                                                <td style="display: none"></td>
+                                                <td style="display: none"></td>
+                                                <td style="display: none"></td>
+                                                <td style="display: none"></td>
+                                                <td style="display: none"></td>
+
+                                            </tr>
+                                                }
+
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--end: Form Wizard Form-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--end::Portlet-->
+
+</div>
+<!-- end:: Content -->

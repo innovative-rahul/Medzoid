@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewBag.Title = "symptoms";
+    var BodyPartId = Request["BodyPartId"];
+    var Search = Request["Search"];
+
+}
+
+
+@section afterjs{
+    <div id="mylocation" class="modal fade" role="dialog" style="    z-index: 9999;">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Search Location</h4> <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div autocomplete="off" id="depat" class="fadeInUp animated">
+                        <div id="custom-search-input" spellcheck="false" style="width: 100%;">
+
+                            <div class="input-group">
+                                <input autocomplete="off" type="text" required="" style="    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);" id="search_latlong" name="search_latlong" class="search-query controls" placeholder="Ex. Home Address city..">
+                                <span style="position:absolute;right:15px;top:15px"><img src="/img/map-marker.png" height="25px"></span>
+                            </div>
+                        </div>  <input class="setbtn" id="locateadd" type="submit" name="locate" value="Set Location" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#locateadd").click(function(){
+//  alert("The paragraph was clicked.");
+            Getlatlong($("#search_latlong").val());
+});
+        function init() {
+            var input = document.getElementById('search_latlong');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+
+        google.maps.event.addDomListener(window, 'load', init);
+
+            function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        var LatLong = getCookie("lat") + "," + getCookie("lng");
+        GetAddress();
+        function GetAddress() {
+
+            var latlng = new google.maps.LatLng(getCookie("lat"), getCookie("lng"));
+            var geocoder = geocoder = new google.maps.Geocoder();
+            geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    if (results[1]) {
+                        $("#location").html("Location: " + results[1].formatted_address);
+                        //alert("Location: " + results[1].formatted_address);
+                    }
+                }
+            });
+        }
+        function Getlatlong(address) {
+
+
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({ 'address': address }, function (results, status) {
+
+                if (status == google.maps.GeocoderStatus.OK) {
+                    var latitude = results[0].geometry.location.lat();
+                    var longitude = results[0].geometry.location.lng();
+                    // console.log(latitude, longitude);
+                    // alert(latitude, longitude);
+
+                    document.cookie = "lat=" + latitude;
+                    document.cookie = "lng=" + longitude;
+                    location.reload();
+                }
+            });
+        }
+
+
+        function Department(id) {
+            $('#hidden_did').val(id);
+            $('#depat').submit();
+        }
+
+
+        var html = "";
+
+           $.ajax({
+            type: 'POST',
+            url: '/SymptomsList',   
+            data: {  BodyPartId:@BodyPartId ,Search: '@Search' },
+            headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+            dataType: 'json',
+            success: function (data) {
+                //console.log(data);
+                $.each(data.Data.Data, function (index, element) {
+                   //html += "<div class=\"rec\"><a onclick=\"getdep(" + element.id + ",'" + element.name + "')\" >" + element.name + "</a></div>";
+
+                    html +="<div onclick=\"Department(" + element.symptoms_id + ")\" class=\"fadeInUp animated col-lg-6 col-md-6 col-xs-12\"> <div class=\"strip_list wow fadeIn\">"
+                         + "<a href=\"#\" class=\"wish_bt\"></a>"
+                         + "<p style='margin-left:-20%'>" + element.symptoms_name + "</p>"
+                         + "</div></div>";
+                });
+                $('#symptomslist').empty().append(html);
+            }
+        });
+
+
+    </script>
+}
+<div id="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/index">Home</a></li>
+
+
+        </ul>
+        <ul style="float: right;top: -15px;position: relative;text-align: right;">
+            <li style="max-width:400px"><a href="javascript:void(0)" data-toggle="modal" data-target="#mylocation" id="location">Location</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container margin_60_35">
+    <form autocomplete="off" method="post" id="depat" action="/Department" class="fadeInUp animated">
+        <input type="hidden" required id="hidden_did" name="hidden_did" />
+        <div class="row" id="symptomslist">
+
+        </div>
+    </form>
+</div>
+
+
+
+
+

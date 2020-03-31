@@ -1,0 +1,182 @@
+﻿
+@{
+    ViewBag.Title = "HelpFaq";
+}
+
+
+@section aftercss{
+ <style>
+     .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+         border: 1px solid #28a745;
+         background: #28a745;
+         font-weight: normal;
+         color: #ffffff;
+     }
+   
+ </style>    
+    
+}
+
+@section afterjs{
+    <script src="~/js/common_scripts.min.js"></script>
+    <script src="~/js/functions.js"></script>
+    <script>
+
+
+
+        var userMaster = new Object();
+        userMaster.mobile = $('#mobileno').val();
+        userMaster.password = $('#password').val();
+
+        $.ajax({
+            type: 'POST',
+            contentType: "application/json; charset=utf-8",
+            dataType: 'json',
+            url: "/HelpFagJson",
+            data: {},
+            success: function (data) {
+                if (data.Status == true) {
+                    for (var i = 0; i < data.data.length; i++) {
+                        if (data.data[i].Category == "About Medzoid") {
+                            $('#accordion1').append('<h4 class="nomargin_top">' + data.data[i].Question + '</h4><div class="add_bottom_45 accordion"><p>' + $.trim(data.data[i].Answer) + '</p></div>');
+                        }
+                        else if (data.data[i].Category == "Data \&\ Privacy") {
+                            $('#accordion2').append('<h4 class="nomargin_top">' + data.data[i].Question + '</h4><div class="add_bottom_45 accordion"><p>' + $.trim(data.data[i].Answer) + '</p></div>');
+                        }
+                        else if (data.data[i].Category == "Appointments") {
+                            $('#accordion3').append('<h4 class="nomargin_top">' + data.data[i].Question + '</h4><div class="add_bottom_45 accordion"><p>' + $.trim(data.data[i].Answer) + '</p></div>');
+                        }
+                        else if (data.data[i].Category == "My Account") {
+                            $('#accordion4').append('<h4 class="nomargin_top">' + data.data[i].Question + '</h4><div class="add_bottom_45 accordion"><p>' + $.trim(data.data[i].Answer) + '</p></div>');
+                        }
+                        else if (data.data[i].Category == "Reviews") {
+                            $('#accordion5').append('<h4 class="nomargin_top">' + data.data[i].Question + '</h4><div class="add_bottom_45 accordion"><p>' + $.trim(data.data[i].Answer) + '</p></div>');
+                        }
+                        else if (data.data[i].Category == "Practice Getting Started") {
+                            $('#accordion6').append('<h4 class="nomargin_top">' + data.data[i].Question + '</h4><div class="add_bottom_45 accordion"><p>' + $.trim(data.data[i].Answer) + '</p></div>');
+                        }
+                        else if (data.data[i].Category == "Pharmacy") {
+                            $('#accordion7').append('<h4 class="nomargin_top">' + data.data[i].Question + '</h4><div class="add_bottom_45 accordion"><p>' + $.trim(data.data[i].Answer) + '</p></div>');
+                        }
+                    }
+                }
+                $("#accordion1").accordion({
+                    collapsible: true
+                });
+               
+                
+            },
+            error: function (xhr) {
+                alert(xhr.responseText)
+            }
+        });
+
+
+
+        function Expand(name) {
+            if (name == 'AboutMedzoid') {
+                $("[id^='accordion']").hide();
+                $('#accordion1').show(500);
+            }
+            else if (name == 'data') {
+                $("[id^='accordion']").hide();
+                $('#accordion2').show(500);
+                 $("#accordion2").accordion({
+                    collapsible: true
+                });
+            }
+            else if (name == 'Appointments') {
+                $("[id^='accordion']").hide();
+                $('#accordion3').show();
+                $("#accordion3").accordion({
+                    collapsible: true
+                });
+            }
+            else if (name == 'MyAccount') {
+                $("[id^='accordion']").hide();
+                $('#accordion4').show();
+                 $("#accordion4").accordion({
+                    collapsible: true
+                });
+            }
+            else if (name == 'Reviews') {
+                $("[id^='accordion']").hide();
+                $('#accordion5').show();
+                 
+                $("#accordion5").accordion({
+                    collapsible: true
+                });
+            }
+            else if (name == 'Practice') {
+                $("[id^='accordion']").hide();
+                $('#accordion6').show();
+                 $("#accordion6").accordion({
+                    collapsible: true
+                });
+            }
+            else if (name == 'Pharmacy') {
+                $("[id^='accordion']").hide();
+                $('#accordion7').show();
+                               
+                $("#accordion7").accordion({
+                    collapsible: true
+                });
+            }
+
+        }
+
+    </script>
+
+}
+
+
+<div class="container margin_60" style="transform: none;">
+    <div class="row" style="transform: none;">
+
+        <!--/aside -->
+
+        <aside class="col-lg-3" id="sidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+
+            <!--/sticky -->
+            <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: relative; transform: none;">
+                <div class="box_style_cat" id="faq_box">
+                    <ul id="cat_nav">
+                        <li onclick="Expand('AboutMedzoid')"><a href="#AboutMedzoid" class="active"><i class="icon_document_alt"></i>About Medzoid</a></li>
+                        <li onclick="Expand('data')"><a href="#dataPrivacy"><i class="icon_document_alt"></i>Data & Privacy</a></li>
+                        <li onclick="Expand('Appointments')"><a href="#Appointments"><i class="icon_document_alt"></i>Appointments</a></li>
+                        <li onclick="Expand('MyAccount')"><a href="#MyAccount"><i class="icon_document_alt"></i>My Account</a></li>
+                        <li onclick="Expand('Reviews')"><a href="#Practice"><i class="icon_document_alt"></i>Reviews</a></li>
+                        <li onclick="Expand('Practice')"><a href="#Practice"><i class="icon_document_alt"></i>Practice</a></li>
+                        <li onclick="Expand('Pharmacy')"><a href="#Pharmacy"><i class="icon_document_alt"></i>Pharmacy</a></li>
+                    </ul>
+                </div><div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                    <div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 265px; height: 287px;">
+                        </div>
+                    </div>
+                    <div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+        <div class="col-lg-9" id="faq">
+            <div id="accordion1">
+            </div>
+            <div id="accordion2" style="display:none">
+            </div>
+            <div id="accordion3" style="display:none">
+            </div>
+            <div id="accordion4" style="display:none">
+            </div>
+            <div id="accordion5" style="display:none">
+            </div>
+            <div id="accordion6" style="display:none">
+            </div>
+            <div id="accordion7" style="display:none">
+            </div>
+        </div>
+    </div>
+</div>

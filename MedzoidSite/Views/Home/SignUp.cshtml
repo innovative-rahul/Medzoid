@@ -1,0 +1,272 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section aftercss{
+    <style>
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+             z-index: -4545; 
+            background-color: #000;
+        }
+    </style>
+    
+    }
+
+
+@section afterjs{
+
+    <script>
+        $(document).ready(function () {
+
+
+            function init() {
+                var input = document.getElementById('search_latlong');
+                var autocomplete = new google.maps.places.Autocomplete(input);
+            }
+
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+            var LatLong = getCookie("lat") + "," + getCookie("lng");
+            GetAddress();
+
+            function GetAddress() {
+
+                var latlng = new google.maps.LatLng(getCookie("lat"), getCookie("lng"));
+                var geocoder = geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        if (results[1]) {
+                            $("#location").html("Location: " + results[1].formatted_address);
+
+                        }
+                    }
+                });
+            }
+
+            function Getlatlong(address) {
+                var geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ 'address': address }, function (results, status) {
+
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        var latitude = results[0].geometry.location.lat();
+                        var longitude = results[0].geometry.location.lng();
+
+                        document.cookie = "lat=" + latitude;
+                        document.cookie = "lng=" + longitude;
+                        location.reload();
+                    }
+                });
+            }
+        
+
+            $("#btnSignUp").click(function () {
+
+                if ($('#txtName').val() == "") {
+                    alert('Please enter Name');
+                }
+                else if ($('#txtMobile').val() == "") {
+                    alert('Please enter Mobile');
+                }
+                else if ($('#txtpassword').val() == "") {
+                    alert('Please enter password');
+                }
+                else {
+                    var userMaster = new Object();
+                    userMaster.name = $('#txtName').val();
+                    userMaster.mobile = $('#txtMobile').val();
+                    userMaster.password = $('#txtpassword').val();
+                    userMaster.email = $('#txtMobile').val();
+                    userMaster.ref_code = $('#txtrefCode').val();
+                    userMaster.latlong = LatLong;
+
+                    $.ajax({
+                        type: 'POST',
+                        contentType: "application/json; charset=utf-8",
+                        dataType: 'json',
+                        url: "/SignUp",
+                        data: '{ userMaster: ' + JSON.stringify(userMaster) + '}',
+                        success: function (data) {
+
+                            if (data.Success == true) {
+                                $("#kt_datetimepicker_modal").modal();
+                                $("#hdUid").val(data.id)
+                            }
+                        },
+                        error: function (xhr) {
+                            alert(xhr.responseText)
+                        }
+                    });
+                }
+            })
+
+
+            $('#btnVerifyOTP').click(function () {
+
+                var model = new Object();
+                model.otp = $('#txtOTP').val();
+                model.Id = $('#hdUid').val();
+                model.usedrefcode = $('#txtRefCode').val();
+
+                $.ajax({
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    url: "/VerifyOTP",
+                    data: '{ model: ' + JSON.stringify(model) + '}',
+                    success: function (data) {
+                        if (data.Success == true) {
+                            alert("Registered Successfully");
+                            location.href = "/Login";
+                        }
+                        else {
+                            alert("Invalid OTP")
+                        }
+                    },
+                    error: function (xhr) {
+                        alert(xhr.responseText)
+                    }
+                });
+            })
+
+
+
+        })
+
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+
+        function validateEmail(emailField) {
+            var reg = /^([A-Za-z0-9_\-\.])+\@@([A-Za-z0-9_\-\.])+\.([A - Za - z]{ 2, 4 }) $ /;
+
+            if (reg.test(emailField.value) == false) {
+                alert('Invalid Email Address');
+                return false;
+            }
+
+            return true;
+
+        }
+
+
+        function getParameterByName(e, t) {
+            t || (t = window.location.href), e = e.replace(/[\[\]]/g, "\\$&");
+            var n = new RegExp("[?&]" + e + "(=([^&#]*)|&|#|$)").exec(t);
+            return n ? n[2] ? decodeURIComponent(n[2].replace(/\+/g, " ")) : "" : null
+        }
+
+
+    </script>
+
+}
+
+<div class="bg_color_2" style="background: #14382d url(../img/hero_bg_1.svg) repeat fixed;">
+    <div class="container margin_60_35">
+        <div id="login-2">
+            <h1>Please login to Medzoid!</h1>
+            <!--begin::Form-->
+            <form action="#" novalidate="novalidate" id="forSignUp" autocomplete="off">
+                <div class="form-group">
+                    <input type="hidden" id="hdUid">
+                    <input class="form-control" type="text" placeholder="Name" name="username" autocomplete="off" id="txtName">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Mobile" name="mobile" autocomplete="off" id="txtMobile" onkeypress="return isNumber(event)" maxlength="10">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Password" name="password" autocomplete="off" id="txtPassword">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="off" id="txtConfirmPassword">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Your referral code (If any)" name="refcode" autocomplete="off" id="txtRefCode">
+                </div>
+                <br />
+                <div class="form-group col-lg-12">
+                    <label>
+                        By clicking register button. you accept that u have read our <a href="#">terms and condition</a>  and  <a>privacy policy </a> and that you continued use of the web is subjected to these policies.
+                    </label>
+
+                </div>
+
+                <!--begin::Action-->
+                <div class="kt-login__actions">
+                    @*<a href="#" class="kt-link kt-login__link-forgot">
+                            Forgot Password ?
+                        </a>*@
+                    @*<button id="kt_login_signin_submit" class="btn btn-primary btn-elevate kt-login__btn-primary">Sign Up</button>*@
+
+                    <input type="button" class="btn_1" id="btnSignUp" value="Submit" />
+
+
+                </div>
+                <!--end::Action-->
+            </form>
+            <p class="text-center link_bright">Already have an account? <a href="@Url.Action("Login","Home")"><strong>Login now!</strong></a></p>
+        </div>
+        <!-- /login -->
+    </div>
+</div>
+
+<!--begin::Modal-->
+<div class="modal fade" id="kt_datetimepicker_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> Verify OTP </h5>
+                <button type="reset" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="la la-remove"></span>
+                </button>
+            </div>
+            <form class="kt-form kt-form--fit kt-form--label-right">
+                @*@using (Html.BeginForm("AddAmount", "Home", FormMethod.Post, new { @class = "kt-form kt-form--fit kt-form--label-right" }))
+                    {*@
+                <div class="modal-body">
+                    <div class="form-group row kt-margin-t-20">
+                        <label class="col-form-label col-lg-3 col-sm-12">OTP</label>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            @*@Html.TextBoxFor(model => model.Amount, new { @class = "form-control", @placeholder = "Minimum Amount is 50 Rs." })*@
+                            <input class="form-control" type="text" placeholder="OTP" name="otp" autocomplete="off" id="txtOTP">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-brand" data-dismiss="modal">Close</button>
+                    <input type="button" class="btn btn-secondary" id="btnVerifyOTP" value="Submit" />
+                </div>
+                @*}*@
+            </form>
+
+        </div>
+    </div>
+</div>
+<!--end::Modal-->

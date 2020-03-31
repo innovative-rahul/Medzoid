@@ -1,0 +1,616 @@
+﻿@{
+
+    ViewBag.Title = "Health Emergency";
+
+}
+
+@section aftercss{
+    <style>
+
+        #tblQuiz td {
+            vertical-align: middle
+        }
+
+
+        .blogview {
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 30px
+        }
+
+            .blogview h1 {
+                background: none;
+                color: #262739;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 50px;
+            }
+
+        #stats h1 {
+            background: none;
+            color: #000;
+            margin-top: 50px;
+            text-transform: uppercase;
+        }
+
+        #stats h2 {
+            font-size: 22px;
+            background: #058c72;
+            color: #fff;
+            padding: 30px 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+            #stats h2 span {
+                color: #fff;
+                font-weight: bolder;
+                font-size: 150%;
+                text-shadow: 3px 3px rgba(12, 12, 11, 0.2);
+            }
+
+        .panel-default {
+            border: 1px solid #999;
+        }
+
+
+        img {
+            max-width: 100%
+        }
+
+        svg {
+            float: left;
+            height: 85px;
+            width: 85px;
+            margin-right: 20px;
+        }
+
+        .imgbox {
+            position: relative
+        }
+
+        .title {
+            background: rgb(22, 72, 97);
+            padding: 20px;
+            font-size: 42px;
+            top: 50%;
+            position: absolute;
+            right: 0;
+            font-weight: bold;
+            max-width: 75%;
+            text-align: right;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(7, 7, 7, 0.77);
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .pull-left {
+            float: left
+        }
+
+        .pull-right {
+            float: right
+        }
+
+        .panel-heading {
+            background: #fff !important;
+            padding: 25px 40px;
+        }
+
+        .panel-body p {
+            font-size: 18px;
+        }
+
+        .panel-body {
+            padding: 25px 40px;
+            background: #fff;
+        }
+
+        .steps {
+            max-width: 450px;
+            margin: auto;
+        }
+
+            .steps div img {
+                float: left;
+                height: 85px;
+                width: 85px;
+                margin-right: 20px;
+            }
+
+            .steps div {
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+            }
+
+                .steps div span {
+                    color: #01b18f;
+                    font-weight: 800;
+                    margin-right: 10px;
+                }
+
+        .panel-title a {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 26px;
+            color: #000 !important;
+        }
+
+        .help {
+            text-align: center;
+            padding-top: 50px
+        }
+
+            .help h1 {
+                font-weight: bold;
+                margin-bottom: 0;
+                padding: 0
+            }
+
+            .help h3 {
+                font-weight: bold;
+                margin-bottom: 0;
+                padding: 0
+            }
+
+        .p-5 {
+            padding-top: 15px;
+            padding-bottom: 15px
+        }
+
+        h1 {
+            background: #01b18f;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        @@media only screen and (max-width: 600px) {
+            .title {
+                position: relative;
+                max-width: 100%;
+                font-size: 18px;
+            }
+
+            h1 {
+                background: #01b18f;
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            .col-5, .col-4 {
+                width: 100%;
+                max-width: 100%;
+                display: contents;
+            }
+
+            .col-4 {
+            }
+
+            .help {
+                text-align: center;
+                padding-top: 50px;
+                max-width: 100%;
+                display: contents;
+            }
+
+            .steps div {
+                font-size: 25px;
+                display: grid;
+                align-items: center;
+                font-weight: 600;
+                width: 100%;
+                text-align: center;
+            }
+
+            svg {
+                float: none;
+                height: 85px;
+                width: 85px;
+                margin-right: 20px;
+                display: block;
+                margin: auto;
+            }
+
+            .steps img {
+                float: none !important;
+                height: 85px;
+                width: 85px;
+                margin-right: auto !important;
+                display: block;
+                margin: auto;
+            }
+        }
+    </style>
+
+
+
+
+}
+
+@section afterjs{
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script type="text/javascript">
+        var html = "";
+        var html2 = "";
+        var confirmed = "";
+        var Death = "";
+        var Dates = "";
+        var country = "";
+        $(document).ready(function () {
+            $.ajax({
+                url: 'https://pomber.github.io/covid19/timeseries.json',
+                type: 'GET',
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $.each(data, function (index, element) {
+                        //console.log(index);
+                        if (index == "India") {
+                            country = index;
+                            for (i = 0; i < element.length; i++) {
+                                confirmed = element[i].confirmed;
+                                Death = element[i].deaths;
+                                Dates = element[i].date;
+                            }
+                            $("#stats").html("<h1>" + country + "</h1><h2>Total No. Of Active Covid 2019 : <span>" + confirmed + "</span></h2><h2>Total No. Of Death : <span>" + Death + "</span></h2><h2>Updated On : <span>" + Dates + "</span></h2><a href='https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd' target='_blank'><h2>WHO Novel Coronavirus(COVID -19) Situation Dashboard</h2></a>");
+                        }
+                    });
+                },
+                error: function (data) {
+
+                }
+            });
+
+            $.ajax({
+                url: 'https://api.medzoid.com/api/Blogs',
+                type: 'GET',
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $.each(data.Data, function (index, element) {
+
+                        html += "<a href='https://medzoid.com/BlogPost/" + element.url + "' class='col-4 blogview'><img src='https://www.medzoid.com/content/images/Blogs/" + element.image + "' /><h1>" + element.title + "</h1></a>";
+                    });
+                    $("#blogs").html(html);
+                },
+                error: function (data) {
+
+                }
+            });
+
+            $.ajax({
+                url: 'https://api.medzoid.com/api/Faq',
+                type: 'GET',
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $.each(data.Data, function (index, element) {
+
+                        html2 += "<div class='panel panel-default '><div class='panel-heading accordion-toggle collapsed question-toggle' data-toggle='collapse' data-parent='#faqAccordion' data-target='#question" + element.id + "'>    <h4 class='panel-title'>    <a href='javascript:void(0)' class='ing'>" + element.Question + "</a>    </h4>    </div>    <div id='question" + element.id + "' class='panel-collapse collapse' style='height: 0px;'>    <div class='panel-body'>    <h5><span class='label label-primary'></span></h5>    <p>" + element.Answer + "</p>    </div>    </div>    </div>";
+                    });
+                    $("#faqAccordion").html(html2);
+                },
+                error: function (data) {
+                }
+            });
+
+
+            $.ajax({
+                url: '/CoronaQuiz',
+                type: 'GET',
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+
+
+                    for (i = 0; i < data.data.length; i++) {
+                        if (i == 0) {
+                            $('#CovidQuiz ').append('<div class="strip_list wow fadeIn animated" style="width:48%;margin-left:25%" id="dv' + i + '">' +
+                                '<span style="margin-right:1%"><b>Q' + (i + 1) + '.</b></span>' +
+                                '<span><strong>' + data.data[i].Question + '</strong></span> <input type="hidden" value="' + data.data[i].id + '" id="hd' + i + '"/>' +
+                                '<br /><br />' +
+                                'True <input type="radio" value="True" name="Answer' + i + '" class="radio" />  &nbsp; False <input type="radio" value="False" name="Answer' + i + '" class="kt-radio--primary" />' +
+                                '<span class="rating" style="visibility:hidden"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>' +
+                                '<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1" style="visibility:hidden"><img src="img/badges/badge_1.svg" width="15" height="15" alt=""></a>' +
+                                '<ul>' +
+                                '<li style="visibility:hidden"><a href="#" target="_blank">Directions</a></li>' +
+                                '<li id="btn' + i + '" onclick="NextQuestion(event)"><a href="#">Next</a></li>' +
+                                '</ul>' +
+                                '</div>');
+
+                        }
+                        else {
+
+                            if (i == 20) {
+                                $('#CovidQuiz ').append('<div class="strip_list" style="display:none; animation-name: fadeIn;width:48%;margin-left:25%" id="dv' + i + '">' +
+                                    '<span style="margin-right:1%"><b>Q' + (i + 1) + '.</b></span>' +
+                                    '<span><strong>' + data.data[i].Question + '</strong></span><input type="hidden" value="' + data.data[i].id + '" id="hd' + i + '"/>' +
+                                    '<br /><br />' +
+                                    'True <input type="radio" value="True" name="Answer' + i + '" class="radio" />  &nbsp; False <input type="radio" value="False" name="Answer' + i + '" class="kt-radio--primary" />' +
+                                    '<span class="rating" style="visibility:hidden"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>' +
+                                    '<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1" style="visibility:hidden"><img src="img/badges/badge_1.svg" width="15" height="15" alt=""></a>' +
+                                    '<ul>' +
+                                    '<li style="visibility:hidden"><a href="#" target="_blank">Directions</a></li>' +
+                                    '<li onclick=SubmitQuiz(event)><a href="#">Submit</a></li></ul></div>');
+                            }
+                            else {
+                                $('#CovidQuiz ').append('<div class="strip_list" style="display:none; animation-name: fadeIn;width:48%;margin-left:25%" id="dv' + i + '">' +
+                                    '<span style="margin-right:1%"><b>Q' + (i + 1) + '.</b></span>' +
+                                    '<span><strong>' + data.data[i].Question + '</strong></span><input type="hidden" value="' + data.data[i].id + '" id="hd' + i + '"/>' +
+                                    '<br /><br />' +
+                                    'True <input type="radio" value="True" name="Answer' + i + '" class="radio" />  &nbsp; False <input type="radio" value="False" name="Answer' + i + '" class="kt-radio--primary" />' +
+                                    '<span class="rating" style="visibility:hidden"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>' +
+                                    '<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1" style="visibility:hidden"><img src="img/badges/badge_1.svg" width="15" height="15" alt=""></a>' +
+                                    '<ul>' +
+                                    '<li style="visibility:hidden"><a href="#" target="_blank">Directions</a></li>' +
+                                    '<li id="btn' + i + '" onclick="NextQuestion(event)"><a href="#">Next</a></li>' +
+                                    '</ul>' +
+                                    '</div>');
+
+
+                            }
+
+
+
+
+                        }
+                    }
+
+                },
+                error: function (data) {
+                }
+            });
+
+
+            $('#btnQuiz').click(function () {
+                $('#CovidQuiz').show(300);
+                $('#btnQuiz').hide();
+                // $('#faqAccordion').hide(50);
+                // $('#h2faq').hide(50);
+                $('html, body').animate({
+                    scrollTop: $("#h1knowledge").offset().top
+                }, 500);
+            });
+
+
+        })
+
+
+        function SubmitQuiz(event) {
+
+            event.preventDefault();
+              if ($('input[name="Answer20"]').is(':checked')) {
+            var answers = [];
+            var rows = 21;
+            for (i = 0; i < rows; i++) {
+                var faqId = $('input[id="hd' + i + '"]').val();
+                var chosenAnswer = $('input[name="Answer' + i + '"]:checked').val();
+                var answerobj = { answer: chosenAnswer, id: faqId };
+                answers.push(answerobj);
+            }
+            $.ajax({
+                url: '/SubmitQuiz',
+                type: 'POST',
+                data: { model: answers },
+                headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                dataType: 'json',
+                success: function (data) {
+                    if (data.Status == true) {
+
+                        $('html, body').animate({
+                            scrollTop: $("#dvresult").offset().top
+                        }, 500);
+
+
+                        $('#CovidQuiz').hide();
+                        $('#dvchart').show();
+
+                        var ctx = document.getElementById('myChart').getContext('2d');
+
+                        var total = 100;
+                        var secured = data.data;
+                        var wrong = total - secured;
+
+                        var chart = new Chart(ctx, {
+                            // The type of chart we want to create
+                            type: 'pie',
+
+                            // The data for our dataset
+                            data: {
+                                labels: ['Correct', 'Wrong'],
+                                datasets: [{
+                                    label: 'Secured',
+                                    backgroundColor: ["green", "#87ceeb"],
+                                    borderColor: '#c2c5cc',
+                                    data: [secured, wrong]
+                                }],
+
+                            },
+
+                            // Configuration options go here
+                            options: {
+                                maintainAspectRatio: false
+                            }
+                        });
+
+
+
+                        $('#pscore').text('You have scored ' + data.data + '%.');
+                        $('#dvresult').show();
+                        $('#dvshare').show();
+                        $('#btnSubmitQuiz').hide();
+
+                        
+                        for (var i = 0; i < data.ans.length; i++) {
+                            $('#dvAnswers table tbody').append('<tr><td>' + (i + 1) + '</td><td>' + data.ans[i].Question + '</td><td>' + data.ans[i].AnswerMarked + '</td><td>' + data.ans[i].corrAns + '</td><td>' + data.ans[i].Answer + '</td></tr>');
+                        }
+                        
+                    }
+                },
+                error: function (data) {
+                }
+            });
+
+            }
+            else {
+                alert('Please select your answer');
+            }
+
+        };
+
+        function NextQuestion(e) {
+            event.preventDefault();
+
+
+            for (var i = 0; i < 21; i++) {
+
+                if ($('input[name="Answer' + i + '"]').is(':checked')) {
+                    if ($("#dv" + i).is(':visible')) {
+                        $("#dv" + i).css("display", "none");
+                        $("#dv" + (i + 1)).css("display", "block").fadeIn();
+                        break;
+                    }
+                }
+                else {
+                    alert('Please select your answer');
+                    break;
+                }
+
+            }
+        }
+
+        function showanswers(e) {
+            e.preventDefault();
+            $('#dvAnswers').show();
+        }
+
+    </script>
+}
+
+<div class="imgbox">
+
+
+    <img src="~/img/covid19/COVID19_1600x900_0.jpg" style="width:100%" />
+    <div class="title">
+        Novel Coronavirus (COVID-19) Guidelines <br />
+        Checkout our resourses
+    </div>
+</div>
+<h1 class="p-5">Helping Patient to Navigate Coronavirus (COVID-19) &amp; Current Situation(Don't Panic It's Preventable)</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-5 pull-left" id="stats">
+
+        </div>
+        <div class="col-7 pull-right help">
+            <h2>
+                DO THE FIVE
+            </h2>
+            <h3 class="mb-3"> Help stop coronavirus</h3>
+            <div class="steps">
+                <div>
+                    <img src="~/assets/images/corona1.png" />
+                    <span>HANDS</span> Wash them often
+                </div>
+                <div>
+                    <img src="~/assets/images/corona2.png" />
+                    <span>ELBOW</span> Cough into it
+                </div>
+                <div>
+                    <img src="~/assets/images/corona3.png" />
+                    <span>FACE</span> Don't touch it
+                </div>
+                <div>
+                    <img src="~/assets/images/corona4.png" />
+                    <span>SPACE</span> Keep safe distance
+                </div>
+                <div>
+                    <img src="~/assets/images/corona5.png" />
+                    <span>FEEL</span> sick ? stay home
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<h1 class="p-5 text-center" id="h1knowledge">Knowledge is best Weapon to Fight coronavirus.<br />Take challenges(Test your knowledge)</h1>
+
+
+<div class="container-fluid ">
+
+    <br /><br />
+    <div style="width:70%">
+        <input type="button" class="btn btn-success" value="Take Quiz" style="margin-bottom:2%;float:right;width:66%;background-color:#01b18f" id="btnQuiz" />
+    </div>
+    <div class="panel-group" id="CovidQuiz" style="display:none"></div>
+    <div style="margin-bottom:4%;display:none;height:300px" id="dvchart">
+        <div id="dvresult" style="width:50%;float:left;margin-left:7%;margin-top:7%;display:none">
+
+            <div class="strip_list" style="visibility: visible;">
+                <h3>Score</h3>
+                <p id="pscore"></p>
+                <ul>
+                    <li style="visibility:hidden"><a href="#" target="_blank">Directions</a></li>
+                    <li style="visibility:visible" onclick="showanswers(event);"><a href="#">Show Answers</a></li>
+                </ul>
+            </div>
+       </div>
+        <div style="float:right;display:none;margin-top:6.5%" id="dvshare">
+            Share your score
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fmedzoid.com%2Fcorona&layout=button_count&size=large&appId=3527212833972388&width=88&height=28" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div style="float:right;height:300px">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <div id="dvAnswers" style="display:none">
+        <table class="table table-bordered table-striped" style="background-color:white">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th style="width:25%">Question</th>
+                    <th style="width:8%">Marked Answers</th>
+                    <th style="width:8%">Correct Answer</th>
+                    <th>Answer</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <h2 style="margin-top: 50px" id="h2faq">Faq's</h2>
+    <div class="panel-group" id="faqAccordion">
+
+    </div>
+    <!--/panel-group-->
+
+</div>
+
+<br />
+<br />
+
+<div class="container-fluid ">
+    <h2>
+        Our Blogs
+    </h2>
+    <div class="row" id="blogs">
+
+    </div>
+
+</div>

@@ -1,0 +1,1026 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section metahead{
+
+    <title>Doctors in Lucknow | Online Appointments - Medzoid</title>
+    <meta name="description" content="Medzoid.com is the best source for book doctor's appointments online along with 24*7 coverage of specialized doctors. Get our app and search by specialties.">
+    <meta name="keywords" content="Nearby Doctors, Find a Doctor in Lucknow, Doctor Near Me, Get Doctor on Call, Nearby Pharmacies, Nearby Blood Donors">
+}
+@section aftercss{
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link href="/rev-slider-files/css/settings.css" rel="stylesheet" async>
+ <style>
+    .bodyparts img{margin-bottom:25px;margin-top:25px;height:80px}.locate{margin-bottom:20px}#filter-records,#filter-department,#filter-symptom,#filter-procedure{background:#fff;position:absolute;width:100%;box-shadow:0 14px 15px rgba(0,0,0,.25882352941176473);top:50px;z-index:999;max-height:200px;overflow:auto}#searchable{z-index:99;position:relative}.rec{padding:5px 10px 5px 40px;line-height:30px;border-bottom:1px dashed #eee;cursor:pointer}.rec a:hover{-webkit-transform:translate(5px,0);-moz-transform:translate(5px,0);-ms-transform:translate(5px,0);-o-transform:translate(5px,0);transform:translate(5px,0)}#male .nav-tabs>li.active>a,#male .nav-tabs>li.active>a:focus,#male .nav-tabs>li.active>a:hover,#female .nav-tabs>li.active>a,#female .nav-tabs>li.active>a:focus,#female .nav-tabs>li.active>a:hover{background:#0db49b;color:#fff;text-transform:uppercase;text-align:center;display:block;line-height:30px}.fade{display:none}.fade.show{display:block;opacity:1}.imgbox{text-align:center;margin-bottom:30px;padding-bottom:5px;padding-top:5px;margin-top:10px}.imgbox span{width:100%;display:block}.imgbox_main{background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.21);max-width:150px;height:200px;text-align:center}.imgbox:hover{box-shadow:0 2px 5px rgba(0,0,0,.21);cursor:pointer}.imgbox_main img{margin:auto;width:90%}.nav-tabs li a{text-align:center;text-transform:uppercase}.nav-tabs li.active{font-size:14px}.tab-pane{background:#fff;padding-top:}.imgbox_main .male{width:90%;padding:5px 10px;background:#feb300;color:#fff;border:none;font-size:14px;position:relative}.imgbox_main .female{width:90%;padding:5px 10px;background:#0db49b;color:#fff;border:none;font-size:14px;position:relative}.mb-50{margin-bottom:50px}
+</style>
+}
+@section afterjs{
+    <!-- REVOLUTION SLIDER SCRIPTS -->
+    <script type="text/javascript"  src="/rev-slider-files/js/jquery.themepunch.tools.min.js" ></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript"  src="/rev-slider-files/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" async>
+        function Department() {
+            $('#Symptom').hide();
+            $('#Department').show();
+            $('#Disease').hide();
+            $('#Procedure').hide();
+        }
+
+        function Symptom() {
+            $('#Symptom').show();
+            $('#Department').hide();
+            $('#Disease').hide();
+            $('#Procedure').hide();
+
+        }
+
+        function Disease() {
+            $('#Symptom').hide();
+            $('#Department').hide();
+            $('#Disease').show();
+            $('#Procedure').hide();
+
+            //https://api.medzoid.com/api/DiseasebySearch?Search=Cancer x-www-form-urlencoded
+        }
+
+        function Procedure() {
+            $('#Symptom').hide();
+            $('#Department').hide();
+            $('#Disease').hide();
+            $('#Procedure').show();
+        }
+
+        function ListPharmacy() {
+            var userString = sessionStorage.getItem('details');
+            var user = JSON.parse(userString);
+
+            if (user == null) {
+                 location.href = "Login?redirectUrl=RegisterPharmacy" ;
+            }
+            else {
+                location.href = "RegisterPharmacy";
+            }
+        }
+
+        function UploadPrescription() {
+            var userString = sessionStorage.getItem('details');
+            var user = JSON.parse(userString);
+
+            if (user == null) {
+                 location.href = "Login?redirectUrl=UploadPrescription" ;
+            }
+            else {
+                location.href = "UploadPrescription";
+            }
+        }
+
+        function SearchBloodDonor() {
+            var userString = sessionStorage.getItem('details');
+            var user = JSON.parse(userString);
+
+            if (user == null) {
+                 location.href = "Login?redirectUrl=SearchBloodDonor" ;
+            }
+            else {
+                location.href = "SearchBloodDonor";
+            }
+        }
+        
+
+        $('#search_disease').keyup(function () {
+            $('#filter-records').show();
+            var html = "";
+            var searchField = $(this).val();
+            $.ajax({
+                type: 'POST',
+               // url: 'https://api.medzoid.com/api/DiseasebySearch',
+                url: '/DiseasebySearch',
+                data: { Search: searchField },
+                headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                dataType: 'json',
+                success: function (data) {
+                    //console.log(data);
+                    $.each(data.Data.Data, function (index, element) {
+                        html += "<div class=\"rec\"><a onclick=\"getdisease(" + element.id + ",'" + element.name + "')\" >" + element.name + "</a></div>";
+                    });
+                    $('#filter-records').empty().append(html);
+                }
+            });
+        });
+
+        $('#search_department').keyup(function () {
+            $('#filter-department').show();
+            var html = "";
+            var searchField = $(this).val();
+
+            let searchedDepts = [];
+            var departments = JSON.parse(localStorage.getItem('departments'))
+            if (departments != null) {
+                for (var i = 0; i < departments.Data.length; i++) {
+                    if (departments.Data[i].name.toLowerCase().includes(searchField)) {
+                        searchedDepts.push(departments.Data[i])
+                    }
+                }
+
+                if (searchField == '') {
+                    searchedDepts = [];
+                }
+                
+                if (searchedDepts.length > 0) {
+                    $.each(searchedDepts, function (index, element) {
+                        html += "<div class=\"rec\"><a onclick=\"getdep(" + element.id + ",'" + element.name + "')\" >" + element.name + "</a></div>";
+                    });
+                    $('#filter-department').empty().append(html);
+                }
+                else {
+                    $('#filter-department').empty();
+                }
+            }
+
+          //Old Logic
+            //$.ajax({
+            //    type: 'POST',
+            //    url: 'https://api.medzoid.com/api/GetDepartmentList',
+            //    data: { DepartmentName: searchField },
+            //    headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+            //    dataType: 'json',
+            //    success: function (data) {
+            //        console.log(data);
+
+                   
+
+            //        $.each(data.Data, function (index, element) {
+            //            html += "<div class=\"rec\"><a onclick=\"getdep(" + element.id + ",'" + element.name + "')\" >" + element.name + "</a></div>";
+            //        });
+            //        $('#filter-department').empty().append(html);
+            //    }
+
+            //});
+         
+        });
+
+        $('#search_procedure').keyup(function () {
+            $('#filter-procedure').show();
+            var html = "";
+            var searchField = $(this).val();
+            $.ajax({
+                type: 'POST',
+                url: '/GetprocedurebySearch',
+                data: { Search: searchField },
+                headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+                    $.each(data.Data.Data, function (index, element) {
+                        html += "<div class=\"rec\"><a onclick=\"getprocedure(" + element.id + ",'" + element.Name + "')\" >" + element.Name + "</a></div>";
+                    });
+                    $('#filter-procedure').empty().append(html);
+                }
+
+            });
+        });
+
+
+        function bodysymtoms(id, name) {
+            location.href = "/symptoms?BodyPartId=" +id + "&Search="+name;
+        }
+
+        function getdisease(id, name) {
+            $('#search_disease').val(name);
+            $('#hidden_did').val(id);
+            $('#filter-records').hide();
+            $('#diseased').submit();
+        }
+
+        function getdep(id, name) {
+            $('#search_department').val(name);
+            $('#hidden_dep_id').val(id);
+            $('#filter-department').hide();
+            $('#depat').submit();
+        }
+
+        function getprocedure(id, name) {
+            $('#search_procedure').val(name);
+            $('#hidden_pid').val(id);
+            $('#filter-procedure').hide();
+            $('#proced').submit();
+        }
+
+        var tpj = jQuery;
+        var revapi72;
+        tpj(document).ready(function () {
+            $('#Symptom').hide();
+            $('#Department').show();
+            $('#Disease').hide();
+            $('#Procedure').hide();
+            if (tpj("#rev_slider_72_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_72_1");
+            } else {
+                revapi72 = tpj("#rev_slider_72_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "rev-slider-files/js/",
+                    sliderLayout: "auto",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            touchOnDesktop: "off",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 1,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        }
+                        ,
+                        arrows: {
+                            style: "gyges",
+                            enable: true,
+                            hide_onmobile: true,
+                            hide_under: 560,
+                            hide_onleave: true,
+                            hide_delay: 200,
+                            hide_delay_mobile: 1200,
+                            tmp: '',
+                            left: {
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 20,
+                                v_offset: 0
+                            },
+                            right: {
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 20,
+                                v_offset: 0
+                            }
+                        }
+                    },
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: 1240,
+                    gridheight: 600,
+                    lazyType: "none",
+                    shadow: 0,
+                    spinner: "spinner0",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        });	/*ready*/
+    </script>
+
+}
+<div id="rev_slider_72_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="doctor_slider_1" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+    <div id="rev_slider_72_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+        <ul>
+            <!-- SLIDE  -->
+            <li data-index="rs-188" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/100x50_b9dee-42512210_ml.jpg" data-delay="5150" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="/Content/img/banner.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                <!-- LAYERS -->
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption   tp-resizeme" id="slide-188-layer-1" data-x="111" data-y="259" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":510,"speed":800,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"+3260","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size:36px; line-height: 22px; font-weight: 700; color: #049d70;font-family:Poppins;text-transform:uppercase;background-color:rgba(0, 122, 255, 0);">Empowering you to improve life</div>
+                
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption   tp-resizeme" id="slide-188-layer-2" data-x="114" data-y="325" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1170,"speed":800,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"+2730","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size:26px; line-height: 22px; font-weight: 700;top: -15px; color: #049d70;font-family:Poppins;text-transform:uppercase;">We help you to take charge of your own life </div>
+            </li>
+            <!-- SLIDE  -->
+            <li data-index="rs-189" data-transition="crossfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/100x50_4e36b-42512211_ml.jpg" data-delay="5150" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="/Content/img/banner2.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                <!-- LAYERS -->
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption   tp-resizeme" id="slide-189-layer-1" data-x="161" data-y="center" data-voffset="-31" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":520,"speed":800,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"+3160","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size:36px; line-height: 22px; font-weight: 700; color: #049d70;font-family:Poppins;text-transform:uppercase;">Best platform for best services </div>
+                
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption   tp-resizeme" id="slide-189-layer-2" data-x="165" data-y="318" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1080,"speed":800,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"+2800","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 26px; line-height: 22px; font-weight: 700;top: -15px; color: #049d70;font-family:Poppins;text-transform:uppercase;">Platform you can get the best healthcare services </div>
+            </li>
+            <!-- SLIDE  -->
+            <li data-index="rs-190" data-transition="crossfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/100x50_364e0-37885311_ml.jpg" data-delay="5150" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="/Content/img/banner3.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                <!-- LAYERS -->
+                <!-- LAYER NR. 5 -->
+                <div class="tp-caption   tp-resizeme" id="slide-190-layer-1" data-x="84" data-y="384" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":500,"speed":800,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"+3260","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size:36px; line-height: 22px; font-weight: 700; color: #049d70;font-family:Poppins;text-transform:uppercase;">Easy adaptable and user friendly </div>
+                
+                <!-- LAYER NR. 6 -->
+                <div class="tp-caption   tp-resizeme" id="slide-190-layer-2" data-x="79" data-y="454" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":960,"speed":800,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"+2930","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 26px; line-height: 22px; font-weight: 700;top: -15px; color: #049d70;font-family:Poppins;text-transform:uppercase;">The app is easy to use and manage at any time </div>
+            </li>
+        </ul>
+        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+    </div>
+</div>
+<section style="background:#fff">
+    <div class="container margin_60">
+
+        <div class="row">
+            <div class="col-md-4">
+                <a href="http://bit.ly/2STx27S" target="_blank" class="box_cat_home" style="background:#049d70">
+                    <img src="/Content/img/2Old.png" width="100px" />
+
+                    <h3 style="color:#fff;font-weight:bold">DOWNLOAD NOW</h3>
+                </a>
+                @*<img src="/Content/img/2.png" />*@
+            </div>
+            <div class="col-md-8">
+                <div class="text-left">
+                    <h2> <strong>Who We</strong> Are!</h2>
+                    <p style="text-align: justify;line-height: 25px;">Medzoid is a next generation application that enables you to get presided and right medical aid at the right time. We at Medzoid know the importance of good health and to sustain it, it is necessary that proper medical aid is available. Keeping an eagle eye, Medzoid came up as a stellar to bridge the gap between health care professionals/ providers and patients while eliminating the middle men. This elimination helped to generate a healthy/ reliable relationship between the patients and healthcare professionals.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section>
+<div class="container margin_60">
+    <div class="main_title">
+        <h2>Search & Book Appointment</h2>
+        <p>With Top Doctor</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
+            <a href="javascript:void(0)" onclick="Department()" class="box_cat_home">
+
+                <img src="/Content/img/Department.png" />
+
+                <h3>Department</h3>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 ">
+            <a href="javascript:void(0)" onclick="Symptom()" class="box_cat_home">
+                <img src="/Content/img/Symptom.png" />
+
+                <h3>Symptom</h3>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+            <a href="javascript:void(0)" onclick="Disease()" class="box_cat_home">
+
+                <img src="/Content/img/Disease.png" />
+
+                <h3>Disease</h3>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 ">
+            <a href="javascript:void(0)" onclick="Procedure()" class="box_cat_home">
+
+                <img src="/Content/img/Procedure.png" />
+
+                <h3>Procedure</h3>
+            </a>
+        </div>
+        @*  <div class="col-lg-3 col-md-6">
+            <a href="#0" class="box_cat_home">
+                <i class="icon-info-4"></i>
+                <img src="img/icon_cat_1.svg" width="60" height="60" alt="">
+               <h3>Primary Care</h3>
+            <ul class="clearfix">
+                <li><strong>124</strong>Doctors</li>
+                <li><strong>60</strong>Clinics</li>
+            </ul>
+                </a>
+            </div>*@
+    </div>
+    <!-- /row -->
+</div>
+<section id="searchable" style=" background: #049c6e url(../img/hero_bg_1.svg) repeat fixed;">
+    <div class="container margin_60">
+        <div id="Department" class="">
+            <div class=" fadeInUp animated main_title" style="color:#fff">
+                <h2 style="color:#fff">Search Department</h2>
+                <p style="color:#fff">With Top Doctor</p>
+            </div>
+            <div class="">
+                <form autocomplete="off" method="post" id="depat" action="/DoctorList" class="fadeInUp animated">
+                    <div id="custom-search-input">
+                        <div class="input-group">
+                            <input type="hidden" required id="hidden_dep_id" name="hidden_deptId" />
+                            <input autocomplete="off" type="text" required id="search_department" class="search-query" placeholder="Ex. Cardiology, Cancer Care ....">
+                           <span style="position:absolute;right:15px;top:15px"><img src="~/img/searchnew.svg" height="25px"/></span> @* <span class="btn_search" ></span>    <input type="submit" class="btn_search" value="Search">*@
+                        </div>
+                        <div id="filter-department"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="Symptom" class="">
+            <div class=" fadeInUp animated main_title" style="color:#fff">
+                <h2 style="color:#fff">Search Symptoms</h2>
+                <p style="color:#fff">With Top Doctor</p>
+            </div>
+            <div class="">
+
+        @* <form method="post" action="" class="fadeInUp animated" style="display:none">
+        <div id="custom-search-input">
+
+            <div class="input-group">
+
+                <input type="text" id="search_symptoms" class=" search-query" placeholder="Ex. Facial Pain, Head Injury ....">
+               <input type="submit" class="btn_search" value="Search">
+            </div>
+                        <div id="filter-symptom"></div>
+                    </div>
+                </form>*@
+
+                <section class="fadeInUp animated container home-work__section mb-50 section-padding">
+
+                    <div class="container bg-white">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#male"><div class="imgbox_main"><img src="/Content/img/male.png" /><button class="male">Male</button></div></a></li>
+                            <li><a data-toggle="tab" href="#female"><div class="imgbox_main"><img src="/Content/img/female.png" /><button class="female">Female</button></div></a></li>
+                        </ul>
+
+                        <div class="tab-content" style="padding-top:15px;background:#fff;border:1px solid #ddd;border-top:none">
+                            <div id="male" class="tab-pane fade in active show">
+                                <ul class="nav nav-tabs ">
+                                    <li class="col-md-6 active"><a data-toggle="tab" class="active show" href="#mfront">Front</a></li>
+                                    <li class="col-md-6 "><a data-toggle="tab" href="#mback">Back</a></li>
+                                </ul>
+                                <div id="mfront" class="tab-pane fade in show active">
+                                    <div class="row bodyparts">
+                                        <div onclick="bodysymtoms(3,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/head-01.svg" />
+                                                <span>Head</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(5,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/neck.svg" />
+                                                <span>Neck</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(14,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/shopunder.svg" />
+                                                <span>Shoulder</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(17,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/Arms.svg" />
+                                                <span>Arms</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(22,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/hand.svg" />
+                                                <span>Hand</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(24,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/chest.svg" />
+                                                <span>Chest</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(28,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/Abdomen.svg" />
+                                                <span>Abdomen</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(32,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/pelives.svg" />
+                                                <span>Pelives</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(37,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/hip.svg" />
+                                                <span>Hip</span>
+                                            </div>
+
+                                        </div>
+                                        <div onclick="bodysymtoms(42,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lages.svg" />
+                                                <span>Legs</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(44,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lages.svg" />
+                                                <span>Feet</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mback" class="tab-pane fade">
+                                    <div class="row bodyparts">
+                                        <div onclick="bodysymtoms(10,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/head-01.svg" />
+                                                <span>Head</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(7,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/neck.svg" />
+                                                <span>Neck</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(15,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/shopunder.svg" />
+                                                <span>Shoulder</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(16,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/Arms.svg" />
+                                                <span>Arms</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(23,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/hand.svg" />
+                                                <span>Hand</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(27,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/upperback.svg" />
+                                                <span>Upper Back</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(31,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lowerback.svg" />
+                                                <span>Lower Back</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(36,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/hip.svg" />
+                                                <span>Hip</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(35,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/Bottocks.svg" />
+                                                <span>Buttocks</span>
+                                            </div>
+
+                                        </div>
+                                        <div onclick="bodysymtoms(43,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lages.svg" />
+                                                <span>Legs</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(45,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lages.svg" />
+                                                <span>Feet</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="female" class="tab-pane fade">
+                                <ul class="nav nav-tabs ">
+                                    <li class="col-md-6 active"><a data-toggle="tab" href="#ffront">Front</a></li>
+                                    <li class="col-md-6 "><a data-toggle="tab" href="#fback">Back</a></li>
+                                </ul>
+                                <div id="ffront" class="tab-pane fade in active">
+                                    <div class="row bodyparts">
+                                        <div onclick="bodysymtoms(8,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/head-01.svg" />
+                                                <span>Head</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(6,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/neck.svg" />
+                                                <span>Neck</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(13,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/shopunder.svg" />
+                                                <span>Shoulder</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(18,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/Arms.svg" />
+                                                <span>Arms</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(21,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/hand.svg" />
+                                                <span>Hand</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(25,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/chestfemale.svg" />
+                                                <span>Chest</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(29,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/Abdomen.svg" />
+                                                <span>Abdomen</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(33,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/pelives.svg" />
+                                                <span>Pelives</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(38,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/hip.svg" />
+                                                <span>Hip</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(41,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lages.svg" />
+                                                <span>Legs</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(47,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lages.svg" />
+                                                <span>Feet</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="fback" class="tab-pane fade">
+                                    <div class="row bodyparts">
+                                        <div onclick="bodysymtoms(9,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/head-01.svg" />
+                                                <span>Head</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(11,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/neck.svg" />
+                                                <span>Neck</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(12,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/shopunder.svg" />
+                                                <span>Shoulder</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(19,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/Arms.svg" />
+                                                <span>Arms</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(20,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/hand.svg" />
+                                                <span>Hand</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(26,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/upperback.svg" />
+                                                <span>Upper Back</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(30,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lowerback.svg" />
+                                                <span>Lower Back</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(39,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/hip.svg" />
+                                                <span>Hip</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(34,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/Bottocks.svg" />
+                                                <span>Buttocks</span>
+                                            </div>
+
+                                        </div>
+                                        <div onclick="bodysymtoms(40,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lages.svg" />
+                                                <span>Legs</span>
+                                            </div>
+                                        </div>
+                                        <div onclick="bodysymtoms(46,'$$$$')" class="col-md-2">
+                                            <div class="imgbox">
+                                                <img src="/Content/svg/bodyparts/lages.svg" />
+                                                <span>Feet</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+
+        <div id="Disease" class="">
+            <div class=" fadeInUp animated main_title" style="color:#fff">
+                <h2 style="color:#fff">Search Disease</h2>
+                <p style="color:#fff">With Top Doctor</p>
+            </div>
+            <div class="">
+
+                <form id="diseased" autocomplete="off" method="post" action="/DiseaseDepartment" class="fadeInUp animated">
+                    <div id="custom-search-input">
+
+                        <div class="input-group">
+                            <input type="hidden" required name="hidden_did" id="hidden_did" />
+                            <input autocomplete="off" required type="text" id="search_disease" name="search_disease" class=" search-query" placeholder="Ex. Facial Pain, Head Injury ....">
+                            <span style="position:absolute;right:15px;top:15px"><img src="~/img/searchnew.svg" height="25px" /></span>  @*<input type="submit" class="btn_search" value="Search">*@
+                        </div>
+                        <div class="" id="filter-records"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="Procedure" class="">
+            <div class=" fadeInUp animated main_title" style="color:#fff">
+                <h2 style="color:#fff">Search Procedure</h2>
+                <p style="color:#fff">With Top Doctor</p>
+            </div>
+            <div class="">
+
+                <form autocomplete="off" id="proced" method="post" action="/Procedure" class="fadeInUp animated">
+                    <div id="custom-search-input">
+
+                        <div class="input-group">
+                            <input type="hidden" required id="hidden_pid" name="hidden_pid" />
+                            <input autocomplete="off" required type="text" id="search_procedure" name="search_procedure" class=" search-query" placeholder="Ex. Abdominal ultrasound,ACTH stimulation test ....">
+                            <span style="position:absolute;right:15px;top:15px"><img src="~/img/searchnew.svg" height="25px" /></span>    @*<input type="submit" class="btn_search" value="Search">*@
+                        </div>
+                        <div id="filter-procedure"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="" style="background:#fff">
+    <div class="container margin_60">
+        <div class="row">
+
+
+            <div class=" col-lg-7 col-md-7 col-sm-7">
+                <div class="col-md-12">
+                    <div class="main_title text-left">
+                        <h2> <strong>Are You Qualified</strong> Doctor!</h2>
+                    </div>
+                </div>
+                <div class="smallcontentdiv" style="text-align: justify;line-height: 25px;">
+                    <img src="/Content/img/144.png" style="" />
+                    <ul>
+                        <li>
+
+                            Increase the number of your patients by being available for them both online and offline. Your practice will increase and patients within your location can easily react out to you.
+                        </li>
+                        <li>
+
+                            Manage appointments by keeping a track of them. This feature effectively helps medical professionals to reduce the chaos of their clinics’ waiting area.
+                        </li>
+                        <li>
+
+                            If you are a medical professional and have just started with your professional life then Medzoid is the best way to pilot your career as it assist you with promotional activities performed under Medzoid’s banner.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 ">
+                <img src="/Content/img/banner3.png" style="width: 100%;    box-shadow: 0 0 12px rgba(0, 0, 0, 0.19);" />
+                @*<input type="button" class="btn_1 full-width" style="margin-top:5px" onclick="@Url.Action("About","Home")" value="List your Practise on Medzoid"/>*@
+                <a href="@Url.Action("RegisterDoctor","Home")" class="btn_1 full-width" style="margin-top:5px">List your Practise on Medzoid</a>
+                
+            </div>
+        </div>
+
+        @*<div class="col-md-4" style="text-align: center;position:relative">
+         
+        </div>*@
+    </div>
+</section>
+<section>
+    <div class="container margin_60">
+
+
+        <div class="row">
+
+            <div class=" col-lg-6 col-md-6 col-sm-6 ">
+
+                <div class="main_title text-left">
+                    <h2> <strong>Search Pharmacy in</strong> Your area!</h2>
+                </div>
+
+
+                <div class="smallcontentdiv">
+                    <img src="/Content/img/144.png" style="" />
+                    <ul>
+                        <li>
+
+                            <b> Allopathic</b>- get these science based, modern time medicines easily with Medzoid, anytime in places near you.
+                        </li>
+                        <li>
+
+                            <b>Ayurvedic </b>- if you are one of those who prefer the historical roots of Indian Medication then get connected with us.
+                        </li>
+                        <li>
+
+                            <b>Homeopathic </b>- the effective and alternative way of treating your medical condition through homeopathic medicines. So easily order them with Medzoid for no biophysical effect
+                        </li>
+                        <li>
+
+                            <b>Unani </b>- with Medzoid you can easily order Greek physicians based Unani medicines. The medicines prepared by Perso-Arabic method.
+                        </li>
+                        <li>
+
+                            <b>Prescribed Medicines  </b>- with Medzoid you can easily order prescribed medicines at your door step. Find them easily with their brand or generic name.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6  ">
+                @*<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
+                        <a href="#" class="box_cat_home">
+
+                            <img src="/Content/img/Department.png" />
+
+                            <h3>Department</h3>
+                        </a>
+                    </div>*@
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a href="/allopathic" class="box_cat_home">
+
+                            <img src="/Content/img/Allopathic.svg" height="60px" />
+
+                            <h3>Allopathic</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a href="/ayurvedic" class="box_cat_home">
+
+                            <img src="/Content/img/Ayorvedic.png" height="60px" />
+
+                            <h3>Ayurvedic</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a href="/homeopathic" class="box_cat_home">
+
+                            <img src="/Content/img/Homopathic.png" height="60px" />
+
+                            <h3>Homeopathic</h3>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a href="/unani" class="box_cat_home">
+
+                            <img src="/Content/img/unani.png" height="60px" />
+
+                            <h3>Unani</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a href="/drugs" class="box_cat_home">
+
+                            <img src="/Content/img/Drugs.png" height="60px" />
+
+                            <h3>Drugs</h3>
+                        </a>
+                    </div>
+
+                    <button class="btn_1 full-width" onclick="ListPharmacy()">List your Pharmacy on Medzoid</button>
+                    @*<a href="@Url.Action("RegisterDoctor","Home")" class="btn_1 full-width" style="margin-top:5px">List your Pharmacy on Medzoid</a>*@
+                </div>
+
+            </div>
+        </div>
+
+        @*<div class="col-md-4" style="text-align: center;position:relative">
+          
+        </div>*@
+    </div>
+</section>
+<section style="background:#fff">
+    <div class="container margin_60">
+        <div class="row">
+            <div class=" col-lg-7 col-md-7 col-sm-7 ">
+                <div class="main_title text-left">
+                    <h2> <strong>Order Online</strong> Medicine!</h2>
+                </div>
+
+                <div class="smallcontentdiv">
+                    <img src="/Content/img/144.png" style="" />
+                    <p style="text-align: justify">Medzoid allows the users to get Allopathic, Ayurvedic, Unani, Prescribed Medicines  and Homeopathic medicines at reasonable price. You can find near by pharmacies depending on the geographical location and order them at your door step.   </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <img src="/Content/img/order.png" style="width: 100%" />
+                <button class="btn_1 full-width" onclick="UploadPrescription()">Upload Prescriptions</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section>
+    <div class="container margin_60">
+
+        <div class="row">
+            <div class=" col-lg-7 col-md-7  col-sm-7">
+                <div class="section-title__text">
+                    <div class="main_title text-left">
+                        <h2> <strong>Find Blood in</strong> Your area!</h2>
+                    </div>
+
+                </div>
+                <div class="smallcontentdiv">
+                    <img src="/Content/img/144.png" style="" />
+                    <p style="text-align: right">Medzoid understands the importance of time and in that concern, we assists the users to get the right blood donor in places near you. </p>
+                    <ul>
+                        <li>
+
+                            Easily find the right blood donor at the right time
+                        </li>
+                        <li>
+
+                            Find blood banks in places near you and have any time accessibility
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <div class="row">
+                    <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+
+                        <a href="#" class="box_cat_home" onclick="SearchBloodDonor()">
+
+                            <img src="/Content/img/blood.png" />
+                           <h3>Search Blood Donor</h3>
+                        </a>
+                    </div>
+                    @*<div class="col-lg-6 col-md-6 col-sm-6  col-xs-6">
+                        <a href="#" class="box_cat_home">
+
+                            <img src="/Content/img/bank.png" />
+
+                            <h3>Search Blood Bank</h3>
+                        </a>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

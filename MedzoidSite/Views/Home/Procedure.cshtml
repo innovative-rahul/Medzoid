@@ -1,0 +1,162 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "Procedure";
+    var depid = "0";
+ 
+    var depname = "";
+    if (Request["hidden_pid"] != null || Request["search_disease"] != null)
+    {
+
+        depid = Request["hidden_pid"].ToString();
+        depname = Request["search_procedure"].ToString();
+    }
+}@section aftercss{
+    <!-- REVOLUTION STYLE SHEETS -->
+
+    <style>
+        #filter-records, #filter-department, #filter-symptom, #filter-procedure {
+            background: #fff;
+            position: absolute;
+            width: 100%;
+            box-shadow: 0 14px 15px rgba(0, 0, 0, 0.25882352941176473);
+            top: 50px;
+            z-index: 999;
+            max-height: 200px;
+            overflow: auto;
+        }
+
+        #searchable {
+            z-index: 99;
+            position: relative;
+        }
+
+        .rec {
+            padding: 5px 10px 5px 40px;
+            line-height: 30px;
+            border-bottom: 1px dashed #eee;
+            cursor: pointer;
+        }
+
+            .rec a:hover {
+                -webkit-transform: translate(5px, 0);
+                -moz-transform: translate(5px, 0);
+                -ms-transform: translate(5px, 0);
+                -o-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+    </style>
+}@section afterjs{
+    <script type="text/javascript">
+        var html = "";
+        var search = "&nbsp;";
+        $.ajax({
+            type: 'POST',
+            url: '/ProcedureDeptDetail',
+            data: { id:'@depid', Search: search},
+            headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+            dataType: 'json',
+            success: function (data) {
+                //console.log(data);
+                $.each(data.Data.Data, function (index, element) {
+                   // html += "<div class=\"rec\"><a onclick=\"getdep(" + element.id + ",'" + element.name + "')\" >" + element.name + "</a></div>";
+                    html += "  <div class=\"col-lg-3 col-md-6\"><form  method=\"post\" action=\"/DoctorList\"><input type=\"hidden\" name=\"hidden_deptId\" value=\""+element.depid +"\" /> <a href=\"javascript:void(0)\" onclick=\"$(this).closest('form').submit()\" class=\"box_cat_home\"> <i class=\"icon-info-4\"></i><img src=\"/img/icon_cat_2.svg\" width=\"60\" height=\"60\" alt=\"\"><h6>" + element.departmentName + "</h6>    </a> </form></div>";
+                });
+                $('#disdep').empty().append(html);
+            }
+
+        });
+        
+    </script>
+}
+<div id="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <li>Departments</li>
+        </ul>
+    </div>
+</div>
+<div class="container margin_120_95">
+    @*<div class="main_title">
+            <h2>Find by specialization</h2>
+            <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p>
+        </div>*@
+    <div id="disdep" class="row">
+
+        @*<div class="col-lg-3 col-md-6">
+                <a href="list.html" class="box_cat_home">
+                    <i class="icon-info-4"></i>
+                    <img src="img/icon_cat_1.svg" width="60" height="60" alt="">
+                    <h3>Primary Care</h3>
+
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="list.html" class="box_cat_home">
+                    <i class="icon-info-4"></i>
+                    <img src="img/icon_cat_2.svg" width="60" height="60" alt="">
+                    <h3>Cardiology</h3>
+
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="list.html" class="box_cat_home">
+                    <i class="icon-info-4"></i>
+                    <img src="img/icon_cat_3.svg" width="60" height="60" alt="">
+                    <h3>MRI Resonance</h3>
+
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="list.html" class="box_cat_home">
+                    <i class="icon-info-4"></i>
+                    <img src="img/icon_cat_4.svg" width="60" height="60" alt="">
+                    <h3>Blood test</h3>
+
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="list.html" class="box_cat_home">
+                    <i class="icon-info-4"></i>
+                    <img src="img/icon_cat_7.svg" width="60" height="60" alt="">
+                    <h3>Laboratory</h3>
+
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="list.html" class="box_cat_home">
+                    <i class="icon-info-4"></i>
+                    <img src="img/icon_cat_5.svg" width="60" height="60" alt="">
+                    <h3>Dentistry</h3>
+
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="list.html" class="box_cat_home">
+                    <i class="icon-info-4"></i>
+                    <img src="img/icon_cat_6.svg" width="60" height="60" alt="">
+                    <h3>X - Ray</h3>
+                    <ul class="clearfix">
+                        <li><strong>124</strong>Doctors</li>
+                        <li><strong>60</strong>Clinics</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="list.html" class="box_cat_home">
+                    <i class="icon-info-4"></i>
+                    <img src="img/icon_cat_8.svg" width="60" height="60" alt="">
+                    <h3>Piscologist</h3>
+                    <ul class="clearfix">
+                        <li><strong>124</strong>Doctors</li>
+                        <li><strong>60</strong>Clinics</li>
+                    </ul>
+                </a>
+            </div>*@
+    </div>
+    <!-- /row -->
+</div>
+

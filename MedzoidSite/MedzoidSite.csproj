@@ -1,0 +1,1832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD6CF9CA-09F3-4012-B482-0C45AA9C2BE2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedzoidSite</RootNamespace>
+    <AssemblyName>MedzoidSite</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Razorpay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Razorpay.3.0.0\lib\net45\Razorpay.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Doctors\Controllers\DoctorController.cs" />
+    <Compile Include="Areas\Doctors\DoctorsAreaRegistration.cs" />
+    <Compile Include="Areas\Employee\Controllers\EmployeeController.cs" />
+    <Compile Include="Areas\Employee\EmployeeAreaRegistration.cs" />
+    <Compile Include="Areas\Pharmacy\Controllers\PharmacyController.cs" />
+    <Compile Include="Areas\Pharmacy\PharmacyAreaRegistration.cs" />
+    <Compile Include="Areas\User\Controllers\UserController.cs" />
+    <Compile Include="Areas\User\UserAreaRegistration.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AndroidGCMPushNotification.cs" />
+    <Compile Include="Models\AppInstalled.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\Blog.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BlogComment.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BlogNew.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BloodDonorDetail.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BreakStringIntoRows_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Calorie.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\carrer.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ClinicDetail.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clinicSchedule.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CommonFunctions.cs" />
+    <Compile Include="Models\contact.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CoronaQuiz.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DepartmentDetails.cs" />
+    <Compile Include="Models\dept_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DiseaseDepartment.cs" />
+    <Compile Include="Models\diseas_dept_list.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\diseas_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DoctorDeptMaster.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DoctorDetails.cs" />
+    <Compile Include="Models\doctorFeedBack.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DoctorMaster.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DoctorQualification.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\doctor_comments.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\doctor_dept_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\doctor_like_dislike.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\doctor_proc_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\doctor_qualification.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\doc_employee_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\doc_society_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FAq.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FavouriteDoctor.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fnSplitValues11_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\get_adds_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HealthTip.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\health_history.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\inquiry_carrer.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\lab_result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\latlongtocity.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOGIN_PRO_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\mail_server.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\main_menu.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\make_appointment.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\manage_body_symptom.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\medical_condition_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\medical_file.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\medical_store_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\medicine_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medzoid.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Medzoid.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medzoid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medzoid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Medzoid.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderPayment.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PharmacyDetails.cs" />
+    <Compile Include="Models\PharmacyHour.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PharmacyMaster.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PharmacyOrder.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PharmacyPrescription.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pharmacy_comments.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pharmacy_like_dislike.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Prescription.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Procedures.cs" />
+    <Compile Include="Models\procedure_dept_list.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_ADDS_CREATE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_ADD_FAMILY_MEMBER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_AD_DETAIL_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_ANSWERBANK_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_AVTAR_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_BANNER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_BLOG_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_BLOOD_DONER_DETAIL_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_CARRER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_CHARGES_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_CLINIC_ADDRESS_MASTER_NEW_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_CLINIC_ADDRESS_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_CLINIC_schedule_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_COMMENTS_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_COMPANY_CONTACT_DETAIL_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_COMPANY_PRODUCT_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_CONTACT_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DEPT_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DIAGNOSTIC_CENTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DIGNOSTIC_FACILITY_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DISEAS_DEPT_LIST_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DISEAS_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_COMMENTS_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_DEPT_MASTER_NEW_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_DEPT_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_LIKE_DISLIKE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_MASTER_NEW_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_PROC_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_QUALIFICATION_NEW_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_QUALIFICATION_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOCTOR_SHOW_HISTORY_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOC_employee_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOC_EXPERIENCE_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOC_PUBLICATION_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_DOC_SOCIETY_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_EMPLOYEE_PAGES_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_EMPLOYEE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_EVENT_INFORMATION_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_EVENT_MANAGE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_FACILITIES_PROVIDER_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_FACILITY_INCHARGE_DOCTOR_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_FACILITY_LIKE_DISLIKE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_FACILITY_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_FAMILY_LAB_RESULT_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_FAMILY_MEDICAL_FILE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_HEALTH_HISTORY_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_INQUIRY_CARRER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_INQUIRY_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_LAB_RESULT_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_LOGO_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MAIL_SERVER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MAIN_MENU_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MANAGE_BODY_SYMPTOM_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MEDICAL_CONDITION_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MEDICAL_FILE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MEDICAL_STORE_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MEDICINE_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MEMBER_SHOW_HISTORY_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MSG_MANAGEMENT_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_MULTIPLE_CONTACT_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PAGES_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PERMISSION_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PHARMACY_COMMENTS_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PHARMACY_CONTACT_DETAIL_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PHARMACY_LIKE_DISLIKE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PHARMACY_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PHARMA_COMPANY_LIKE_DISLIKE_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PHARMA_COMPANY_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PROCEDURE_DEPT_LIST_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PROC_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_PUSH_NOTIFICATION_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_QUESTIONMASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_REFPRICE_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_REGISTEREDDEVICES_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_REVIEWBANK_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_REVIEW_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_SUBSCRIBERS_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_SUB_MENU_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_SUB_SUB_MENU_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_SYMPTOMS_LIST_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_SYMPTOMS_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_SYMPTOMS_TO_DEPT_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_TESTIMONIAL_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_USER_MASTER_NEW_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_USER_MASTER_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCE_WALLET_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\proc_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QuestionMaster.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\refprice_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReviewBank.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SearchAllTables_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sms.cs" />
+    <Compile Include="Models\spGetClaimedAndUnclaimedDoctors_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spGetDocDetailsbasedonClinic_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spGetPharmacyOrders_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spGetPharmacyQuotation1_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spGetPharmacyQuotation_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spGetUserQuotation_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SplitString1234_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StringSplit_Result.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\subscriber.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Subscription.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Symptoms.cs" />
+    <Compile Include="Models\symptoms_list.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\symptoms_master.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\symptoms_to_dept.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblException.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\testimonial.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserAddress.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserMaster.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\wallet.cs">
+      <DependentUpon>Medzoid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\AfterLoginViewModel.cs" />
+    <Compile Include="ViewModel\AppointmentViewModel.cs" />
+    <Compile Include="ViewModel\BlogViewModel.cs" />
+    <Compile Include="ViewModel\BloodDonorDetailResponse.cs" />
+    <Compile Include="ViewModel\ClinicDetailsViewModel.cs" />
+    <Compile Include="ViewModel\ClinicScheduleViewModel.cs" />
+    <Compile Include="ViewModel\ContactViewModel.cs" />
+    <Compile Include="ViewModel\DashboardViewModel.cs" />
+    <Compile Include="ViewModel\Doctor.cs" />
+    <Compile Include="ViewModel\DoctorRegistrationViewModel.cs" />
+    <Compile Include="ViewModel\EmployeeDashboardViewModel.cs" />
+    <Compile Include="ViewModel\FaqViewModel.cs" />
+    <Compile Include="ViewModel\ForgotPwdViewModel.cs" />
+    <Compile Include="ViewModel\HealthTipsViewModel.cs" />
+    <Compile Include="ViewModel\MyOrderViewModel.cs" />
+    <Compile Include="ViewModel\MyQuotationViewModel.cs" />
+    <Compile Include="ViewModel\OrderViewModel.cs" />
+    <Compile Include="ViewModel\OTPViewModel.cs" />
+    <Compile Include="ViewModel\PrescriptionViewModel.cs" />
+    <Compile Include="ViewModel\QuizModel.cs" />
+    <Compile Include="ViewModel\UserDetails.cs" />
+    <Compile Include="ViewModel\WalletViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\blog.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\error.min.html" />
+    <Content Include="assets\css\layers.css" />
+    <Content Include="assets\css\pages-style.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\images\Blog-Banner 324.jpg" />
+    <Content Include="assets\images\Blog-Banner.jpg" />
+    <Content Include="assets\images\close2b0d.html" />
+    <Content Include="assets\images\clutch_new.html" />
+    <Content Include="assets\images\contect-us-3.png" />
+    <Content Include="assets\images\contect-us.jpg" />
+    <Content Include="assets\images\corona1.png" />
+    <Content Include="assets\images\corona2.png" />
+    <Content Include="assets\images\corona3.png" />
+    <Content Include="assets\images\corona4.png" />
+    <Content Include="assets\images\corona5.png" />
+    <Content Include="assets\images\divami_logo2b0d.html" />
+    <Content Include="assets\images\divami_logo_symbol2b0d.html" />
+    <Content Include="assets\images\favicon.html" />
+    <Content Include="assets\images\four-2nd648a.html" />
+    <Content Include="assets\images\hamburger2b0d.html" />
+    <Content Include="assets\images\infographic404648a.html" />
+    <Content Include="assets\images\left404648a.html" />
+    <Content Include="assets\vendors\aos2b0d.html" />
+    <Content Include="assets\vendors\slick2b0d.html" />
+    <Content Include="Content\css\ajax-loader.gif" />
+    <Content Include="Content\css\animate.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\fonts\slick.svg" />
+    <Content Include="Content\css\home.min.css" />
+    <Content Include="Content\fonts\CalibreLight.html" />
+    <Content Include="Content\fonts\CalibreLight.svg" />
+    <Content Include="Content\fonts\CalibreMedium.html" />
+    <Content Include="Content\fonts\CalibreMedium.svg" />
+    <Content Include="Content\fonts\CalibreRegular.html" />
+    <Content Include="Content\fonts\CalibreRegular.svg" />
+    <Content Include="Content\fonts\EqualSans.html" />
+    <Content Include="Content\fonts\EqualSans.svg" />
+    <Content Include="Content\fonts\FjallaOneRegular.html" />
+    <Content Include="Content\fonts\FjallaOneRegular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular-4.html" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular-5.html" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="Content\fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="Content\fonts\Lato-Bold.html" />
+    <Content Include="Content\fonts\Lato-Bold.svg" />
+    <Content Include="Content\fonts\Lato-BoldItalic.html" />
+    <Content Include="Content\fonts\Lato-Italic.html" />
+    <Content Include="Content\fonts\Lato-Regular.html" />
+    <Content Include="Content\fonts\NotoSerif-Bold.html" />
+    <Content Include="Content\images\checkbox-1.html" />
+    <Content Include="Content\images\checkbox-2.html" />
+    <Content Include="Content\images\close2b0d.svg" />
+    <Content Include="Content\images\clutch_new.svg" />
+    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\hamburger2b0d.svg" />
+    <Content Include="Content\images\home\awards-divami_logo2b0d.svg" />
+    <Content Include="Content\images\home\banner-bg2b0d.svg" />
+    <Content Include="Content\images\home\banner-mobile-bg2b0d.svg" />
+    <Content Include="Content\images\home\colon2b0d.svg" />
+    <Content Include="Content\images\home\commerce-card-icon2b0d.svg" />
+    <Content Include="Content\images\home\consumer-card-icon2b0d.svg" />
+    <Content Include="Content\images\home\design-excellence-award-for-best-mobile-application-divami-by-cii2b0d.png" />
+    <Content Include="Content\images\home\digital-card-icon2b0d.svg" />
+    <Content Include="Content\images\home\enterprice-card-icon2b0d.svg" />
+    <Content Include="Content\images\home\interaction-design-award-divami-by-cii2b0d.png" />
+    <Content Include="Content\images\home\mouse2b0d.svg" />
+    <Content Include="Content\images\home\rectangle-gradient.png" />
+    <Content Include="Content\images\home\sass-card-icon2b0d.svg" />
+    <Content Include="Content\images\home\star2b0d.svg" />
+    <Content Include="Content\images\home\top-b2b-creative-and-design-company2b0d.png" />
+    <Content Include="Content\images\logo-arrow-gray2b0d.svg" />
+    <Content Include="Content\images\open-menu-01.svg" />
+    <Content Include="Content\images\stroke-arrow-right2b0d.svg" />
+    <Content Include="Content\img\10.png" />
+    <Content Include="Content\img\111.png" />
+    <Content Include="Content\img\112.jpg" />
+    <Content Include="Content\img\12.png" />
+    <Content Include="Content\img\123.png" />
+    <Content Include="Content\img\144.png" />
+    <Content Include="Content\img\2.png" />
+    <Content Include="Content\img\2Old.png" />
+    <Content Include="Content\img\3.png" />
+    <Content Include="Content\img\4.png" />
+    <Content Include="Content\img\5.png" />
+    <Content Include="Content\img\6.png" />
+    <Content Include="Content\img\7.png" />
+    <Content Include="Content\img\8.png" />
+    <Content Include="Content\img\9.png" />
+    <Content Include="Content\img\ab1.png" />
+    <Content Include="Content\img\ab2.png" />
+    <Content Include="Content\img\ab3.png" />
+    <Content Include="Content\img\Allopathic.svg" />
+    <Content Include="Content\img\Allopatick.png" />
+    <Content Include="Content\img\android.png" />
+    <Content Include="Content\img\app-url-.png" />
+    <Content Include="Content\img\Ayorvedic.png" />
+    <Content Include="Content\img\Ayorvedic.svg" />
+    <Content Include="Content\img\background.svg" />
+    <Content Include="Content\img\bank.png" />
+    <Content Include="Content\img\banner.jpg" />
+    <Content Include="Content\img\banner.png" />
+    <Content Include="Content\img\banner2.jpg" />
+    <Content Include="Content\img\banner2.png" />
+    <Content Include="Content\img\banner3.jpg" />
+    <Content Include="Content\img\banner3.png" />
+    <Content Include="Content\img\bannerold.png" />
+    <Content Include="Content\img\bg5.png" />
+    <Content Include="Content\img\blood bank .png" />
+    <Content Include="Content\img\blood donner.png" />
+    <Content Include="Content\img\blood.png" />
+    <Content Include="Content\img\brand.png" />
+    <Content Include="Content\img\comment 1.svg" />
+    <Content Include="Content\img\demo.jpg" />
+    <Content Include="Content\img\Department.png" />
+    <Content Include="Content\img\Department.svg" />
+    <Content Include="Content\img\Disease.png" />
+    <Content Include="Content\img\Disease.svg" />
+    <Content Include="Content\img\Drugs.png" />
+    <Content Include="Content\img\Drugs.svg" />
+    <Content Include="Content\img\facebook-m.png" />
+    <Content Include="Content\img\favicon.ico.png" />
+    <Content Include="Content\img\Homopathic.png" />
+    <Content Include="Content\img\Homopathic.svg" />
+    <Content Include="Content\img\instagram-m.png" />
+    <Content Include="Content\img\ios.png" />
+    <Content Include="Content\img\linked-m.png" />
+    <Content Include="Content\img\logo 2nd .svg" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logo.svg" />
+    <Content Include="Content\img\m.png" />
+    <Content Include="Content\img\m.svg" />
+    <Content Include="Content\img\map.svg" />
+    <Content Include="Content\img\mapaddres.svg" />
+    <Content Include="Content\img\maphome.svg" />
+    <Content Include="Content\img\mobile icon .png" />
+    <Content Include="Content\img\moblie phone .png" />
+    <Content Include="Content\img\order.png" />
+    <Content Include="Content\img\OurTeam\animesh1.jpg" />
+    <Content Include="Content\img\OurTeam\honey1.jpg" />
+    <Content Include="Content\img\OurTeam\nancy1.jpg" />
+    <Content Include="Content\img\OurTeam\shahroz1.jpg" />
+    <Content Include="Content\img\OurTeam\sunil1.jpg" />
+    <Content Include="Content\img\Procedure.png" />
+    <Content Include="Content\img\Procedure.svg" />
+    <Content Include="Content\img\screenshot.png" />
+    <Content Include="Content\img\search.svg" />
+    <Content Include="Content\img\socile mediya.svg" />
+    <Content Include="Content\img\Symptom.png" />
+    <Content Include="Content\img\Symptom.svg" />
+    <Content Include="Content\img\ui-dersign.png" />
+    <Content Include="Content\img\unani.png" />
+    <Content Include="Content\img\unani.svg" />
+    <Content Include="Content\img\upper logo .svg" />
+    <Content Include="Content\img\VectorSmartObject1.svg" />
+    <Content Include="Content\img\youtube.png" />
+    <Content Include="Content\js\wow.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\ajax-loader.gif" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.video.play.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\owl.carousel.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\owl.carousel.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\css\animate.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\css\docs.theme.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\bird_blue_32.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\download.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-drag.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-modern.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-module.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-options.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-responsive.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-zombie.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\owl-logo.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\twitter_25.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\js\app.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\js\foundation.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\foundation.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\highlight.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\animate.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\autoheight.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\autoplay.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\autowidth.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\basic.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\center.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\demos.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\events.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\lazyLoad.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\merge.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\mousewheel.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\responsive.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\rtl.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\stagepadding.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\test.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\urlhashnav.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\video.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\api-classes.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\api-events.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\api-options.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\dev-buildin-plugins.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\dev-external.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\dev-plugin-api.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\dev-styles.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\started-faq.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\started-installation.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\started-welcome.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\support-changelog.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\support-contact.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\support-contributing.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\index.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\css\animate.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\bird_blue_32.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\download.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-drag.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-modern.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-module.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-options.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-responsive.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-zombie.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\owl-logo.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\twitter_25.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\js\app.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\js\foundation.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\foundation.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\highlight.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\helpers\modulo.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\helpers\test.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\Gruntfile.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\img\ajax-loader.gif" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\img\owl.video.play.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.animate.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.autoheight.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.autoplay.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.autorefresh.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.carousel.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.hash.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.lazyload.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.navigation.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.support.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.support.modernizr.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.video.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\test\index.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\test\unit\autoplay.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\test\unit\core.js" />
+    <Content Include="Content\sceen_2.mp4" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\banner.jpg" />
+    <Content Include="Content\themes\medzoid.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\app\custom\pages\faq\faq-1.html" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\error\error-1.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\error\error-2.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\error\error-3.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\error\error-4.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\error\error-5.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\error\error-6.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\inbox\inbox.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\invoices\invoice-1.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\invoices\invoice-2.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\login\login-1.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\login\login-2.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\login\login-3.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\login\login-4.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\login\login-5.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\login\login-6.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\pricing\pricing-1.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\pricing\pricing-2.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\pricing\pricing-3.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\pricing\pricing-4.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\faq-1.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\faq-2.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\faq-3.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\feedback.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\home-1.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\home-2.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\license.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\todo\todo.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\wizard\wizard-1.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\wizard\wizard-2.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\wizard\wizard-3.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\wizard\wizard-4.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\aside\dark.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\aside\light.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\brand\dark.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\brand\light.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\header\base\dark.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\header\base\light.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\header\menu\dark.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\header\menu\light.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\style.bundle.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\builder.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\calendar\background-events.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\calendar\basic.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\calendar\external-events.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\calendar\google.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\calendar\list-view.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\charts\amcharts\charts.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\charts\amcharts\maps.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\charts\amcharts\stock-charts.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\charts\flotcharts.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\charts\google-charts.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\charts\morris-charts.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\extended\blockui.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\extended\bootstrap-notify.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\extended\dual-listbox.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\extended\kanban-board.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\extended\sticky-panels.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\extended\sweetalert2.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\extended\toastr.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\extended\treeview.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\maps\google-maps.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\maps\jqvmap.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\portlets\draggable.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\portlets\tools.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\utils\idle-timer.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\components\utils\session-timeout.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\advanced\column-rendering.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\advanced\column-visibility.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\advanced\footer-callback.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\advanced\multiple-controls.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\advanced\row-callback.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\advanced\row-grouping.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\basic\basic.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\basic\headers.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\basic\paginations.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\basic\scrollable.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\data-sources\ajax-client-side.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\data-sources\ajax-server-side.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\data-sources\html.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\data-sources\javascript.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\extensions\buttons.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\extensions\colreorder.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\extensions\keytable.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\extensions\responsive.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\extensions\rowgroup.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\extensions\rowreorder.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\extensions\scroller.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\extensions\select.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\search-options\advanced-search.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\datatables\search-options\column-search.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\file-upload\dropzonejs.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\file-upload\ktavatar.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\file-upload\uppy.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\bootstrap-markdown.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\ckeditor-balloon-block.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\ckeditor-balloon.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\ckeditor-classic.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\ckeditor-document.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\ckeditor-inline.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\quill.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\summernote.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\editors\tinymce.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\validation\form-controls.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\validation\form-widgets.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\autosize.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-datepicker.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-daterangepicker.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-datetimepicker.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-maxlength.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-multipleselectsplitter.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-select.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-switch.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-timepicker.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\bootstrap-touchspin.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\clipboard.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\form-repeater.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\input-mask.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\ion-range-slider.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\nouislider.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\select2.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\tagify.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\forms\widgets\typeahead.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\advanced\column-rendering.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\advanced\column-width.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\advanced\horizontal.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\advanced\modal.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\advanced\record-selection.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\advanced\row-details.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\advanced\vertical.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\api\events.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\api\methods.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\base\data-ajax.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\base\data-json.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\base\data-local.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\base\html-table.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\base\local-sort.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\base\translation.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\child\data-ajax.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\crud\metronic-datatable\child\data-local.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\chat\chat.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\contacts\add-contact.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\contacts\edit-contact.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\contacts\list-columns.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\contacts\list-datatable.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\inbox\inbox.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\login\login-1.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\login\login-general.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\projects\add-project.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\projects\list-datatable.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\todo\todo.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\user\add-user.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\user\edit-user.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\user\list-datatable.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\user\profile.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\wizard\wizard-1.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\wizard\wizard-2.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\wizard\wizard-3.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\custom\wizard\wizard-4.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\pages\dashboard.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\js\scripts.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-1.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-2.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-3.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-4.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-41.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-42.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-6.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-8.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\bg\bg-9.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\blog\blog1.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\blog\blog2.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\blog\blog3.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\blog\blog4.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\blog\blog5.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\client-logos\logo1.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\client-logos\logo2.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\client-logos\logo3.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\client-logos\logo4.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\client-logos\logo5.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\company-logos\logo-2.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\company-logos\logo_client_color.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\company-logos\logo_client_white.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo1.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo10.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo11.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo12.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo13.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo14.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo15.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo16.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo17.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo18.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo19.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo2.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo20.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo21.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo22.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo3.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo4.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo5.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo6.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo7.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo8.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\demos\preview\demo9.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\error\bg1.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\error\bg2.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\error\bg3.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\error\bg4.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\error\bg5.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\error\bg6.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\logos\logo-4.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\logos\logo-5.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\logos\logo-dark.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\logos\logo-light.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\logos\logo-mini-2-md.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\misc\bg-1.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\misc\bg-2.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product10.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product11.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product13.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product15.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product16.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product22.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product25.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product27.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product4.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product6.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\products\product9.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\project-logos\1.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\project-logos\2.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\project-logos\3.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\project-logos\4.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\project-logos\5.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\project-logos\6.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\project-logos\7.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_1.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_10.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_11.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_12.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_13.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_14.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_2.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_3.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_4.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_5.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_6.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_7.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_8.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\100_9.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_1.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_10.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_11.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_12.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_13.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_16.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_17.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_18.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_19.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_2.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_20.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_21.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_22.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_24.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_25.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_3.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_4.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_5.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_6.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_7.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_8.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\300_9.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\user1.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\user4.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\media\users\user5.jpg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\ckeditor\ckeditor-balloon-block.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\ckeditor\ckeditor-balloon.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\ckeditor\ckeditor-classic.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\ckeditor\ckeditor-document.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\ckeditor\ckeditor-inline.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\datatables\datatables.bundle.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\datatables\datatables.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\flot\flot.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\fullcalendar\fullcalendar.bundle.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\fullcalendar\fullcalendar.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\gmaps\gmaps.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\jquery-ui\jquery-ui.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\jqvmap\jqvmap.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\jstree\jstree.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\kanban\kanban.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\tinymce\tinymce.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\uppy\uppy.bundle.js" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-brands-400.svg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-regular-400.svg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-solid-900.svg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon2\Flaticon2.svg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon\Flaticon.svg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\line-awesome\line-awesomeeb4f.svg" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\images\owl.carousel\owl.video.play.png" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\plugins.bundle.css" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\plugins.bundle.js" />
+    <Content Include="Content\vendors\aos2b0d.js" />
+    <Content Include="Content\vendors\homepage-common2b0d.js" />
+    <Content Include="Content\vendors\jquery-3.4.1.min.js" />
+    <Content Include="Content\vendors\slick2b0d.js" />
+    <Content Include="Content\vendors\wow.min.js" />
+    <Content Include="css\ajax-loader.gif" />
+    <Content Include="css\blog.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\chosen.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\datedropper.css" />
+    <Content Include="css\datedropper.min.css" />
+    <Content Include="css\date_picker.css" />
+    <Content Include="css\icon_fonts\css\all_icons.css" />
+    <Content Include="css\icon_fonts\css\all_icons_min.css" />
+    <Content Include="css\icon_fonts\css\fontello-codes.css" />
+    <Content Include="css\icon_fonts\css\icon_set_1.css" />
+    <Content Include="css\icon_fonts\css\icon_set_2.css" />
+    <Content Include="css\icon_fonts\css\icon_set_3.css" />
+    <Content Include="css\icon_fonts\demo_icon_set_1.html" />
+    <Content Include="css\icon_fonts\demo_icon_set_2.html" />
+    <Content Include="css\icon_fonts\demo_icon_set_3.html" />
+    <Content Include="css\icon_fonts\font\ElegantIcons.svg" />
+    <Content Include="css\icon_fonts\font\fontello.svg" />
+    <Content Include="css\icon_fonts\font\icon_set_1.svg" />
+    <Content Include="css\icon_fonts\font\Pe-icon-7-stroke.svg" />
+    <Content Include="css\jquery.mmenu.all.css" />
+    <Content Include="css\menu.css" />
+    <Content Include="css\owl.video.play.png" />
+    <Content Include="css\src\datedropper.svg" />
+    <Content Include="css\style.css" />
+    <Content Include="css\tables.css" />
+    <Content Include="css\timedropper.css" />
+    <Content Include="css\timedropper.min.css" />
+    <Content Include="css\vendors.css" />
+    <Content Include="css\vendors.uncompressed.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="img\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="img\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="img\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="img\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="img\apple_app.png" />
+    <Content Include="img\apple_app_2x.png" />
+    <Content Include="img\app_img.svg" />
+    <Content Include="img\arrow-gray-1.svg" />
+    <Content Include="img\arrow_down.svg" />
+    <Content Include="img\arrow_down_menu.svg" />
+    <Content Include="img\arrow_left.png" />
+    <Content Include="img\arrow_right.png" />
+    <Content Include="img\badges\badge_1.svg" />
+    <Content Include="img\badges\badge_2.svg" />
+    <Content Include="img\badges\badge_3.svg" />
+    <Content Include="img\badges\badge_4.svg" />
+    <Content Include="img\badges\badge_5.svg" />
+    <Content Include="img\badges\badge_6.svg" />
+    <Content Include="img\bg_2.png" />
+    <Content Include="img\bg_menu.png" />
+    <Content Include="img\camera.svg" />
+    <Content Include="img\checkbox.png" />
+    <Content Include="img\checkbox.svg" />
+    <Content Include="img\close_infobox.png" />
+    <Content Include="img\covid19\COVID19.png" />
+    <Content Include="img\covid19\COVID19_1600x900_0.jpg" />
+    <Content Include="img\covid19\elbow.jpg" />
+    <Content Include="img\covid19\face-touching.jpg" />
+    <Content Include="img\covid19\keepdistance.jpg" />
+    <Content Include="img\covid19\logo.png" />
+    <Content Include="img\covid19\sick.jpg" />
+    <Content Include="img\covid19\Symptoms_of_coronavirus_disease_2019_2.0.svg" />
+    <Content Include="img\doc.jpg" />
+    <Content Include="img\doctors_icon.svg" />
+    <Content Include="img\doctor_listing_1.jpg" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\google_play_app.png" />
+    <Content Include="img\google_play_app_2x.png" />
+    <Content Include="img\hero_bg_1.svg" />
+    <Content Include="img\hero_home_bg_1.svg" />
+    <Content Include="img\icon-home-1.svg" />
+    <Content Include="img\icon-home-2.svg" />
+    <Content Include="img\icon-home-3.svg" />
+    <Content Include="img\icon_cat_1.svg" />
+    <Content Include="img\icon_cat_2.svg" />
+    <Content Include="img\icon_cat_3.svg" />
+    <Content Include="img\icon_cat_4.svg" />
+    <Content Include="img\icon_cat_5.svg" />
+    <Content Include="img\icon_cat_6.svg" />
+    <Content Include="img\icon_cat_7.svg" />
+    <Content Include="img\icon_cat_8.svg" />
+    <Content Include="img\icon_ccv.gif" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logo_2x.png" />
+    <Content Include="img\logo_no_name.svg" />
+    <Content Include="img\map-marker-contacts.png" />
+    <Content Include="img\map-marker.png" />
+    <Content Include="img\patient_icon.svg" />
+    <Content Include="img\payments.png" />
+    <Content Include="img\payments_2x.png" />
+    <Content Include="img\paypal_bt.png" />
+    <Content Include="img\pins\Doctors.png" />
+    <Content Include="img\search.svg" />
+    <Content Include="img\select-icons.png" />
+    <Content Include="img\shadow_pic.png" />
+    <Content Include="img\small-arrow.svg" />
+    <Content Include="img\stars.svg" />
+    <Content Include="img\subheader_bg_1.png" />
+    <Content Include="img\video_fix.png" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\common_scripts.js" />
+    <Content Include="js\common_scripts.min.js" />
+    <Content Include="js\datedropper.js" />
+    <Content Include="js\datedropper.min.js" />
+    <Content Include="js\functions.js" />
+    <Content Include="js\hideShowPassword.js" />
+    <Content Include="js\hideShowPassword.min.js" />
+    <Content Include="js\infobox.js" />
+    <Content Include="js\jquery-2.2.4.min.js" />
+    <Content Include="js\jquery.cookiebar.js" />
+    <Content Include="js\jquery.mmenu.all.js" />
+    <Content Include="js\jquery.mmenu.js" />
+    <Content Include="js\jquery.selectbox-0.2.js" />
+    <Content Include="js\mapmarker.jquery.js" />
+    <Content Include="js\mapmarker_contacts_func.js" />
+    <Content Include="js\mapmarker_func.jquery.js" />
+    <Content Include="js\map_home.js" />
+    <Content Include="js\map_listing.js" />
+    <Content Include="js\markerclusterer.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\modernizr_tables.js" />
+    <Content Include="js\owl.carousel.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\pw_strenght.js" />
+    <Content Include="js\ResizeSensor.js" />
+    <Content Include="js\ResizeSensor.min.js" />
+    <Content Include="js\retina-replace.js" />
+    <Content Include="js\retina-replace.min.js" />
+    <Content Include="js\sticky-kit-1.4.js" />
+    <Content Include="js\sticky-kit-1.4.min.js" />
+    <Content Include="js\sticky-kit.js" />
+    <Content Include="js\sticky-kit.min.js" />
+    <Content Include="js\tables_func.js" />
+    <Content Include="js\tables_func_2.js" />
+    <Content Include="js\tabs.js" />
+    <Content Include="js\theia-sticky-sidebar.js" />
+    <Content Include="js\timedropper.js" />
+    <Content Include="js\timedropper.min.js" />
+    <Content Include="js\video_header.js" />
+    <Content Include="js\wow.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="Models\Medzoid.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Medzoid.edmx</DependentUpon>
+      <LastGenOutput>Medzoid.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Medzoid.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Medzoid.edmx</DependentUpon>
+      <LastGenOutput>Medzoid.cs</LastGenOutput>
+    </Content>
+    <Content Include="rev-slider-files\assets\100x50_364e0-37885311_ml.jpg" />
+    <Content Include="rev-slider-files\assets\100x50_4e36b-42512211_ml.jpg" />
+    <Content Include="rev-slider-files\assets\100x50_b9dee-42512210_ml.jpg" />
+    <Content Include="rev-slider-files\assets\364e0-37885311_ml.jpg" />
+    <Content Include="rev-slider-files\assets\4e36b-42512211_ml.jpg" />
+    <Content Include="rev-slider-files\assets\b9dee-42512210_ml.jpg" />
+    <Content Include="rev-slider-files\assets\loader.gif" />
+    <Content Include="rev-slider-files\css\settings.css" />
+    <Content Include="rev-slider-files\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="rev-slider-files\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="rev-slider-files\fonts\pe-icon-7-stroke\css\helper.css" />
+    <Content Include="rev-slider-files\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="rev-slider-files\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="rev-slider-files\fonts\revicons\revicons.svg" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="rev-slider-files\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="rev-slider-files\js\jquery.revslider-doctor_slider_1.js" />
+    <Content Include="rev-slider-files\js\jquery.revslider.embed.js" />
+    <Content Include="rev-slider-files\js\jquery.themepunch.enablelog.js" />
+    <Content Include="Areas\User\Views\User\PaymentPage.cshtml" />
+    <Content Include="Areas\User\Views\User\GatewayResponse.cshtml" />
+    <Content Include="Areas\Doctors\Views\Doctor\DoctorDashboard.cshtml" />
+    <Content Include="Areas\Doctors\Views\Doctor\DoctorProfile.cshtml" />
+    <Content Include="Areas\Doctors\Views\Doctor\Appointment.cshtml" />
+    <Content Include="Areas\Doctors\Views\Doctor\MyWallet.cshtml" />
+    <Content Include="Areas\Doctors\Views\Doctor\PaymentPage.cshtml" />
+    <Content Include="Areas\Doctors\Views\Doctor\GatewayResponse.cshtml" />
+    <Content Include="Areas\Doctors\Views\Doctor\ChangePassword.cshtml" />
+    <Content Include="Areas\Pharmacy\Views\Pharmacy\ChangePassword.cshtml" />
+    <EntityDeploy Include="Models\Medzoid.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Medzoid.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Medzoid.edmx.diagram">
+      <DependentUpon>Medzoid.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Views\Admin\Faq.cshtml" />
+    <Content Include="Areas\Doctors\Views\web.config" />
+    <Content Include="Areas\Employee\Views\web.config" />
+    <Content Include="Areas\User\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Admin\CheckPrescriptionManually.cshtml" />
+    <None Include="rev-slider-files\js\jquery.themepunch.revolution.min.jsOld" />
+    <Content Include="rev-slider-files\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="rev-slider-files\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\css\fonts\slick.eot" />
+    <Content Include="Content\css\fonts\slick.ttf" />
+    <Content Include="Content\css\fonts\slick.woff" />
+    <Content Include="Content\css\fonts\slickd41d.eot" />
+    <Content Include="Content\css\fonts\slickd41dd41d.eot" />
+    <Content Include="Content\fonts\samsungsharpsans-bold.otf" />
+    <Content Include="Content\fonts\samsungsharpsans-medium.otf" />
+    <Content Include="Content\fonts\samsungsharpsans.otf" />
+    <Content Include="Content\img\Department.psd" />
+    <Content Include="Content\OwlCarousel2-2.3.4\.gitattributes" />
+    <Content Include="Content\OwlCarousel2-2.3.4\.gitignore" />
+    <Content Include="Content\OwlCarousel2-2.3.4\.travis.yml" />
+    <Content Include="Content\OwlCarousel2-2.3.4\bower.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\CONTRIBUTING.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\LICENSE" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\README.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\README.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.map" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\custom.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\demos.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\highlight.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\_settings.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.min.map" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\data\classes.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\data\events.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\data\features.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\data\options.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\layouts\demos.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\layouts\docs.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\layouts\home.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\animate.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autoheight.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autoplay.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autowidth.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\basic.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\center.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\demos.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\events.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\lazyLoad.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\merge.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\mousewheel.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\responsive.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\rtl.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\stagepadding.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\test.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\urlhashnav.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\video.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-classes.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-events.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-options.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-buildin-plugins.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-external.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-plugin-api.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-styles.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-faq.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-installation.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-welcome.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-changelog.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-contact.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-contributing.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\index.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\footer.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\head.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\header.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\home-carousel.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\home-features.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\home-hero.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\home-teaser-text.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\javascripts.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\releated-docs.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\sidenav-docs.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\title.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\vendors.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\ISSUE_TEMPLATE.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\LICENSE" />
+    <Content Include="Content\OwlCarousel2-2.3.4\package-lock.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\package.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\README.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\ROADMAP.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\.jscsrc" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\.jshintrc" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\owl.carousel.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\owl.theme.default.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\owl.theme.green.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_animate.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_autoheight.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_core.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_lazyload.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_theme.default.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_theme.green.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_theme.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_video.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\_config.json" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\icon_fonts\.DS_Store" />
+    <Content Include="css\icon_fonts\css\.DS_Store" />
+    <Content Include="css\icon_fonts\font\.DS_Store" />
+    <Content Include="css\icon_fonts\font\ElegantIcons.eot" />
+    <Content Include="css\icon_fonts\font\ElegantIcons.ttf" />
+    <Content Include="css\icon_fonts\font\ElegantIcons.woff" />
+    <Content Include="css\icon_fonts\font\fontello.eot" />
+    <Content Include="css\icon_fonts\font\fontello.ttf" />
+    <Content Include="css\icon_fonts\font\fontello.woff" />
+    <Content Include="css\icon_fonts\font\icon_set_1.eot" />
+    <Content Include="css\icon_fonts\font\icon_set_1.ttf" />
+    <Content Include="css\icon_fonts\font\icon_set_1.woff" />
+    <Content Include="css\icon_fonts\font\Pe-icon-7-stroke.eot" />
+    <Content Include="css\icon_fonts\font\Pe-icon-7-stroke.ttf" />
+    <Content Include="css\icon_fonts\font\Pe-icon-7-stroke.woff" />
+    <Content Include="css\src\datedropper.eot" />
+    <Content Include="css\src\datedropper.ttf" />
+    <Content Include="css\src\datedropper.woff" />
+    <Content Include="img\.DS_Store" />
+    <Content Include="img\badges\.DS_Store" />
+    <Content Include="img\pins\.DS_Store" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\app\custom\pages\faq\faq-1.rtl.html.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\inbox\inbox.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\invoices\invoice-1.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\invoices\invoice-2.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\pricing\pricing-1.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\pricing\pricing-2.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\pricing\pricing-3.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\pricing\pricing-4.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\faq-1.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\faq-2.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\faq-3.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\feedback.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\home-1.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\home-2.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\support-center\license.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\todo\todo.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\wizard\wizard-1.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\wizard\wizard-2.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\wizard\wizard-3.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\pages\wizard\wizard-4.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\aside\dark.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\aside\light.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\brand\dark.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\brand\light.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\header\base\dark.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\header\base\light.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\header\menu\dark.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\skins\header\menu\light.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\css\style.bundle.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\datatables\datatables.bundle.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\fullcalendar\fullcalendar.bundle.rtl.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\jquery-ui\jquery-ui.bundle.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\jqvmap\jqvmap.bundle.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\jstree\jstree.bundle.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\kanban\kanban.bundle.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\custom\uppy\uppy.bundle.css.tmp" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-brands-400.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-brands-400.ttf" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-brands-400.woff" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-brands-400.woff2" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-brands-400d41d.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-regular-400.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-regular-400.ttf" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-regular-400.woff" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-regular-400.woff2" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-regular-400d41d.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-solid-900.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-solid-900.ttf" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-solid-900.woff" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-solid-900.woff2" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\%40fortawesome\fa-solid-900d41d.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon2\Flaticon2.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon2\Flaticon2.ttf" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon2\Flaticon2.woff" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon2\Flaticon2d41d.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon\Flaticon.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon\Flaticon.ttf" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon\Flaticon.woff" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\flaticon\Flaticond41d.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\line-awesome\line-awesome0176.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\line-awesome\line-awesomeeb4f.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\line-awesome\line-awesomeeb4f.ttf" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\line-awesome\line-awesomeeb4f.woff" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\line-awesome\line-awesomeeb4f.woff2" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\summernote\summernote64fe.eot" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\summernote\summernote64fe.ttf" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\fonts\summernote\summernote64fe.woff" />
+    <Content Include="Content\themes\metronic\theme\default\demo1\dist\assets\plugins\global\plugins.bundle.rtl.css.tmp" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\unclaimeddoctor.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\Dashboard.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\ClinicDetails.cshtml" />
+    <Content Include="Areas\Pharmacy\Views\Pharmacy\Dashboard.cshtml" />
+    <Content Include="Areas\Pharmacy\Views\Pharmacy\Orders.cshtml" />
+    <Content Include="Areas\Pharmacy\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Pharmacy\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Admin\Blog.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\ClinicSchedule.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\HealthTips.cshtml" />
+    <Content Include="Areas\Employee\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Employee\Views\Employee\Dashboard.cshtml" />
+    <Content Include="Areas\Employee\Views\Employee\EmpProfile.cshtml" />
+    <Content Include="Areas\Employee\Views\Employee\EmpAppointment.cshtml" />
+    <Content Include="Areas\Employee\Views\Employee\EmpChangePassword.cshtml" />
+    <Content Include="Areas\User\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\User\Views\User\Dashboard.cshtml" />
+    <Content Include="Areas\User\Views\User\Userprofile.cshtml" />
+    <Content Include="Areas\User\Views\User\Appointment.cshtml" />
+    <Content Include="Areas\User\Views\User\MyFavDoctor.cshtml" />
+    <Content Include="Areas\User\Views\User\MyWallet.cshtml" />
+    <Content Include="Areas\User\Views\User\MyOrders.cshtml" />
+    <Content Include="Areas\User\Views\User\MyQuotation.cshtml" />
+    <Content Include="Areas\User\Views\User\MyBloodReq.cshtml" />
+    <Content Include="Areas\User\Views\User\DonorRequest.cshtml" />
+    <Content Include="Areas\User\Views\User\ChangePassword.cshtml" />
+    <Content Include="Areas\Doctors\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Doctors\Views\Doctor\MyPractise.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="rev-slider-files\.DS_Store" />
+    <Content Include="rev-slider-files\assets\.DS_Store" />
+    <Content Include="rev-slider-files\fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="rev-slider-files\fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="rev-slider-files\fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="rev-slider-files\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="rev-slider-files\fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="rev-slider-files\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="rev-slider-files\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="rev-slider-files\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="rev-slider-files\fonts\revicons\revicons.eot" />
+    <Content Include="rev-slider-files\fonts\revicons\revicons.ttf" />
+    <Content Include="rev-slider-files\fonts\revicons\revicons.woff" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\chosen.jquery.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\PageScripts\Layout.js" />
+    <Content Include="Scripts\PageScripts\MyPractise.js" />
+    <Content Include="Scripts\PieChart.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
+    <Content Include="Views\Home\BlogPost.cshtml" />
+    <Content Include="Views\Shared\_Layout Admin.cshtml" />
+    <Content Include="Views\Home\Career.cshtml" />
+    <Content Include="Views\Home\Department.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\DiseaseDepartment.cshtml" />
+    <Content Include="Views\Home\DoctorList.cshtml" />
+    <Content Include="Views\Home\Procedure.cshtml" />
+    <Content Include="Views\Home\Allopathic.cshtml" />
+    <Content Include="Views\Home\Drugs.cshtml" />
+    <Content Include="Views\Home\Unani.cshtml" />
+    <Content Include="Views\Home\Homeopathic.cshtml" />
+    <Content Include="Views\Home\Ayurvedic.cshtml" />
+    <Content Include="Views\Home\symptoms.cshtml" />
+    <Content Include="Views\Home\Press.cshtml" />
+    <Content Include="Views\Home\AreyouQualifiedDoctor.cshtml" />
+    <Content Include="Views\Home\PrivacyPolicy.cshtml" />
+    <Content Include="Views\Home\TermsAndConditions.cshtml" />
+    <Content Include="Views\Home\HelpFaq.cshtml" />
+    <Content Include="Views\Home\DocDetails.cshtml" />
+    <Content Include="Views\Home\RegisterDoctor.cshtml" />
+    <Content Include="Views\Home\RegisterPharmacy.cshtml" />
+    <Content Include="Views\Home\UploadPrescription.cshtml" />
+    <Content Include="Views\Home\SearchBloodDonor.cshtml" />
+    <Content Include="Views\Home\HelpFaqOld.cshtml" />
+    <Content Include="Views\Home\SignUp.cshtml" />
+    <Content Include="Views\Home\ForgotPassword.cshtml" />
+    <Content Include="Views\Home\Corona.cshtml" />
+    <Content Include="Views\Home\HealthEmergency.cshtml" />
+    <Content Include="Views\Home\HowSearchWorks.cshtml" />
+    <Content Include="Views\Home\VerifiedReviews.cshtml" />
+    <Content Include="Views\Home\HealthEmergency - Copy.cshtml" />
+    <Content Include="Views\Home\Resetpassword.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Doctors\Data\" />
+    <Folder Include="Areas\Employee\Data\" />
+    <Folder Include="Areas\Pharmacy\Data\" />
+    <Folder Include="Areas\User\Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58496</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58496/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

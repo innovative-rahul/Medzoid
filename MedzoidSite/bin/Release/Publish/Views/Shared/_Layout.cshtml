@@ -1,0 +1,482 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    @RenderSection("metahead", false)
+    <meta name="google-site-verification" content="U7dd_c-H5GDV9RE_XkFAE4UPuyaSMTZ0SkG9ylqNTYs" />
+    <!-- Favicons-->
+    @*<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">*@
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet" async>
+
+    <!-- BASE CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" async>
+
+    @*<link href="/css/bootstrap.min.css" rel="stylesheet" async>*@
+    <link href="/css/style.css" rel="stylesheet" async>
+
+    @*@Scripts.Render("~/Main/css")*@
+
+    <link href="/css/menu.css" rel="stylesheet" async>
+    <link href="/css/vendors.css" rel="stylesheet" async>
+    <link href="/css/icon_fonts/css/all_icons_min.css" rel="stylesheet" async>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet" />
+
+    @RenderSection("aftercss", false)
+    <!-- YOUR CUSTOM CSS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158026340-1"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&sensor=false&key=AIzaSyAwkve_xhk-YDVBegxHYQZjXS7Qr3pKzBI"></script>
+
+    <script async>
+        function getCookies(cname) {
+            var name = cname + "="; var decodedCookie = decodeURIComponent(document.cookie); var ca = decodedCookie.split(';'); for (var i = 0; i < ca.length; i++) {
+                var c = ca[i]; while (c.charAt(0) == ' ') { c = c.substring(1) }
+                if (c.indexOf(name) == 0) { return c.substring(name.length, c.length) }
+            }
+            return ""
+        }
+        function getLocation() {
+            if (getCookies("lat").length > 0 || getCookies("lng").length > 0) { }
+            else {
+                if (navigator.geolocation) { navigator.geolocation.getCurrentPosition(geoSuccess, geoError) }
+                else { alert("Geolocation is not supported by this browser.") }
+            }
+        }
+        function geoSuccess(position) { var lat = position.coords.latitude; var lng = position.coords.longitude; document.cookie = "lat=" + lat; document.cookie = "lng=" + lng }
+        function geoError() { }
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) }
+        gtag('js', new Date()); gtag('config', 'UA-158026340-1'); function logout() { sessionStorage.setItem('details', null); location.href = '/Index' }
+    </script>
+
+    <link href="/css/custom.css" rel="stylesheet" async>
+
+    <style>
+        .right_ul li {
+            margin-bottom: 15px
+        }
+
+        .setbtn {
+            background: #000;
+            width: 100%;
+            line-height: 35px;
+            border: none;
+            color: #fff;
+            margin-top: 15px
+        }
+
+        .pac-container {
+            z-index: 9999
+        }
+    </style>
+</head>
+<body onload="getLocation()">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=3527212833972388&autoLogAppEvents=1"></script>
+
+
+    <div id="preloader" class="Fixed">
+        <div data-loader="circle-side"></div>
+    </div>
+    <!-- /Preload-->
+
+    <div id="page">
+        <header class="header_sticky">
+            <a href="#menu" class="btn_mobile">
+                <div class="hamburger hamburger--spin" id="hamburger">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- /btn_mobile-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div id="logo_home">
+                            <a href="@Url.Action("Index", "Home")" title="medzoid"> <img src="/Content/img/logo.png" height="60" class="animated infinite heartBeat"  /></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-6" style="padding: 15px 0;">
+                        <ul id="top_access">
+                            <li>
+                                <a href="/login"><i class="pe-7s-user"></i></a>
+                            </li>
+                            @*<li><a href="#"><i class="pe-7s-add-user"></i></a></li>*@
+                        </ul>
+                        <nav id="menu" class="main-menu">
+                            <ul>
+                                <li>
+                                    <span><a href="@Url.Action("HealthEmergency", "Home", new { id = "NeedGuidance" })">Covid-19</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="@Url.Action("Index", "Home")">Home</a></span>
+                                </li>
+                                <li>
+                                    <span>  <a href="@Url.Action("About", "Home")"> About Us </a></span>
+                                </li>
+                                <li>
+                                    <span>  <a href="@Url.Action("Blog", "Home")"> Blog </a></span>
+                                </li>
+                                @*<li>
+            <span>  <a href="@Url.Action("Press","Home")"> Press </a></span>
+        </li>*@
+                                <li>
+                                    <span> <a href="@Url.Action("Career", "Home")"> Career </a></span>
+                                </li>
+                                <li>
+                                    <span> <a href="@Url.Action("Contact", "Home")"> Contact Us </a></span>
+                                </li>
+                                <li id="liLoggedin">
+                                    <span> <a href="#" id="lnkLogin">  </a></span>
+                                    <ul>
+                                        <li><a href="#" id="lnkAccount">My Account</a></li>
+                                        <li><a href="#" onclick="logout()">Log Out</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <!-- /main-menu -->
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+        </header>
+        <!-- /header -->
+
+        <main>
+
+            @RenderBody()
+            <div id="app_section">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-5">
+                            <p><img src="/img/screenshot.png" alt="" class="img-fluid" width="500" height="433"></p>
+                        </div>
+                        <div class="col-md-6 " style="padding-top:50px">
+                            <small>Everything You Need, In One App </small>
+                            <h3>Download <strong>Medzoid App</strong> Now!</h3>
+                            <ul class="lead">
+                                <li>
+                                    <i class="icon-ok"></i>
+                                    Connect with health care professionals near you
+                                </li>
+                                <li>
+                                    <i class="icon-ok"></i>
+                                    To get online appointments
+                                </li>
+                                <li>
+                                    <i class="icon-ok"></i>
+                                    Track appointments and save time
+                                </li>
+                                <li>
+                                    <i class="icon-ok"></i>
+                                    Search pharmacies near you
+                                </li>
+                            </ul>
+                            <div class="app_buttons wow" data-wow-offset="100">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.1 85.9" style="enable-background:new 0 0 43.1 85.9;" xml:space="preserve">
+                                <path stroke-linecap="round" stroke-linejoin="round" class="st0 draw-arrow" d="M11.3,2.5c-5.8,5-8.7,12.7-9,20.3s2,15.1,5.3,22c6.7,14,18,25.8,31.7,33.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-1" d="M40.6,78.1C39,71.3,37.2,64.6,35.2,58" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-2" d="M39.8,78.5c-7.2,1.7-14.3,3.3-21.5,4.9" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    		</svg>
+
+                                <a href="https://play.google.com/store/apps/details?id=com.app.medzoid&hl=en" target="_blank" class="fadeIn" title=" Medzoid App on Play store"><img src="/img/google_play_app.png" alt="" width="150" height="50" data-retina="true"></a>
+                                <a href="https://www.amazon.in/Medzoid-Find-Nearby-Doctors/dp/B0842S9R7W/ref=sr_1_2?keywords=medzoid&qid=1584953246&s=mobile-apps&sr=1-2" title=" Medzoid App on Amazon App store" class="fadeIn"><img src="/img/amapp.png" alt="" width="150" height="50" data-retina="true"></a>
+                                <a href="https://api.medzoid.com/Documents/Pages/app-release.apk" class="fadeIn" title=" Medzoid Employee App on Amazon App store"><img src="/img/amapp.png" alt="" width="150" height="50" data-retina="true"></a>
+                                <br /><br />
+                                <div class="search_div">
+                                    <div class="input-group">
+                                        @using (Html.BeginForm("SendDownLoadLink", "Home", FormMethod.Post))
+                                        {
+                                            <input autocomplete="off" type="text" required id="search_department" name="mobile" class="search-query" placeholder="  Enter Mobile." style="width:64%;height:37px"> @:&nbsp;
+                                            <input type="submit" value="Submit" class="btn btn-submit" />
+                                        }
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /app_section -->
+        </main>
+        <!-- /main content -->
+
+        <footer>
+            <div class="container margin_60_35">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <p>
+                            <a href="#" title="medzoid">
+                                <img src="/Content/img/logo.png" data-retina="true" alt="" width="163" height="36" class="img-fluid animated infinite heartBeat">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h5>Important Link</h5>
+                        <ul class="links">
+                            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                            <li><a href="@Url.Action("About", "Home")">About</a></li>
+                            @*<li><a href="@Url.Action("Press","Home")">Press</a></li>*@
+                            <li><a href="@Url.Action("Blog", "Home")">Blog</a></li>
+                            <li><a href="@Url.Action("Career", "Home")">Career</a></li>
+                            <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h5>For Professional</h5>
+                        <ul class="links">
+                            @*<li><a href="#">Become Patner</a></li>*@
+                            <li><a href="@Url.Action("AreyouQualifiedDoctor", "Home")">Are Your Qualified Doctor</a></li>
+                            <li><a href="@Url.Action("PrivacyPolicy", "Home")">Privacy Policy</a></li>
+                            <li><a href="@Url.Action("TermsAndConditions", "Home")">Terms &amp; Condition</a></li>
+                            <li><a href="@Url.Action("HelpFaq", "Home")">Help &amp; FAQ</a></li>
+                            <li><a href="http://bit.ly/2STx27S" target="_blank">Download App</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h5>Contact with Us</h5>
+                        <ul class="contacts">
+                            <li><a href="tel://9305662689"><i class="icon_mobile"></i> +91 9305662689</a></li>
+                            <li><a href="mailto:info@medzoid.com"><i class="icon_mail_alt"></i> info@medzoid.com</a></li>
+                        </ul>
+                        <div class="follow_us">
+                            <h5>Follow us</h5>
+                            <ul>
+                                <li><a href="https://www.facebook.com/medzoidapp/" target="_blank"><i class="social_facebook"></i></a></li>
+                                <li><a href="https://twitter.com/medzoidapp" target="_blank"><i class="social_twitter"></i></a></li>
+                                <li><a href="#"><i class="social_linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/medzoidapp/" target="_blank"><i class="social_instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul id="additional_links">
+                            <li><a href="@Url.Action("TermsAndConditions", "Home")">Terms &amp; Condition</a></li>
+                            <li><a href="@Url.Action("PrivacyPolicy", "Home")">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="copy">&copy; @System.DateTime.Now.Year Medzoid</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/footer-->
+    </div>
+    <!-- page -->
+
+    <div id="toTop"></div>
+    <!-- Back to top button -->
+    <!-- COMMON SCRIPTS -->
+    @*<script src="/js/jquery-2.2.4.min.js"></script>*@
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/common_scripts.min.js"></script>
+    <script src="/js/functions.js"></script>
+    @*<script src="~/Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/select2.js"></script>*@
+    @RenderSection("afterjs", false)
+
+    @*<script src="~/Scripts/PageScripts/code.min.js" async></script>*@
+
+    <script>
+
+        CheckSession();
+
+        function CheckSession() {
+
+            var userString = sessionStorage.getItem('details');
+            var user = JSON.parse(userString);
+
+            //var session = getParameterByName('session');
+
+            if (user == null) {
+                $('#top_access').show();
+                $('#liLoggedin').hide();
+
+            }
+            else {
+                if (user.userDetails.UserType == "B") {
+                    $('#lnkAccount').attr('href', '/User/User/Dashboard');
+                }
+                else if (user.userDetails.UserType == "D") {
+                    $('#lnkAccount').attr('href', '/User/User/Dashboard');
+                }
+                else if (user.userDetails.UserType == "P") {
+                    $('#lnkAccount').attr('href', '/Pharmacy/Pharmacy/Dashboard');
+                }
+                else if (user.userDetails.UserType == "E") {
+                    $('#lnkAccount').attr('href', '/Employee/Employee/Dashboard');
+                }
+                else if (user.userDetails.UserType == "A") {
+                    $('#lnkAccount').attr('href', '/Admin/Admin/Dashboard');
+                }
+
+
+
+                $('#top_access').hide();
+                $('#liLoggedin').show();
+                $('#lnkLogin').html('| &nbsp;&nbsp;&nbsp;' + user.userDetails.Name);
+
+
+                if (window.location.href.includes("Login") || window.location.href.includes("login")) {
+                    window.location.href = "/Index";
+                }
+
+            }
+        }
+        LoadDepartment();
+
+        function LoadDepartment() {
+
+            var departments = JSON.parse(localStorage.getItem('departments'))
+            if (departments == null) {
+                $.ajax({
+                    type: 'GET',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    url: "/LoadDepartments",
+                    headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                    data: {},
+                    success: function (data) {
+                        if (data.Status == true) {
+                            localStorage.setItem('departments', JSON.stringify(data));
+                        }
+                    },
+                    error: function (xhr) {
+                        //  alert(xhr.responseText)
+                    }
+                });
+            }
+        }
+
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+    </script>
+</body>
+</html>

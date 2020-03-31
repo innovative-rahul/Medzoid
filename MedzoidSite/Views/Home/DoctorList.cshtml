@@ -1,0 +1,256 @@
+﻿@{
+    ViewBag.Title = "DoctorList";
+    var deptId = 0;
+
+
+    if (Request["hidden_deptId"] != null)
+    {
+        deptId = Convert.ToInt32(Request["hidden_deptId"]);
+    }
+}
+@section afterjs{
+    <div id="mylocation" class="modal fade" role="dialog" style="    z-index: 9999;">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Search Location</h4> <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div autocomplete="off" id="depat" class="fadeInUp animated">
+                        <div id="custom-search-input" spellcheck="false" style="width: 100%;">
+
+                            <div class="input-group">
+                                <input autocomplete="off" type="text" required="" style="    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);" id="search_latlong" name="search_latlong" class="search-query controls" placeholder="Ex. Home Address city..">
+                                <span style="position:absolute;right:15px;top:15px"><img src="/img/map-marker.png" height="25px"></span>
+                            </div>
+                        </div>  <input class="setbtn" id="locateadd" type="submit" name="locate" value="Set Location" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+        $("#locateadd").click(function () {
+
+                Getlatlong($("#search_latlong").val());
+            });
+
+
+        function init() {
+            var input = document.getElementById('search_latlong');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        var LatLong = getCookie("lat") + "," + getCookie("lng");
+            GetAddress();
+
+            function GetAddress() {
+
+                var latlng = new google.maps.LatLng(getCookie("lat"), getCookie("lng"));
+                var geocoder = geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        if (results[1]) {
+                            $("#location").html("Location: " + results[1].formatted_address);
+                            
+                        }
+                    }
+                });
+            }
+
+            function Getlatlong(address) {
+                var geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ 'address': address }, function (results, status) {
+
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        var latitude = results[0].geometry.location.lat();
+                        var longitude = results[0].geometry.location.lng();
+                       
+                        document.cookie = "lat=" + latitude;
+                        document.cookie = "lng=" + longitude;
+                        location.reload();
+                    }
+                });
+            }
+
+
+
+        var html = "";
+         var DoctorName = "";
+           $.ajax({
+            type: 'POST',
+            url: '/GetDoctorList',
+            data: { deptId: @deptId,Mode:1,DoctorName:DoctorName ,LatLong:LatLong },
+            headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                sessionStorage.setItem("DocList", JSON.stringify(data));
+                if (data.Data.Data.length > 0) {
+                    $.each(data.Data.Data, function (index, element) {
+                       
+                        var slug = convertToSlug(element.DocName);
+                        var rating = (element.Rating / 2);
+                        
+                        var rate = "";
+                        rating = Math.round(rating);
+
+                        if (rating == 0) {
+                            rate = "<i class=\"icon_star \"></i><i class=\"icon_star\"></i><i class=\"icon_star \"></i><i class=\"icon_star \"></i><i class=\"icon_star\"></i>"
+                        }
+                       else if (rating == 1) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star\"></i><i class=\"icon_star \"></i><i class=\"icon_star \"></i><i class=\"icon_star\"></i>"
+                        }
+                       else if (rating == 2) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star \"></i><i class=\"icon_star \"></i><i class=\"icon_star\"></i>"
+                        }
+                        else if (rating == 3) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star \"></i><i class=\"icon_star\"></i>"
+                        }
+                        else if (rating == 4) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star\"></i>"
+                        }
+                        else if (rating == 5) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i>"
+                        }
+
+                        html += "<div class=\"strip_list wow fadeIn\">"
+                            + "<a href=\"#\" class=\"wish_bt\"></a>"
+                            + "<figure>"
+                            + "<a href=\"#\"><img src=\"https://api.medzoid.com/Documents/UserImages/" + element.Photo + "\" alt=\"\"  onerror=this.src='/img/NoDoctor.png'></a>"
+                            + "</figure>"
+                            + "<small>" + element.deptName + "</small>"
+                            + "<h3>" + element.DocName + "</h3>"
+                            + "<p>" + element.HospitalAffiliation + "</p>"
+                            + "<span class=\"rating\">" + rate
+                            + "<small>(" + element.RatingByCount + ")</small></span > "
+                            + "<ul>"
+                            + "<li><a href=\"http://maps.google.com/?q=" + element.LatLong + "\" onclick=\"onHtmlClick('Doctors', 0)\" class=\"btn_listing\">View on Map</a></li>"
+                            + "<li><a href=\"https://maps.google.com?saddr=Current+Location&daddr=" + element.LatLong + "\" target=\"_blank\">Directions</a></li>"
+                            + "<li><a href='#' id='lnkBookNow' onclick=BookNow(" + element.doc_id + ",'" + slug + "')>Book now</a></li>"
+                            + "</ul>"
+                            + "</div>";
+                    });
+                    $('#doclist').empty().append(html);
+                }
+                else {
+
+                    $('#doclist').empty().append("<div class='strip_list wow fadeIn animated' style='visibility: visible;height:95%; animation-name: fadeIn;>" +
+                        "<figure><a href='#'><img src='https://api.medzoid.com/Documents/UserImages/NoUser.png' alt=''></a></figure>" +
+                        "<h3 style='margin-top:5%'>No Doctor Found</h3></div>");
+                }
+            }
+
+        });
+
+
+        });
+
+        function BookNow(id, slug) {
+           
+            var docList = JSON.parse(sessionStorage.getItem("DocList"));
+            for (var i = 0; i < docList.Data.Data.length; i++) {
+                if (docList.Data.Data[i].doc_id == id) {
+                    sessionStorage.setItem("DocList", JSON.stringify(docList.Data.Data[i]));
+                }
+            }
+            sessionStorage.setItem("docId", id);
+            location.href = "DocDetails/" + slug + "/?id=" + btoa(id);
+        };
+
+
+        function convertToSlug(Text) {
+            return Text
+                .toLowerCase()
+                .replace(/[^\w ]+/g, '')
+                .replace(/ +/g, '-')
+                ;
+        }
+
+
+        function imgError(obj) {
+            var image = 'https://api.medzoid.com/Documents/UserImages/NoUser.png';
+            $(this).attr('src', image);
+        }
+
+    </script>
+}
+<div id="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/index">Home</a></li>
+
+
+        </ul>
+        <ul style="float: right;top: -15px;position: relative;text-align: right;">
+            <li style="max-width:400px"><a href="javascript:void(0)" data-toggle="modal" data-target="#mylocation" id="location">Location</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="filters_listing">
+    @*<div class="container">
+        <ul class="clearfix">
+            <li>
+                <h6>Type</h6>
+                <div class="switch-field">
+                    <input type="radio" id="all" name="type_patient" value="all" checked>
+                    <label for="all">All</label>
+                    <input type="radio" id="doctors" name="type_patient" value="doctors">
+                    <label for="doctors">Doctors</label>
+                    <input type="radio" id="clinics" name="type_patient" value="clinics">
+                    <label for="clinics">Clinics</label>
+                </div>
+            </li>
+
+           
+
+            <li>
+                <h6>Sort by</h6>
+                <select name="orderby" class="selectbox">
+                    <option value="Closest">Closest</option>
+                    <option value="Best rated">Best rated</option>
+                    <option value="Men">Men</option>
+                    <option value="Women">Women</option>
+                </select>
+            </li>
+        </ul>
+    </div>*@
+    <!-- /container -->
+</div>
+<div class="container margin_60_35">
+    <div class="row">
+        <div class="col-lg-7" id="doclist">
+            Loading Doctors.....
+        </div>
+        <aside class="col-lg-5" id="sidebar">
+            <div id="map_listing" class="normal_list">
+                <img src="~/img/doc.jpg" style="border:inset"/>
+            </div>
+        </aside>
+    </div>
+</div>
+

@@ -1,0 +1,372 @@
+﻿@model MedzoidSite.ViewModel.WalletViewModel
+@{
+    ViewBag.Title = "MyWallet";
+    Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+}
+
+<!-- begin:: Subheader -->
+<div class="kt-subheader   kt-grid__item" id="kt_subheader">
+    <div class="kt-container  kt-container--fluid ">
+        <div class="kt-subheader__main">
+            <h3 class="kt-subheader__title">
+
+                My Wallet
+            </h3>
+
+            <span class="kt-subheader__separator kt-hidden"></span>
+            <div class="kt-subheader__breadcrumbs">
+                <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
+                <span class="kt-subheader__breadcrumbs-separator"></span>
+                <a href="#" class="kt-subheader__breadcrumbs-link">
+                    Crud
+                </a>
+                <span class="kt-subheader__breadcrumbs-separator"></span>
+                <a href="#" class="kt-subheader__breadcrumbs-link">
+                    Forms & Controls
+                </a>
+                <span class="kt-subheader__breadcrumbs-separator"></span>
+                <a href="#" class="kt-subheader__breadcrumbs-link">
+                    Form Controls
+                </a>
+                <span class="kt-subheader__breadcrumbs-separator"></span>
+                <a href="#" class="kt-subheader__breadcrumbs-link">
+                    My Wallet
+                </a>
+                <!-- <span class="kt-subheader__breadcrumbs-link kt-subheader__breadcrumbs-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="kt-subheader__toolbar">
+            <div class="kt-subheader__wrapper">
+                <a href="#" class="btn kt-subheader__btn-primary">
+                    Actions &nbsp;
+                    <!--<i class="flaticon2-calendar-1"></i>-->
+                </a>
+
+                <div class="dropdown dropdown-inline" data-toggle="kt-tooltip" title="Quick actions" data-placement="left">
+                    <a href="#" class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--success kt-svg-icon--md">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <polygon points="0 0 24 0 24 24 0 24" />
+                                <path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                <path d="M11,14 L9,14 C8.44771525,14 8,13.5522847 8,13 C8,12.4477153 8.44771525,12 9,12 L11,12 L11,10 C11,9.44771525 11.4477153,9 12,9 C12.5522847,9 13,9.44771525 13,10 L13,12 L15,12 C15.5522847,12 16,12.4477153 16,13 C16,13.5522847 15.5522847,14 15,14 L13,14 L13,16 C13,16.5522847 12.5522847,17 12,17 C11.4477153,17 11,16.5522847 11,16 L11,14 Z" fill="#000000" />
+                            </g>
+                        </svg>                        <!--<i class="flaticon2-plus"></i>-->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-fit dropdown-menu-md dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="kt-nav">
+                            <li class="kt-nav__head">
+                                Add anything or jump to:
+                                <i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+                            </li>
+                            <li class="kt-nav__separator"></li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-drop"></i>
+                                    <span class="kt-nav__link-text">Order</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-calendar-8"></i>
+                                    <span class="kt-nav__link-text">Ticket</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-telegram-logo"></i>
+                                    <span class="kt-nav__link-text">Goal</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-new-email"></i>
+                                    <span class="kt-nav__link-text">Support Case</span>
+                                    <span class="kt-nav__link-badge">
+                                        <span class="kt-badge kt-badge--success">5</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__separator"></li>
+                            <li class="kt-nav__foot">
+                                <a class="btn btn-label-brand btn-bold btn-sm" href="#">Upgrade plan</a>
+                                <a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Learn more</a>
+                            </li>
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end:: Subheader -->
+<!-- begin:: Content -->
+<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+
+    <div class="kt-portlet kt-portlet--mobile">
+
+        <div class="kt-portlet__head kt-portlet__head--lg">
+            <div class="kt-portlet__head-label">
+
+                <span class="kt-portlet__head-icon">
+                    <i class="kt-font-brand fa-wallet"></i>
+                </span>
+                <h3 class="kt-portlet__head-title">
+                    Available Balance : @Model.TotalAvailableAmount INR
+                </h3>
+                <a href="#" class="btn btn-default btn-icon-sm " style="margin-left:50px" data-toggle="modal" data-target="#kt_datetimepicker_modal">
+                    <i class="la la-plus"></i>
+                    Add Money
+                </a>
+
+            </div>
+            <div class="kt-portlet__head-toolbar">
+                <div class="kt-portlet__head-wrapper">
+                    <div class="kt-portlet__head-actions">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="kt-portlet__head kt-portlet__head--lg">
+            <div class="kt-portlet__head-label">
+                <span class="kt-portlet__head-icon">
+                    <i class="kt-font-brand flaticon2-line-chart"></i>
+                </span>
+                <h3 class="kt-portlet__head-title">
+                    Recent Transaction
+                </h3>
+
+                @*<span style="margin-left:50px">Amount Available : @Model.TotalAvailableAmount INR</span>
+                    &nbsp;&nbsp;
+                    <a href="#" class="btn btn-default btn-icon-sm ">
+                        <i class="la la-plus"></i>
+                        Add Money
+                    </a>*@
+
+            </div>
+            <div class="kt-portlet__head-toolbar">
+                <div class="kt-portlet__head-wrapper">
+                    <div class="kt-portlet__head-actions">
+                        <div class="dropdown dropdown-inline">
+                            <button type="button" class="btn btn-default btn-icon-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="la la-download"></i> Export
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <ul class="kt-nav">
+                                    <li class="kt-nav__section kt-nav__section--first">
+                                        <span class="kt-nav__section-text">Choose an option</span>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-print"></i>
+                                            <span class="kt-nav__link-text">Print</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-copy"></i>
+                                            <span class="kt-nav__link-text">Copy</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                            <span class="kt-nav__link-text">Excel</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
+                                            <span class="kt-nav__link-text">CSV</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                            <span class="kt-nav__link-text">PDF</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        &nbsp;
+                        <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
+                            <i class="la la-plus"></i>
+                            New Record
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kt-portlet__body">
+            <!--begin: Datatable -->
+            <table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_1">
+                <thead>
+                    <tr>
+                        <th>Serial No</th>
+                        <th>Amount</th>
+                        <th>Transfer Type</th>
+                        <th>Transfer date</th>
+                        <th>Message</th>
+                        @*<th>Action</th>*@
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @{ int rowNo = 0; }
+                    @if (Model.walletDetails.Count() > 0)
+                    {
+                        foreach (var item in Model.walletDetails)
+                        {
+                            <tr>
+                                <td>
+                                    @(rowNo += 1)
+                                </td>
+                                <td>@item.amount</td>
+                                <td>@item.TransferType</td>
+                                <td>@item.TransferDate</td>
+                                <td>@item.Message</td>
+                                @*<td>
+
+                                        <span class="dropdown">
+                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="false" id="lnkDropdown">
+                                                <i class="la la-ellipsis-h"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu dropdown-menu-right" style="display: none;" id="dvdropdown">
+
+                                            </div>
+                                        </span>
+
+
+                                    </td>*@
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="10">
+                                No Appointment Found
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+            <!--end: Datatable -->
+        </div>
+    </div>
+</div>
+<div style="display:none" id="paynow">
+    <form action="http://localhost:58409/Home/GatewayResponse" method="post">
+        @*<script src="https://checkout.razorpay.com/v1/checkout.js" id="script"
+                    data-key="rzp_test_Bt8jztadCkgBhA"
+                    data-name="Razorpay"
+                    data-description="Purchase Description"
+                    data-image="https://razorpay.com/favicon.png"
+                    data-prefill.name="Gaurav Kumar"
+                    data-prefill.email="gaurav.kumar@example.com"
+                    data-prefill.contact="9807633539"
+                    data-theme.color="#F37254"></script>
+            <input type="hidden" value="Hidden Element" name="hidden">*@
+    </form>
+
+
+</div>
+
+<!-- end:: Content -->
+<!--begin::Modal-->
+<div class="modal fade" id="kt_datetimepicker_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> Add Money to Wallet </h5>
+                <button type="reset" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="la la-remove"></span>
+                </button>
+            </div>
+            @*<form class="kt-form kt-form--fit kt-form--label-right">*@
+            @using (Html.BeginForm("AddAmount", "User", FormMethod.Post, new { @class = "kt-form kt-form--fit kt-form--label-right" }))
+            {
+                @*<input type="submit" value="Save" />*@
+
+                <div class="modal-body">
+                    <div class="form-group row kt-margin-t-20">
+                        <label class="col-form-label col-lg-3 col-sm-12">Amount</label>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            @*<input type="text" class="form-control" id="txtAmount" data-z-index="1100" placeholder="Minimum Amount is 50 Rs." />*@
+
+                            @Html.TextBoxFor(model => model.Amount, new { @class = "form-control", @placeholder = "Minimum Amount is 50 Rs." })
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    @*<button type="reset" class="btn btn-secondary" id="btnAddAmount">Submit</button>*@
+
+                    <input type="submit" class="btn btn-brand" id="btnAddAmount" value="Submit" />
+
+                </div>
+            }
+            @*</form>*@
+        </div>
+    </div>
+</div>
+<!--end::Modal-->
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"
+        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        //$("#btnAddAmount").click(function () {
+        //    debugger;
+        //    $.ajax({
+        //        type: 'POST',
+        //        contentType: "application/json; charset=utf-8",
+        //        dataType: 'json',
+        //        url: "../Home/AddAmount",
+        //        data: '{ amount: ' + $('#txtAmount').val() + '}',
+        //        success: function (data) {
+        //            debugger;
+        //            if (data.Success == true) {
+
+        //                $('#paynow').show();
+
+        //                $("#script").removeData();
+
+        //                $("#script").attr("data-amount", data.TotalAmount);
+        //                $("#script").attr("data-order_id", data.orderId);
+
+        //               // $("#paynow script").data("amount", data.TotalAmount)
+        //               // $("#paynow script").data("order_id", data.orderId)
+
+        //                $(".razorpay-payment-button").trigger("click");
+        //            }
+        //        },
+        //        error: function (xhr) {
+        //            alert(xhr.responseText)
+        //        }
+        //    });
+
+        //});
+
+        // $('.razorpay-payment-button').addClass("btn btn-secondary");
+
+    });
+
+</script>
+
+
+

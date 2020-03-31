@@ -1,0 +1,203 @@
+﻿
+@{
+    ViewBag.Title = "Register Pharmacy";
+}
+
+@section aftercss {
+
+    <link href="~/css/chosen.min.css" rel="stylesheet" />
+}
+
+@section afterjs{
+
+    <script src="~/Scripts/chosen.jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#ddlpType").chosen();
+            $("#ddlpType").trigger("chosen:updated");
+
+            LoadDepartment();
+
+            //var deptId = getParameterByName('deptId');
+            //$('#hidden_dep_id').val(deptId);
+
+            $("#btnsubmit").click(function () {
+
+                $.ajax({
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    url: "https://api.medzoid.com/api/Pharmacy",
+                    headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                    data: {
+                        name: $("#name").val(), email: $("#email").val(), mobile: $('#mobile').val(), address: $("#Address").val() + "$" + $("#area").val(), password: $("#password").val(),
+                        deptId: $("#hfSeleted").val(), AboutUs: $("#AboutUs").val(), Fee: $("#fee").val(), experience: $("#experience").val(), Membership: $("#Membership").val(),
+                        HospitalAffiliation: $("#HospitalAffiliation").val(), mci_no: $("#mci_no").val(), OnlineAppointment: $("#ddlOnlineAppointment").val()
+                    },
+                    success: function (data) {
+                        if (data.Status == true) {
+                            alert('Registered Successfully');
+                            $(':input', '#formRegister').not(':button, :submit, :reset, :hidden').val('').prop('checked', false).prop('selected', false);
+                        }
+                    },
+                    error: function (xhr) {
+                        alert(xhr.responseText)
+                    }
+                });
+            });
+
+
+            $("#password").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    e.preventDefault();
+                    document.getElementById("btnsubmit").click();
+                }
+            });
+
+
+            $('#ddlpType').on('change', function (e) {
+                $('#hfSeleted').val($(this).val());
+            });
+
+            // $('#Address').keyup(function () {
+            //    var address = $('#Address').val();
+            //    $.ajax({
+            //        type: 'POST',
+            //        contentType: "application/json",
+            //        dataType: 'json',
+            //        url: '/Admin/Admin/SearchAddress',
+            //        data: '{searchTerm:"' + address + '"}',
+            //        success: function (data) {
+            //            var array = [];
+            //            var arraywithPlace = [];
+            //            var dd = JSON.parse(data.data);
+
+            //            for (var i = 0; i < dd.predictions.length; i++) {
+            //                array.push(dd.predictions[i].description);
+            //                arraywithPlace.push(dd.predictions[i]);
+            //            }
+            //            localStorage.setItem("Predictions", JSON.stringify(arraywithPlace));
+            //            $("#Address").autocomplete({
+            //                source: array
+            //            });
+            //        },
+            //        error: function (xhr) {
+            //            alert(xhr.responseText)
+            //        }
+            //    });
+            //});
+
+            //$('#Address').blur(function () {
+            //    var Predictions = JSON.parse(localStorage.getItem("Predictions") || "[]");
+            //    for (var i = 0; i < Predictions.length; i++) {
+            //        if ($('#inputAddress_address').val() == Predictions[i].description) {
+
+            //            var PlaceId = Predictions[i].place_id;
+
+            //            $.ajax({
+
+            //                type: 'POST',
+            //                contentType: "application/json",
+            //                dataType: 'json',
+            //                url: '/Admin/Admin/GetLatLong',
+            //                data: '{placeId:"' + PlaceId + '"}',
+            //                success: function (data) {
+            //                    var dd = JSON.parse(data.data);
+            //                    $('#hdLatlong').val(dd.result.geometry.location.lat + "," + dd.result.geometry.location.lng);
+            //                    $('#lblLatLong').text("Latlong: " + dd.result.geometry.location.lat + "," + dd.result.geometry.location.lng);
+
+            //                },
+            //                error: function (data) {
+
+            //                }
+            //            });
+            //        }
+            //    }
+            //});
+
+
+
+        });
+
+
+    </script>
+
+}
+
+<div class="bg_color_2" style="background: #14382d url(../img/hero_bg_1.svg) repeat fixed;">
+    <div class="container margin_60_35">
+        <div id="login-2">
+            <h1>Please Register to Medzoid!</h1>
+            <form method="post" id="formRegister">
+                <input type="hidden" required id="hidden_dep_id" name="hidden_deptId" value="" />
+                <input type="hidden" name="latlong" id="hdLatlong">
+                <div class="box_form clearfix">
+                    <div style="padding:5%">
+                        <div class="form-group">
+                            <input type="tel" id="name" name="name" class="form-control" placeholder="Pharmacy Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Announcement" name="Announcement" id="Announcement">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="contact person name" name="contact_person_name" id="contact_person_name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="DeliveryDistance" name="DeliveryDistance" id="DeliveryDistance">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="dl_no" name="dl_no" id="dl_no">
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" id="hfSeleted" name="deptId" />
+                            <select class="form-control " id="ddlpType" name="deptId" multiple="multiple" style="width:100%">
+                                <option value="Allopathic">Allopathic</option>
+                                <option value="Ayurvedic">Ayurvedic</option>
+                                <option value="Homeopathic">Homeopathic</option>
+                                <option value="Unani">Unani</option>
+                                <option value="Drugs">Drugs</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Pharmacy Address" name="PharmacyAddress" id="PharmacyAddress">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Pharmacy Phone No." name="PharmacyPhnNo" id="PharmacyPhnNo">
+                        </div>
+                        <div class="form-group">
+                            <select id="ddlPharmacyCategory" name="OnlineAppointment" class="form-control">
+                                <option value="Wholesale">Wholesale</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Both">Both</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="ddlDeliveryType" name="DeliveryType" class="form-control">
+                                <option value="HomeDelivery">HomeDelivery</option>
+                                <option value="SelfPickup">SelfPickup</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="ddlOnlineAppointment" name="OnlineAppointment" class="form-control">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Membership" name="Membership" id="Membership">
+                        </div>
+                        <div class="form-group">
+                            <input class="btn_1" type="button" id="btnsubmit" value="Register">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            @*<p class="text-center link_bright">Do not have an account yet? <a href="#0"><strong>Register now!</strong></a></p>*@
+        </div>
+        <!-- /login -->
+    </div>
+</div>
+
+

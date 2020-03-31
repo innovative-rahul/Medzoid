@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+
+@section afterjs{
+
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            var deptId = getParameterByName('deptId');
+            $('#hidden_dep_id').val(deptId);
+
+            $("#btnsubmit").click(function () {
+
+                var userMaster = new Object();
+                userMaster.mobile = $('#mobileno').val();
+                userMaster.password = $('#password').val();
+
+                $.ajax({
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    url: "/Login",
+                    data: '{ userMaster: ' + JSON.stringify(userMaster) + '}',
+                    success: function (data) {
+                        if (data.Success == true) {
+                            sessionStorage.setItem('details', JSON.stringify(data.details));
+
+                            if (data.details.userDetails.UserType == "A") {
+                                location.href = "Admin/Admin/Dashboard";
+                            }
+                            else if (data.details.userDetails.UserType == "D") {
+                                location.href = "Doctors/Doctor/DoctorDashboard";
+                            }
+                            else if (data.details.userDetails.UserType == "P") {
+                                location.href = "Pharmacy/Pharmacy/Dashboard";
+                            }
+                            else if (data.details.userDetails.UserType == "E") {
+                                location.href = "Employee/Employee/Dashboard";
+                            }
+                            else if (data.details.userDetails.UserType == "B") {
+
+                                var redirectionUrl = getParameterByName('redirectUrl');
+                                if (redirectionUrl == 'DocDetails') {
+                                    location.href = "DocDetails";
+                                }
+                                else if (redirectionUrl == 'RegisterPharmacy') {
+                                    location.href = "RegisterPharmacy";
+                                }
+                                else if (redirectionUrl == 'UploadPrescription') {
+                                    location.href = "UploadPrescription";
+                                }
+                                else if (redirectionUrl == 'SearchBloodDonor') {
+                                    location.href = "SearchBloodDonor";
+                                }
+                                else {
+                                    location.href = "User/User/Dashboard";
+                                }
+                            }
+                            
+                        }
+                        if (data.Success == false) {
+                            alert('Invalid Credentials');
+                        }
+                    },
+                    error: function (xhr) {
+                        alert(xhr.responseText)
+                    }
+                });
+            });
+
+            $("#password").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    e.preventDefault();
+                    document.getElementById("btnsubmit").click();
+                }
+            });
+
+        });
+
+        function getParameterByName(e, t) {
+            t || (t = window.location.href), e = e.replace(/[\[\]]/g, "\\$&");
+            var n = new RegExp("[?&]" + e + "(=([^&#]*)|&|#|$)").exec(t);
+            return n ? n[2] ? decodeURIComponent(n[2].replace(/\+/g, " ")) : "" : null
+        }
+    </script>
+
+}
+
+<div class="bg_color_2" style="background: #14382d url(../img/hero_bg_1.svg) repeat fixed;">
+    <div class="container margin_60_35">
+        <div id="login-2">
+            <h1>Please login to Medzoid!</h1>
+            <form method="post" id="formLogin">
+                <input type="hidden" required id="hidden_dep_id" name="hidden_deptId" value="" />
+                <div class="box_form clearfix">
+                    <div class="box_login">
+                        @*<a href="#0" class="social_bt facebook">Login with Facebook</a>
+                            <a href="#0" class="social_bt google">Login with Google</a>
+                            <a href="#0" class="social_bt linkedin">Login with Linkedin</a>*@
+                        <img src="/Content/img/2Old.png" style="    width: 170px;    margin: auto;    display: block;" />
+
+                    </div>
+                    <div class="box_login last">
+                        <div class="form-group">
+                            <input type="tel" id="mobileno" name="mobileno" class="form-control" placeholder="Your Mobile Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Your password" name="password" id="password">
+                            <a href="@Url.Action("ForgotPassword","Home")" class="forgot"><small>Forgot password?</small></a>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn_1" type="button" id="btnsubmit" value="Login">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p class="text-center link_bright">Do not have an account yet? <a href="@Url.Action("Signup","Home")"><strong>Register now!</strong></a></p>
+        </div>
+        <!-- /login -->
+    </div>
+</div>
+
+

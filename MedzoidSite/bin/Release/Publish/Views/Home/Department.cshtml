@@ -1,0 +1,100 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Department";
+    var depid = 0;
+    var depname = "";
+    if (Request["hidden_did"] != null)
+    {
+
+        depid = Convert.ToInt32(Request["hidden_did"]);
+    }
+}@section aftercss{
+    <!-- REVOLUTION STYLE SHEETS -->
+
+    <style>
+        #filter-records, #filter-department, #filter-symptom, #filter-procedure {
+            background: #fff;
+            position: absolute;
+            width: 100%;
+            box-shadow: 0 14px 15px rgba(0, 0, 0, 0.25882352941176473);
+            top: 50px;
+            z-index: 999;
+            max-height: 200px;
+            overflow: auto;
+        }
+
+        #searchable {
+            z-index: 99;
+            position: relative;
+        }
+
+        .rec {
+            padding: 5px 10px 5px 40px;
+            line-height: 30px;
+            border-bottom: 1px dashed #eee;
+            cursor: pointer;
+        }
+
+            .rec a:hover {
+                -webkit-transform: translate(5px, 0);
+                -moz-transform: translate(5px, 0);
+                -ms-transform: translate(5px, 0);
+                -o-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+    </style>
+}@section afterjs{
+    <script type="text/javascript">
+
+        var html = "";
+        $.ajax({
+            type: 'POST',
+          //  url: 'https://api.medzoid.com/api/DiseaseDepartment',
+            url: '/DiseaseDepartmentList',
+           // data: { id: @depid, Name: '@depname' },
+            data: { id: @depid},
+            headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+            dataType: 'json',
+            success: function (data) {
+                for (var i = 0; i < data.Data.Data.length; i++) {
+                    $('#disdep').append("<div class='col-lg-3 col-md-6' onclick='Department(" + data.Data.Data[i].deptId + ")\'>" +
+                        "<a href='#' class='box_cat_home'>" +
+                        "<i class='icon-info-4'></i>" +
+                        "<img src='img/icon_cat_8.svg' width='60' height='60' alt=''>" +
+                        "<h3>" + data.Data.Data[i].departName + "</h3>" +
+                        "<ul class='clearfix'></ul></a></div>");
+                }
+            }
+        });
+
+
+         function Department(id) {
+            $('#hidden_dep_id').val(id);
+            $('#depat').submit();
+        }
+
+    </script>
+}
+<div id="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <li>Departments</li>
+        </ul>
+    </div>
+</div>
+<div class="container margin_120_95">
+    @*<div class="main_title">
+            <h2>Find by specialization</h2>
+            <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p>
+        </div>*@
+    <form autocomplete="off" method="post" id="depat" action="/DoctorList" class="fadeInUp animated">
+        <input type="hidden" required id="hidden_dep_id" name="hidden_deptId" />
+        <div class="row" id="disdep">
+
+        </div>
+    </form>
+</div>
+

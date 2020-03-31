@@ -1,0 +1,206 @@
+﻿@model IEnumerable<MedzoidSite.Models.carrer>
+@{
+    ViewBag.Title = "Career";
+
+}
+
+@section aftercss{
+
+    <style type="text/css"> 
+
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1040;
+            background-color: #000;
+        }
+    </style>
+
+}
+
+
+@section afterjs{
+    <script type="text/javascript">
+        $('#btnApply').click(function () {
+
+            if ($('#name').val() == "") {
+                alert('Please enter Name');
+            }
+            else if ($('#email').val() == "") {
+                alert('Please enter Email');
+            }
+            else if ($('#inputFile').val() == "") {
+                alert('Please select File to upload');
+            }
+            else if ($('#message').val() == "") {
+                alert('Please enter Message');
+            }
+            else {
+                formdata = new FormData();
+                if ($("#inputFile").prop('files').length > 0) {
+                    file = $("#inputFile").prop('files')[0];
+                    formdata.append('File', file);
+                    formdata.append('email', $('#email').val());
+                    formdata.append('name', $('#name').val());
+                    formdata.append('message', $('#message-text').val());
+                }
+
+                $.ajax({
+                    url: '/Apply',
+                    type: 'POST',
+                    data: formdata,
+                    success: function (data) {
+                        if (data.Status == true) {
+                            alert('Submitted Successfully');
+                            $('#exampleModal').hide();
+                        }
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            }
+
+           
+
+        });
+
+
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+
+        function validateEmail(emailField) {
+            
+            var x = emailField.value;
+            var atpos = x.indexOf("@@");
+            var dotpos = x.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+                alert("Not a valid e-mail address");
+                emailField.value = "";
+                return false;
+            }
+
+
+            return true;
+
+        }
+
+
+    </script>
+}
+
+<div id="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/index">Home</a></li>
+
+
+        </ul>
+        <ul style="float:right">
+            <li><a href="javascript:void(0)">Career</a></li>
+
+
+        </ul>
+    </div>
+</div>
+<div class="container margin_60_35">
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <p>
+                If you are one of those who what to enhance their skills or are looking to pilot their career or want a place where you can work in harmony then “Medzoid” is your answer.
+            </p>
+            <p>
+                Medzoid is a company, a platform that brings amazing people together to explore their skills. It is a workplace where that showcases a variety of human experience. We not only focus on the wider picture but also at minute details. At Medzoid you will be a part of a teams that has gained its experience through decades, providing extraordinary work. Medzoid is a hub where your ideals take a leap towards a brighter future. Medzoid is a collection and collaboration of thinkers. Thinkers that think out of the box are all welcomed here. The success of the company is a result of appreciation of grave thinkers, inspiration and commitment towards the growth. Medzoid believes that each individual is store of knowledge and working with such people is the best way to learn.
+            </p>
+            <p>
+                We at Medzoid believe that striving towards a goal, a common goal can help achieve the best user satisfaction. That is why we believe in going deeper in the supply of skill full employees. With every idea, service or feature that is innovative, make every employ ideally strong. So, if you are a thinker, a writer, an app developer Medzoid is a place where you can discover yourself with doing something that you love. To target at users and patients satisfaction all over the world and knowing our ability we want creative and inspiring individuals to join hands with us. With multiple pipeline projects Medzoid aims at bigger and better goals for the future.
+            </p>
+            <p>
+                Come join us, get discovered and realize your potential while enjoying other benefits.
+
+            </p>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <table id="tableData" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th style="width:7%">Serial No</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Apply</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @{ int rowNo = 0; }
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @(rowNo += 1)<input type="hidden" value="@item.id" id="hdid@(rowNo)" />
+                        </td>
+                        <td>@item.c_title</td>
+                        <td>@Html.Raw(item.Text)</td>
+                        <td>
+                            <a href="@Url.Action("Apply","Home")" class="la-link" data-toggle="modal" data-target="#exampleModal">Apply</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:10%;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Apply</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="email" onblur="validateEmail(this);">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">CV:</label>
+                        <input type="file" class="form-control" id="inputFile">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btnApply">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,3424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\slayer\Downloads\MedzoidSite\MedzoidSite\MedzoidSite\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Admin/Views/Admin/Blog.cshtml">
+      <publishTime>03/23/2020 18:55:05</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/CheckPrescriptionManually.cshtml">
+      <publishTime>03/30/2020 03:11:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/ClinicDetails.cshtml">
+      <publishTime>03/06/2020 16:35:22</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/ClinicSchedule.cshtml">
+      <publishTime>03/05/2020 14:37:33</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Dashboard.cshtml">
+      <publishTime>03/15/2020 18:38:37</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Faq.cshtml">
+      <publishTime>03/26/2020 22:36:57</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/HealthTips.cshtml">
+      <publishTime>03/19/2020 13:01:13</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/unclaimeddoctor.cshtml">
+      <publishTime>03/06/2020 15:20:57</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_Layout.cshtml">
+      <publishTime>03/30/2020 02:45:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/web.config">
+      <publishTime>02/29/2020 12:05:18</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Doctor/Appointment.cshtml">
+      <publishTime>03/23/2020 01:35:02</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Doctor/ChangePassword.cshtml">
+      <publishTime>03/23/2020 02:04:14</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Doctor/DoctorDashboard.cshtml">
+      <publishTime>03/23/2020 00:19:27</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Doctor/DoctorProfile.cshtml">
+      <publishTime>03/23/2020 01:21:18</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Doctor/GatewayResponse.cshtml">
+      <publishTime>03/23/2020 01:45:05</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Doctor/MyPractise.cshtml">
+      <publishTime>03/18/2020 23:42:02</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Doctor/MyWallet.cshtml">
+      <publishTime>03/23/2020 01:41:01</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Doctor/PaymentPage.cshtml">
+      <publishTime>03/23/2020 01:46:15</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/Shared/_Layout.cshtml">
+      <publishTime>03/23/2020 01:47:21</publishTime>
+    </File>
+    <File Include="Areas/Doctors/Views/web.config">
+      <publishTime>03/25/2020 16:32:20</publishTime>
+    </File>
+    <File Include="Areas/Employee/Views/Employee/Dashboard.cshtml">
+      <publishTime>03/18/2020 14:05:40</publishTime>
+    </File>
+    <File Include="Areas/Employee/Views/Employee/EmpAppointment.cshtml">
+      <publishTime>03/18/2020 16:01:30</publishTime>
+    </File>
+    <File Include="Areas/Employee/Views/Employee/EmpChangePassword.cshtml">
+      <publishTime>03/18/2020 16:03:36</publishTime>
+    </File>
+    <File Include="Areas/Employee/Views/Employee/EmpProfile.cshtml">
+      <publishTime>03/18/2020 14:47:32</publishTime>
+    </File>
+    <File Include="Areas/Employee/Views/Shared/_Layout.cshtml">
+      <publishTime>03/20/2020 00:10:15</publishTime>
+    </File>
+    <File Include="Areas/Employee/Views/web.config">
+      <publishTime>03/25/2020 16:32:23</publishTime>
+    </File>
+    <File Include="Areas/Pharmacy/Views/Pharmacy/ChangePassword.cshtml">
+      <publishTime>03/23/2020 02:15:40</publishTime>
+    </File>
+    <File Include="Areas/Pharmacy/Views/Pharmacy/Dashboard.cshtml">
+      <publishTime>03/02/2020 17:16:31</publishTime>
+    </File>
+    <File Include="Areas/Pharmacy/Views/Pharmacy/Orders.cshtml">
+      <publishTime>03/23/2020 02:10:56</publishTime>
+    </File>
+    <File Include="Areas/Pharmacy/Views/Shared/_Layout.cshtml">
+      <publishTime>03/23/2020 02:12:46</publishTime>
+    </File>
+    <File Include="Areas/Pharmacy/Views/web.config">
+      <publishTime>03/02/2020 12:07:15</publishTime>
+    </File>
+    <File Include="Areas/User/Views/Shared/_Layout.cshtml">
+      <publishTime>03/21/2020 02:40:23</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/Appointment.cshtml">
+      <publishTime>03/22/2020 23:49:39</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/ChangePassword.cshtml">
+      <publishTime>03/21/2020 02:50:17</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/Dashboard.cshtml">
+      <publishTime>03/18/2020 22:26:59</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/DonorRequest.cshtml">
+      <publishTime>03/18/2020 22:56:19</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/GatewayResponse.cshtml">
+      <publishTime>03/21/2020 01:18:33</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/MyBloodReq.cshtml">
+      <publishTime>03/21/2020 02:33:58</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/MyFavDoctor.cshtml">
+      <publishTime>03/22/2020 23:57:25</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/MyOrders.cshtml">
+      <publishTime>03/18/2020 22:52:26</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/MyQuotation.cshtml">
+      <publishTime>03/18/2020 22:54:22</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/MyWallet.cshtml">
+      <publishTime>03/21/2020 01:12:20</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/PaymentPage.cshtml">
+      <publishTime>03/21/2020 01:15:55</publishTime>
+    </File>
+    <File Include="Areas/User/Views/User/Userprofile.cshtml">
+      <publishTime>03/23/2020 01:21:43</publishTime>
+    </File>
+    <File Include="Areas/User/Views/web.config">
+      <publishTime>03/25/2020 16:32:47</publishTime>
+    </File>
+    <File Include="assets/css/blog.css">
+      <publishTime>02/11/2020 11:58:20</publishTime>
+    </File>
+    <File Include="assets/css/custom.css">
+      <publishTime>02/10/2020 16:37:00</publishTime>
+    </File>
+    <File Include="assets/css/error.min.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/css/layers.css">
+      <publishTime>02/10/2020 16:30:22</publishTime>
+    </File>
+    <File Include="assets/css/pages-style.css">
+      <publishTime>02/10/2020 16:27:44</publishTime>
+    </File>
+    <File Include="assets/css/style.css">
+      <publishTime>03/15/2020 16:07:49</publishTime>
+    </File>
+    <File Include="assets/images/Blog-Banner 324.jpg">
+      <publishTime>02/11/2020 18:10:28</publishTime>
+    </File>
+    <File Include="assets/images/Blog-Banner.jpg">
+      <publishTime>02/10/2020 17:18:32</publishTime>
+    </File>
+    <File Include="assets/images/close2b0d.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/images/clutch_new.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/images/contect-us-3.png">
+      <publishTime>02/10/2020 16:59:40</publishTime>
+    </File>
+    <File Include="assets/images/contect-us.jpg">
+      <publishTime>02/10/2020 16:59:40</publishTime>
+    </File>
+    <File Include="assets/images/corona1.png">
+      <publishTime>03/25/2020 19:19:55</publishTime>
+    </File>
+    <File Include="assets/images/corona2.png">
+      <publishTime>03/25/2020 19:21:55</publishTime>
+    </File>
+    <File Include="assets/images/corona3.png">
+      <publishTime>03/25/2020 19:25:18</publishTime>
+    </File>
+    <File Include="assets/images/corona4.png">
+      <publishTime>03/25/2020 19:26:03</publishTime>
+    </File>
+    <File Include="assets/images/corona5.png">
+      <publishTime>03/25/2020 19:26:35</publishTime>
+    </File>
+    <File Include="assets/images/divami_logo2b0d.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/images/divami_logo_symbol2b0d.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/images/favicon.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/images/four-2nd648a.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/images/hamburger2b0d.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/images/infographic404648a.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/images/left404648a.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/vendors/aos2b0d.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="assets/vendors/slick2b0d.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/MedzoidSite.dll">
+      <publishTime>03/30/2020 03:12:02</publishTime>
+    </File>
+    <File Include="bin/MedzoidSite.pdb">
+      <publishTime>03/30/2020 03:12:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 01:06:16</publishTime>
+    </File>
+    <File Include="bin/Razorpay.dll">
+      <publishTime>11/09/2018 11:43:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/28/2018 12:59:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 13:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="blog/index.html">
+      <publishTime>02/10/2020 15:40:43</publishTime>
+    </File>
+    <File Include="Content/css/ajax-loader.gif">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/css/animate.min.css">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>03/15/2020 17:22:44</publishTime>
+    </File>
+    <File Include="Content/css/fonts/slick.eot">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/css/fonts/slick.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/css/fonts/slick.ttf">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/css/fonts/slick.woff">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/css/fonts/slickd41d.eot">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/css/fonts/slickd41dd41d.eot">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/css/home.min.css">
+      <publishTime>02/13/2020 16:34:32</publishTime>
+    </File>
+    <File Include="Content/fonts/CalibreLight.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/CalibreLight.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/CalibreMedium.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/CalibreMedium.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/CalibreRegular.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/CalibreRegular.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/EqualSans.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/EqualSans.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/FjallaOneRegular.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/FjallaOneRegular.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular-2.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular-3.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular-4.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular-5.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regulard41d.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/Lato-Bold.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/Lato-Bold.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/Lato-BoldItalic.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/Lato-Italic.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/Lato-Regular.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/NotoSerif-Bold.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/samsungsharpsans-bold.otf">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/samsungsharpsans-medium.otf">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/fonts/samsungsharpsans.otf">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/checkbox-1.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/checkbox-2.html">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/close2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/clutch_new.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/favicon.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/hamburger2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/awards-divami_logo2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/banner-bg2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/banner-mobile-bg2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/colon2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/commerce-card-icon2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/consumer-card-icon2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/design-excellence-award-for-best-mobile-application-divami-by-cii2b0d.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/digital-card-icon2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/enterprice-card-icon2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/interaction-design-award-divami-by-cii2b0d.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/mouse2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/rectangle-gradient.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/sass-card-icon2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/star2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/home/top-b2b-creative-and-design-company2b0d.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/logo-arrow-gray2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/open-menu-01.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/images/stroke-arrow-right2b0d.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/10.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/111.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/112.jpg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/12.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/123.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/144.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/2.png">
+      <publishTime>02/12/2020 18:01:34</publishTime>
+    </File>
+    <File Include="Content/img/2Old.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/3.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/3.zip">
+      <publishTime>02/10/2020 15:40:29</publishTime>
+    </File>
+    <File Include="Content/img/4.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/5.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/6.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/7.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/8.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/9.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/ab1.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/ab2.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/ab3.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/Allopathic.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/Allopatick.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/android.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/app-url-.png">
+      <publishTime>02/14/2020 12:00:28</publishTime>
+    </File>
+    <File Include="Content/img/Ayorvedic.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/Ayorvedic.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/background.svg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/bank.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/banner.jpg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/banner.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/banner2.jpg">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/banner2.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/banner3.jpg">
+      <publishTime>03/17/2020 16:37:10</publishTime>
+    </File>
+    <File Include="Content/img/banner3.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/bannerold.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/bg5.png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/blood bank .png">
+      <publishTime>02/10/2020 15:40:28</publishTime>
+    </File>
+    <File Include="Content/img/blood donner.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/blood.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/brand.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/comment 1.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/demo.jpg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Department.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Department.psd">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Department.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Disease.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Disease.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Drugs.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Drugs.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/facebook-m.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/favicon.ico.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Homopathic.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Homopathic.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/instagram-m.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/ios.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/linked-m.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/logo 2nd .svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/logo.png">
+      <publishTime>02/12/2020 18:03:46</publishTime>
+    </File>
+    <File Include="Content/img/logo.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/m.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/m.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/map.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/mapaddres.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/maphome.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/mobile icon .png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/moblie phone .png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/order.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/OurTeam/animesh1.jpg">
+      <publishTime>02/13/2020 15:04:14</publishTime>
+    </File>
+    <File Include="Content/img/OurTeam/honey1.jpg">
+      <publishTime>02/13/2020 15:04:14</publishTime>
+    </File>
+    <File Include="Content/img/OurTeam/nancy1.jpg">
+      <publishTime>02/13/2020 15:04:14</publishTime>
+    </File>
+    <File Include="Content/img/OurTeam/shahroz1.jpg">
+      <publishTime>02/13/2020 15:04:14</publishTime>
+    </File>
+    <File Include="Content/img/OurTeam/sunil1.jpg">
+      <publishTime>02/13/2020 15:04:14</publishTime>
+    </File>
+    <File Include="Content/img/Procedure.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Procedure.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/screenshot.png">
+      <publishTime>02/20/2020 13:40:02</publishTime>
+    </File>
+    <File Include="Content/img/search.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/socile mediya.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Symptom.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/Symptom.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/ui-dersign.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/unani.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/unani.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/upper logo .svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/VectorSmartObject1.svg">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/img/youtube.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/js/wow.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/.gitattributes">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/.gitignore">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/.travis.yml">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/bower.json">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/CONTRIBUTING.md">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/assets/ajax-loader.gif">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/assets/owl.video.play.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/LICENSE">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/owl.carousel.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/owl.carousel.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/dist/README.md">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/css/animate.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/css/docs.theme.min.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/bird_blue_32.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/download.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/feature-drag.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/feature-modern.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/feature-module.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/feature-options.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/feature-responsive.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/feature-zombie.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/owl-logo.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/img/twitter_25.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/js/app.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/js/foundation.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/ajax-loader.gif">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.min.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.video.play.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/owlcarousel/README.md">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/vendors/foundation.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.map">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.mousewheel.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/animate.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/autoheight.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/autoplay.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/autowidth.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/basic.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/center.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/demos.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/events.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/lazyLoad.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/merge.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/mousewheel.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/responsive.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/rtl.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/stagepadding.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/test.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/urlhashnav.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/demos/video.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/api-classes.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/api-events.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/api-options.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/dev-buildin-plugins.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/dev-external.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/dev-plugin-api.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/dev-styles.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/started-faq.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/started-installation.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/started-welcome.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/support-changelog.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/support-contact.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/docs/support-contributing.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs/index.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/css/animate.css">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/bird_blue_32.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/download.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/feature-drag.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/feature-modern.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/feature-module.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/feature-options.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/feature-responsive.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/feature-zombie.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/owl-logo.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/img/twitter_25.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/js/app.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/js/foundation.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/scss/custom.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/scss/demos.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/scss/docs.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/scss/docs.theme.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/scss/highlight.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/vendors/foundation.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/vendors/highlight.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.map">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.mousewheel.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/data/classes.json">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/data/events.json">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/data/features.json">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/data/options.json">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/helpers/modulo.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/helpers/test.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/layouts/demos.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/layouts/docs.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/layouts/home.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/animate.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autoheight.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autoplay.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autowidth.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/basic.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/center.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/demos.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/events.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/lazyLoad.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/merge.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/mousewheel.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/responsive.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/rtl.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/stagepadding.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/test.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/urlhashnav.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/video.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-classes.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-events.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-options.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-buildin-plugins.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-external.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-plugin-api.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-styles.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-faq.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-installation.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-welcome.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-changelog.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-contact.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-contributing.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/pages/index.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/footer.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/head.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/header.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/home-carousel.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/home-features.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/home-hero.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/home-teaser-text.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/javascripts.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/releated-docs.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/sidenav-docs.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/title.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/docs_src/templates/partials/vendors.hbs">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/Gruntfile.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/ISSUE_TEMPLATE.md">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/LICENSE">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/package-lock.json">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/package.json">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/README.md">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/ROADMAP.md">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/img/ajax-loader.gif">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/img/owl.video.play.png">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/.jscsrc">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/.jshintrc">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.animate.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.autoheight.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.autoplay.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.autorefresh.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.carousel.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.hash.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.lazyload.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.navigation.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.support.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.support.modernizr.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/js/owl.video.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/owl.carousel.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/owl.theme.green.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/_animate.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/_autoheight.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/_core.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/_lazyload.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/_theme.default.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/_theme.green.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/_theme.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/src/scss/_video.scss">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/test/index.html">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/test/unit/autoplay.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/test/unit/core.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/OwlCarousel2-2.3.4/_config.json">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/sceen_2.mp4">
+      <publishTime>02/14/2020 13:33:16</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/14/2020 13:05:58</publishTime>
+    </File>
+    <File Include="Content/themes/banner.jpg">
+      <publishTime>01/29/2020 13:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/medzoid.png">
+      <publishTime>01/29/2020 13:34:14</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/app/custom/pages/faq/faq-1.html">
+      <publishTime>01/24/2020 11:36:42</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/app/custom/pages/faq/faq-1.rtl.html.tmp">
+      <publishTime>01/24/2020 11:36:42</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/error/error-1.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/error/error-2.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/error/error-3.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/error/error-4.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/error/error-5.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/error/error-6.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/inbox/inbox.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/inbox/inbox.rtl.css.tmp">
+      <publishTime>01/24/2020 11:33:04</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/invoices/invoice-1.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/invoices/invoice-1.rtl.css.tmp">
+      <publishTime>01/24/2020 11:36:02</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/invoices/invoice-2.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/invoices/invoice-2.rtl.css.tmp">
+      <publishTime>01/24/2020 11:36:22</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/login/login-1.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/login/login-2.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/login/login-3.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/login/login-4.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/login/login-5.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/login/login-6.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/pricing/pricing-1.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/pricing/pricing-1.rtl.css.tmp">
+      <publishTime>01/24/2020 11:34:42</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/pricing/pricing-2.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/pricing/pricing-2.rtl.css.tmp">
+      <publishTime>01/24/2020 11:35:02</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/pricing/pricing-3.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/pricing/pricing-3.rtl.css.tmp">
+      <publishTime>01/24/2020 11:35:22</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/pricing/pricing-4.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/pricing/pricing-4.rtl.css.tmp">
+      <publishTime>01/24/2020 11:35:42</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/faq-1.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/faq-1.rtl.css.tmp">
+      <publishTime>01/24/2020 11:30:25</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/faq-2.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/faq-2.rtl.css.tmp">
+      <publishTime>01/24/2020 11:30:45</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/faq-3.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/faq-3.rtl.css.tmp">
+      <publishTime>01/24/2020 11:31:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/feedback.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/feedback.rtl.css.tmp">
+      <publishTime>01/24/2020 11:31:25</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/home-1.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/home-1.rtl.css.tmp">
+      <publishTime>01/24/2020 11:29:45</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/home-2.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/home-2.rtl.css.tmp">
+      <publishTime>01/24/2020 11:30:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/license.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/support-center/license.rtl.css.tmp">
+      <publishTime>01/24/2020 11:31:45</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/todo/todo.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/todo/todo.rtl.css.tmp">
+      <publishTime>01/24/2020 11:32:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/wizard/wizard-1.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/wizard/wizard-1.rtl.css.tmp">
+      <publishTime>01/24/2020 11:25:34</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/wizard/wizard-2.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/wizard/wizard-2.rtl.css.tmp">
+      <publishTime>01/24/2020 11:33:43</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/wizard/wizard-3.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/wizard/wizard-3.rtl.css.tmp">
+      <publishTime>01/24/2020 11:34:02</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/wizard/wizard-4.css">
+      <publishTime>02/27/2020 11:07:33</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/pages/wizard/wizard-4.rtl.css.tmp">
+      <publishTime>01/24/2020 11:21:21</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/aside/dark.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/aside/dark.rtl.css.tmp">
+      <publishTime>01/24/2020 11:19:20</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/aside/light.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/aside/light.rtl.css.tmp">
+      <publishTime>01/24/2020 11:37:04</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/brand/dark.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/brand/dark.rtl.css.tmp">
+      <publishTime>01/24/2020 11:19:12</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/brand/light.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/brand/light.rtl.css.tmp">
+      <publishTime>01/24/2020 11:37:02</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/base/dark.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/base/dark.rtl.css.tmp">
+      <publishTime>01/24/2020 11:37:24</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/base/light.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/base/light.rtl.css.tmp">
+      <publishTime>01/24/2020 11:19:03</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/menu/dark.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/menu/dark.rtl.css.tmp">
+      <publishTime>01/24/2020 11:37:25</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/menu/light.css">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/menu/light.rtl.css.tmp">
+      <publishTime>01/24/2020 11:19:09</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/style.bundle.css">
+      <publishTime>02/27/2020 12:26:49</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/css/style.bundle.rtl.css.tmp">
+      <publishTime>01/24/2020 11:19:34</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/builder.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/calendar/background-events.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/calendar/basic.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/calendar/external-events.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/calendar/google.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/calendar/list-view.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/charts/amcharts/charts.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/charts/amcharts/maps.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/charts/amcharts/stock-charts.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/charts/flotcharts.js">
+      <publishTime>02/05/2020 16:20:17</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/charts/google-charts.js">
+      <publishTime>02/05/2020 16:42:41</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/charts/morris-charts.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/extended/blockui.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/extended/bootstrap-notify.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/extended/dual-listbox.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/extended/kanban-board.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/extended/sticky-panels.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/extended/sweetalert2.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/extended/toastr.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/extended/treeview.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/maps/google-maps.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/maps/jqvmap.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/portlets/draggable.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/portlets/tools.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/utils/idle-timer.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/components/utils/session-timeout.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/advanced/column-rendering.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/advanced/column-visibility.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/advanced/footer-callback.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/advanced/multiple-controls.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/advanced/row-callback.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/advanced/row-grouping.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/basic/basic.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/basic/headers.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/basic/paginations.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/basic/scrollable.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/data-sources/ajax-client-side.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/data-sources/ajax-server-side.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/data-sources/html.js">
+      <publishTime>01/25/2020 11:31:00</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/data-sources/javascript.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/extensions/buttons.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/extensions/colreorder.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/extensions/keytable.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/extensions/responsive.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/extensions/rowgroup.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/extensions/rowreorder.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/extensions/scroller.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/extensions/select.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/search-options/advanced-search.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/datatables/search-options/column-search.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/file-upload/dropzonejs.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/file-upload/ktavatar.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/file-upload/uppy.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/bootstrap-markdown.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/ckeditor-balloon-block.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/ckeditor-balloon.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/ckeditor-classic.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/ckeditor-document.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/ckeditor-inline.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/quill.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/summernote.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/editors/tinymce.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/validation/form-controls.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/validation/form-widgets.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/autosize.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-datepicker.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-daterangepicker.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-datetimepicker.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-maxlength.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-multipleselectsplitter.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-select.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-switch.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-timepicker.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-touchspin.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/clipboard.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/form-repeater.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/input-mask.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/ion-range-slider.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/nouislider.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/select2.js">
+      <publishTime>03/05/2020 14:38:52</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/tagify.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/forms/widgets/typeahead.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/advanced/column-rendering.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/advanced/column-width.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/advanced/horizontal.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/advanced/modal.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/advanced/record-selection.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/advanced/row-details.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/advanced/vertical.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/api/events.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/api/methods.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/base/data-ajax.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/base/data-json.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/base/data-local.js">
+      <publishTime>02/27/2020 11:29:44</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/base/html-table.js">
+      <publishTime>02/27/2020 11:51:40</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/base/local-sort.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/base/translation.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/child/data-ajax.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/crud/metronic-datatable/child/data-local.js">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/chat/chat.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/contacts/add-contact.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/contacts/edit-contact.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/contacts/list-columns.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/contacts/list-datatable.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/inbox/inbox.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/login/login-1.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/login/login-general.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/projects/add-project.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/projects/list-datatable.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/todo/todo.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/user/add-user.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/user/edit-user.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/user/list-datatable.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/user/profile.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/wizard/wizard-1.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/wizard/wizard-2.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/wizard/wizard-3.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/wizard/wizard-4.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/pages/dashboard.js">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/js/scripts.bundle.js">
+      <publishTime>01/01/2020 22:54:03</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-1.jpg">
+      <publishTime>12/17/2019 10:12:06</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-2.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-3.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-4.jpg">
+      <publishTime>01/24/2020 16:59:42</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-41.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-42.jpg">
+      <publishTime>01/24/2020 16:17:42</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-6.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-8.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/bg/bg-9.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/blog/blog1.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/blog/blog2.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/blog/blog3.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/blog/blog4.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/blog/blog5.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/client-logos/logo1.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/client-logos/logo2.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/client-logos/logo3.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/client-logos/logo4.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/client-logos/logo5.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/company-logos/logo-2.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/company-logos/logo_client_color.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/company-logos/logo_client_white.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo1.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo10.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo11.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo12.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo13.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo14.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo15.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo16.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo17.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo18.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo19.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo2.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo20.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo21.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo22.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo3.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo4.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo5.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo6.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo7.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo8.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/demos/preview/demo9.jpg">
+      <publishTime>12/29/2019 08:06:05</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/error/bg1.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/error/bg2.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/error/bg3.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/error/bg4.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/error/bg5.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/error/bg6.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/logos/logo-4.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/logos/logo-5.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/logos/logo-dark.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/logos/logo-light.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/logos/logo-mini-2-md.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/misc/bg-1.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/misc/bg-2.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product10.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product11.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product13.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product15.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product16.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product22.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product25.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product27.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product4.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product6.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/products/product9.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/project-logos/1.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/project-logos/2.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/project-logos/3.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/project-logos/4.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/project-logos/5.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/project-logos/6.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/project-logos/7.png">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_1.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_10.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_11.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_12.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_13.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_14.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_2.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_3.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_4.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_5.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_6.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_7.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_8.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/100_9.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_1.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_10.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_11.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_12.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_13.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_16.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_17.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_18.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_19.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_2.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_20.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_21.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_22.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_24.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_25.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_3.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_4.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_5.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_6.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_7.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_8.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/300_9.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/user1.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/user4.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/media/users/user5.jpg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/ckeditor/ckeditor-balloon-block.bundle.js">
+      <publishTime>10/25/2019 20:13:17</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/ckeditor/ckeditor-balloon.bundle.js">
+      <publishTime>10/25/2019 20:13:17</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/ckeditor/ckeditor-classic.bundle.js">
+      <publishTime>10/25/2019 20:13:17</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/ckeditor/ckeditor-document.bundle.js">
+      <publishTime>10/25/2019 20:13:19</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/ckeditor/ckeditor-inline.bundle.js">
+      <publishTime>10/25/2019 20:13:19</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/datatables/datatables.bundle.css">
+      <publishTime>10/25/2019 20:13:24</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/datatables/datatables.bundle.js">
+      <publishTime>12/23/2019 06:51:28</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/datatables/datatables.bundle.rtl.css.tmp">
+      <publishTime>01/24/2020 12:02:02</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/flot/flot.bundle.js">
+      <publishTime>10/25/2019 20:13:24</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css">
+      <publishTime>10/25/2019 20:13:19</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js">
+      <publishTime>10/25/2019 20:13:19</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle.rtl.css.tmp">
+      <publishTime>01/24/2020 11:18:39</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/gmaps/gmaps.js">
+      <publishTime>10/25/2019 20:13:24</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/jquery-ui/jquery-ui.bundle.css.tmp">
+      <publishTime>01/24/2020 11:17:28</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/jquery-ui/jquery-ui.bundle.js">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/jqvmap/jqvmap.bundle.css.tmp">
+      <publishTime>01/24/2020 11:18:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/jqvmap/jqvmap.bundle.js">
+      <publishTime>10/25/2019 20:13:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/jstree/jstree.bundle.css.tmp">
+      <publishTime>01/24/2020 11:16:40</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/jstree/jstree.bundle.js">
+      <publishTime>10/25/2019 20:13:27</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/kanban/kanban.bundle.css.tmp">
+      <publishTime>01/24/2020 11:16:31</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/kanban/kanban.bundle.js">
+      <publishTime>10/25/2019 20:13:25</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/tinymce/tinymce.bundle.js">
+      <publishTime>12/23/2019 06:51:31</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/uppy/uppy.bundle.css.tmp">
+      <publishTime>01/24/2020 11:15:50</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/custom/uppy/uppy.bundle.js">
+      <publishTime>12/23/2019 06:51:31</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-brands-400.eot">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-brands-400.svg">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-brands-400.ttf">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-brands-400.woff">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-brands-400.woff2">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-brands-400d41d.eot">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-regular-400.eot">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-regular-400.svg">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-regular-400.ttf">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-regular-400.woff">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-regular-400.woff2">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-regular-400d41d.eot">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-solid-900.eot">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-solid-900.svg">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-solid-900.ttf">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-solid-900.woff">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-solid-900.woff2">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/%40fortawesome/fa-solid-900d41d.eot">
+      <publishTime>12/23/2019 06:51:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon/Flaticon.eot">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon/Flaticon.svg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon/Flaticon.ttf">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon/Flaticon.woff">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon/Flaticond41d.eot">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon2/Flaticon2.eot">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon2/Flaticon2.svg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon2/Flaticon2.ttf">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon2/Flaticon2.woff">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/flaticon2/Flaticon2d41d.eot">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/line-awesome/line-awesome0176.eot">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/line-awesome/line-awesomeeb4f.eot">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/line-awesome/line-awesomeeb4f.svg">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/line-awesome/line-awesomeeb4f.ttf">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/line-awesome/line-awesomeeb4f.woff">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/line-awesome/line-awesomeeb4f.woff2">
+      <publishTime>12/17/2019 10:12:07</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/summernote/summernote64fe.eot">
+      <publishTime>10/25/2019 20:13:33</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/summernote/summernote64fe.ttf">
+      <publishTime>10/25/2019 20:13:33</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/fonts/summernote/summernote64fe.woff">
+      <publishTime>10/25/2019 20:13:33</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/images/owl.carousel/owl.video.play.png">
+      <publishTime>10/25/2019 20:13:28</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/plugins.bundle.css">
+      <publishTime>12/23/2019 06:51:28</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/plugins.bundle.js">
+      <publishTime>02/08/2020 17:57:26</publishTime>
+    </File>
+    <File Include="Content/themes/metronic/theme/default/demo1/dist/assets/plugins/global/plugins.bundle.rtl.css.tmp">
+      <publishTime>01/24/2020 11:19:01</publishTime>
+    </File>
+    <File Include="Content/vendors/aos2b0d.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/vendors/homepage-common2b0d.js">
+      <publishTime>02/10/2020 17:25:06</publishTime>
+    </File>
+    <File Include="Content/vendors/jquery-3.4.1.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/vendors/slick2b0d.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="Content/vendors/wow.min.js">
+      <publishTime>02/10/2020 15:40:30</publishTime>
+    </File>
+    <File Include="css/.DS_Store">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/ajax-loader.gif">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/blog.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/chosen.min.css">
+      <publishTime>03/21/2020 19:19:49</publishTime>
+    </File>
+    <File Include="css/custom.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/datedropper.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/datedropper.min.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/date_picker.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/.DS_Store">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/css/.DS_Store">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/css/all_icons.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/css/all_icons_min.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/css/fontello-codes.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/css/icon_set_1.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/css/icon_set_2.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/css/icon_set_3.css">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/demo_icon_set_1.html">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/demo_icon_set_2.html">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/demo_icon_set_3.html">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/.DS_Store">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/ElegantIcons.eot">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/ElegantIcons.svg">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/ElegantIcons.ttf">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/ElegantIcons.woff">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/fontello.eot">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/fontello.svg">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/fontello.ttf">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/fontello.woff">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/icon_set_1.eot">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/icon_set_1.svg">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/icon_set_1.ttf">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/icon_set_1.woff">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/Pe-icon-7-stroke.eot">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/Pe-icon-7-stroke.svg">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/Pe-icon-7-stroke.ttf">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/icon_fonts/font/Pe-icon-7-stroke.woff">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/jquery.mmenu.all.css">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/menu.css">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/owl.video.play.png">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/src/datedropper.eot">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/src/datedropper.svg">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/src/datedropper.ttf">
+      <publishTime>02/20/2020 11:51:36</publishTime>
+    </File>
+    <File Include="css/src/datedropper.woff">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>03/15/2020 16:13:58</publishTime>
+    </File>
+    <File Include="css/tables.css">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="css/timedropper.css">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="css/timedropper.min.css">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="css/vendors.css">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="css/vendors.uncompressed.css">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>03/15/2020 14:50:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/10/2020 12:23:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/10/2020 12:23:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/10/2020 12:23:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/10/2020 12:23:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/10/2020 12:23:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/10/2020 12:23:28</publishTime>
+    </File>
+    <File Include="How MEDZOID Search Works.docx">
+      <publishTime>03/24/2020 02:27:22</publishTime>
+    </File>
+    <File Include="How Reviews Work on Medzoid.docx">
+      <publishTime>03/24/2020 02:27:22</publishTime>
+    </File>
+    <File Include="img/.DS_Store">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/apple-touch-icon-114x114-precomposed.png">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/apple-touch-icon-144x144-precomposed.png">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/apple-touch-icon-57x57-precomposed.png">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/apple-touch-icon-72x72-precomposed.png">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/apple_app.png">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/apple_app_2x.png">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/app_img.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/arrow-gray-1.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/arrow_down.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/arrow_down_menu.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/arrow_left.png">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/arrow_right.png">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/badges/.DS_Store">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/badges/badge_1.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/badges/badge_2.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/badges/badge_3.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/badges/badge_4.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/badges/badge_5.svg">
+      <publishTime>02/20/2020 11:51:38</publishTime>
+    </File>
+    <File Include="img/badges/badge_6.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/bg_2.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/bg_menu.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/camera.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/checkbox.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/checkbox.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/close_infobox.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/covid19/COVID19.png">
+      <publishTime>03/22/2020 15:59:11</publishTime>
+    </File>
+    <File Include="img/covid19/COVID19_1600x900_0.jpg">
+      <publishTime>03/22/2020 15:59:11</publishTime>
+    </File>
+    <File Include="img/covid19/elbow.jpg">
+      <publishTime>03/22/2020 15:59:11</publishTime>
+    </File>
+    <File Include="img/covid19/face-touching.jpg">
+      <publishTime>03/22/2020 15:59:11</publishTime>
+    </File>
+    <File Include="img/covid19/keepdistance.jpg">
+      <publishTime>03/22/2020 15:59:11</publishTime>
+    </File>
+    <File Include="img/covid19/logo.png">
+      <publishTime>03/22/2020 16:01:17</publishTime>
+    </File>
+    <File Include="img/covid19/sick.jpg">
+      <publishTime>03/22/2020 15:59:11</publishTime>
+    </File>
+    <File Include="img/covid19/Symptoms_of_coronavirus_disease_2019_2.0.svg">
+      <publishTime>03/22/2020 15:59:11</publishTime>
+    </File>
+    <File Include="img/doc.jpg">
+      <publishTime>03/07/2020 12:37:15</publishTime>
+    </File>
+    <File Include="img/doctors_icon.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/doctor_listing_1.jpg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/favicon.ico">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/google_play_app.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/google_play_app_2x.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/hero_bg_1.svg">
+      <publishTime>03/17/2020 13:42:16</publishTime>
+    </File>
+    <File Include="img/hero_home_bg_1.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon-home-1.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon-home-2.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon-home-3.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_cat_1.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_cat_2.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_cat_3.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_cat_4.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_cat_5.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_cat_6.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_cat_7.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_cat_8.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/icon_ccv.gif">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/logo_2x.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/logo_no_name.svg">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/map-marker-contacts.png">
+      <publishTime>02/20/2020 11:51:40</publishTime>
+    </File>
+    <File Include="img/map-marker.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/patient_icon.svg">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/payments.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/payments_2x.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/paypal_bt.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/pins/.DS_Store">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/pins/Doctors.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/search.svg">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/select-icons.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/shadow_pic.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/small-arrow.svg">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/stars.svg">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/subheader_bg_1.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="img/video_fix.png">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="js/.DS_Store">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="js/bootstrap-datepicker.js">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>02/20/2020 11:51:42</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/common_scripts.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/common_scripts.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/datedropper.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/datedropper.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/functions.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/hideShowPassword.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/hideShowPassword.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/infobox.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/jquery-2.2.4.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/jquery.cookiebar.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/jquery.mmenu.all.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/jquery.mmenu.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/jquery.selectbox-0.2.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/mapmarker.jquery.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/mapmarker_contacts_func.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/mapmarker_func.jquery.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/map_home.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/map_listing.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/markerclusterer.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/modernizr.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/modernizr_tables.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/owl.carousel.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/owl.carousel.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/pw_strenght.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/ResizeSensor.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/ResizeSensor.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/retina-replace.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/retina-replace.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/sticky-kit-1.4.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/sticky-kit-1.4.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/sticky-kit.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/sticky-kit.min.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/tables_func.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/tables_func_2.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/tabs.js">
+      <publishTime>02/20/2020 11:51:44</publishTime>
+    </File>
+    <File Include="js/theia-sticky-sidebar.js">
+      <publishTime>02/20/2020 11:51:46</publishTime>
+    </File>
+    <File Include="js/timedropper.js">
+      <publishTime>02/20/2020 11:51:46</publishTime>
+    </File>
+    <File Include="js/timedropper.min.js">
+      <publishTime>02/20/2020 11:51:46</publishTime>
+    </File>
+    <File Include="js/video_header.js">
+      <publishTime>02/20/2020 11:51:46</publishTime>
+    </File>
+    <File Include="js/wow.js">
+      <publishTime>02/20/2020 11:51:46</publishTime>
+    </File>
+    <File Include="js/wow.min.js">
+      <publishTime>02/20/2020 11:51:46</publishTime>
+    </File>
+    <File Include="Models/Medzoid.edmx.diagram">
+      <publishTime>03/26/2020 22:52:24</publishTime>
+    </File>
+    <File Include="rev-slider-files/.DS_Store">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/assets/.DS_Store">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/assets/100x50_364e0-37885311_ml.jpg">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/assets/100x50_4e36b-42512211_ml.jpg">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/assets/100x50_b9dee-42512210_ml.jpg">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/assets/364e0-37885311_ml.jpg">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/assets/4e36b-42512211_ml.jpg">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/assets/b9dee-42512210_ml.jpg">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/assets/loader.gif">
+      <publishTime>02/20/2020 11:51:30</publishTime>
+    </File>
+    <File Include="rev-slider-files/css/settings.css">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/font-awesome/css/font-awesome.css">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/font-awesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/font-awesome/fonts/FontAwesome.otf">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/pe-icon-7-stroke/css/helper.css">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/revicons/revicons.eot">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/revicons/revicons.svg">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/revicons/revicons.ttf">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/fonts/revicons/revicons.woff">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.actions.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.carousel.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.kenburn.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.layeranimation.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.migration.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.navigation.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.parallax.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.slideanims.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/extensions/revolution.extension.video.min.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/jquery.revslider-doctor_slider_1.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/jquery.revslider.embed.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/jquery.themepunch.enablelog.js">
+      <publishTime>02/20/2020 11:51:32</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/jquery.themepunch.revolution.min.js">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="rev-slider-files/js/jquery.themepunch.tools.min.js">
+      <publishTime>02/20/2020 11:51:34</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>02/10/2020 12:23:34</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>02/10/2020 12:23:34</publishTime>
+    </File>
+    <File Include="Scripts/chosen.jquery.min.js">
+      <publishTime>03/25/2020 16:33:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.js">
+      <publishTime>02/10/2020 12:23:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>02/10/2020 12:23:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.map">
+      <publishTime>02/10/2020 12:23:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.js">
+      <publishTime>02/10/2020 12:23:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.js">
+      <publishTime>02/10/2020 12:23:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.map">
+      <publishTime>02/10/2020 12:23:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>02/10/2020 12:23:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>02/10/2020 12:23:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>02/10/2020 12:23:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>02/10/2020 12:23:42</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>02/10/2020 12:23:40</publishTime>
+    </File>
+    <File Include="Scripts/PageScripts/code.min.js">
+      <publishTime>03/18/2020 16:24:45</publishTime>
+    </File>
+    <File Include="Scripts/PageScripts/Layout.js">
+      <publishTime>03/02/2020 12:28:40</publishTime>
+    </File>
+    <File Include="Scripts/PageScripts/MyPractise.js">
+      <publishTime>03/02/2020 12:22:43</publishTime>
+    </File>
+    <File Include="Scripts/PieChart.js">
+      <publishTime>03/26/2020 00:00:50</publishTime>
+    </File>
+    <File Include="Views/Admin/ClinicDetails.cshtml">
+      <publishTime>02/29/2020 12:17:42</publishTime>
+    </File>
+    <File Include="Views/Admin/Dashboard.cshtml">
+      <publishTime>02/28/2020 12:29:12</publishTime>
+    </File>
+    <File Include="Views/Admin/unclaimeddoctor.cshtml">
+      <publishTime>02/29/2020 12:00:43</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>03/25/2020 16:30:33</publishTime>
+    </File>
+    <File Include="Views/Home/Allopathic.cshtml">
+      <publishTime>03/22/2020 15:24:39</publishTime>
+    </File>
+    <File Include="Views/Home/AreyouQualifiedDoctor.cshtml">
+      <publishTime>03/05/2020 11:52:16</publishTime>
+    </File>
+    <File Include="Views/Home/Ayurvedic.cshtml">
+      <publishTime>03/22/2020 15:29:39</publishTime>
+    </File>
+    <File Include="Views/Home/Blog.cshtml">
+      <publishTime>03/23/2020 18:20:44</publishTime>
+    </File>
+    <File Include="Views/Home/BlogPost.cshtml">
+      <publishTime>02/23/2020 13:31:46</publishTime>
+    </File>
+    <File Include="Views/Home/Career.cshtml">
+      <publishTime>03/20/2020 17:30:04</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>03/20/2020 01:01:05</publishTime>
+    </File>
+    <File Include="Views/Home/Corona.cshtml">
+      <publishTime>03/24/2020 00:35:38</publishTime>
+    </File>
+    <File Include="Views/Home/Department.cshtml">
+      <publishTime>03/21/2020 20:14:07</publishTime>
+    </File>
+    <File Include="Views/Home/DiseaseDepartment.cshtml">
+      <publishTime>03/21/2020 20:14:14</publishTime>
+    </File>
+    <File Include="Views/Home/DocDetails.cshtml">
+      <publishTime>03/30/2020 01:23:01</publishTime>
+    </File>
+    <File Include="Views/Home/DoctorList.cshtml">
+      <publishTime>03/30/2020 00:51:19</publishTime>
+    </File>
+    <File Include="Views/Home/Drugs.cshtml">
+      <publishTime>03/22/2020 15:33:37</publishTime>
+    </File>
+    <File Include="Views/Home/ForgotPassword.cshtml">
+      <publishTime>03/28/2020 00:28:34</publishTime>
+    </File>
+    <File Include="Views/Home/HealthEmergency - Copy.cshtml">
+      <publishTime>03/25/2020 16:51:04</publishTime>
+    </File>
+    <File Include="Views/Home/HealthEmergency.cshtml">
+      <publishTime>03/27/2020 21:45:19</publishTime>
+    </File>
+    <File Include="Views/Home/HelpFaq - Copy.cshtml">
+      <publishTime>03/15/2020 22:41:24</publishTime>
+    </File>
+    <File Include="Views/Home/HelpFaq.cshtml">
+      <publishTime>03/27/2020 00:11:56</publishTime>
+    </File>
+    <File Include="Views/Home/HelpFaqOld.cshtml">
+      <publishTime>03/15/2020 22:41:24</publishTime>
+    </File>
+    <File Include="Views/Home/Homeopathic.cshtml">
+      <publishTime>03/22/2020 15:30:53</publishTime>
+    </File>
+    <File Include="Views/Home/HowSearchWorks.cshtml">
+      <publishTime>03/25/2020 16:24:54</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/21/2020 20:22:57</publishTime>
+    </File>
+    <File Include="Views/Home/Login.cshtml">
+      <publishTime>03/23/2020 00:30:28</publishTime>
+    </File>
+    <File Include="Views/Home/Press.cshtml">
+      <publishTime>03/03/2020 10:32:57</publishTime>
+    </File>
+    <File Include="Views/Home/PrivacyPolicy.cshtml">
+      <publishTime>03/05/2020 11:59:51</publishTime>
+    </File>
+    <File Include="Views/Home/Procedure.cshtml">
+      <publishTime>03/21/2020 20:34:57</publishTime>
+    </File>
+    <File Include="Views/Home/RegisterDoctor.cshtml">
+      <publishTime>03/23/2020 16:43:56</publishTime>
+    </File>
+    <File Include="Views/Home/RegisterPharmacy.cshtml">
+      <publishTime>03/22/2020 23:34:37</publishTime>
+    </File>
+    <File Include="Views/Home/Resetpassword.cshtml">
+      <publishTime>03/28/2020 00:46:13</publishTime>
+    </File>
+    <File Include="Views/Home/SearchBloodDonor.cshtml">
+      <publishTime>03/22/2020 23:17:36</publishTime>
+    </File>
+    <File Include="Views/Home/SignUp.cshtml">
+      <publishTime>03/20/2020 17:38:39</publishTime>
+    </File>
+    <File Include="Views/Home/symptoms.cshtml">
+      <publishTime>03/21/2020 19:31:28</publishTime>
+    </File>
+    <File Include="Views/Home/TermsAndConditions.cshtml">
+      <publishTime>03/05/2020 12:07:28</publishTime>
+    </File>
+    <File Include="Views/Home/Unani.cshtml">
+      <publishTime>03/22/2020 15:31:58</publishTime>
+    </File>
+    <File Include="Views/Home/UploadPrescription.cshtml">
+      <publishTime>03/27/2020 02:02:58</publishTime>
+    </File>
+    <File Include="Views/Home/VerifiedReviews.cshtml">
+      <publishTime>03/25/2020 16:27:55</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>02/10/2020 12:23:28</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout - Copy %282%29.cshtml">
+      <publishTime>02/20/2020 12:12:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout - Copy.cshtml">
+      <publishTime>02/10/2020 12:24:44</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout Admin.cshtml">
+      <publishTime>02/28/2020 17:50:34</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/27/2020 02:24:59</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/10/2020 12:23:28</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/10/2020 12:23:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/26/2020 17:23:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

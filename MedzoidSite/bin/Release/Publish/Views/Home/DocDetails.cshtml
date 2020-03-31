@@ -1,0 +1,577 @@
+﻿
+@{
+    ViewBag.Title = "DocDetails";
+}
+@section afterjs{
+
+    <div id="mylocation" class="modal fade" role="dialog" style="    z-index: 9999;">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Search Location</h4> <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div autocomplete="off" id="depat" class="fadeInUp animated">
+                        <div id="custom-search-input" spellcheck="false" style="width: 100%;">
+
+                            <div class="input-group">
+                                <input autocomplete="off" type="text" required="" style="    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);" id="search_latlong" name="search_latlong" class="search-query controls" placeholder="Ex. Home Address city..">
+                                <span style="position:absolute;right:15px;top:15px"><img src="/img/map-marker.png" height="25px"></span>
+                            </div>
+                        </div>  <input class="setbtn" id="locateadd" type="submit" name="locate" value="Set Location" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            function init() {
+                var input = document.getElementById('search_latlong');
+                var autocomplete = new google.maps.places.Autocomplete(input);
+            }
+
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+            var LatLong = getCookie("lat") + "," + getCookie("lng");
+            GetAddress();
+
+            function GetAddress() {
+
+                var latlng = new google.maps.LatLng(getCookie("lat"), getCookie("lng"));
+                var geocoder = geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        if (results[1]) {
+                            $("#location").html("Location: " + results[1].formatted_address);
+
+                        }
+                    }
+                });
+            }
+
+            function Getlatlong(address) {
+                var geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ 'address': address }, function (results, status) {
+
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        var latitude = results[0].geometry.location.lat();
+                        var longitude = results[0].geometry.location.lng();
+
+                        document.cookie = "lat=" + latitude;
+                        document.cookie = "lng=" + longitude;
+                        location.reload();
+                    }
+                });
+            }
+
+
+
+            //var docId = JSON.parse(sessionStorage.getItem("docId"));
+            var docId = getParameterByName('id');
+
+            if (isNaN(docId)) {
+                docId = atob(docId)
+            }
+
+
+            $.ajax({
+                type: 'GET',
+                url: 'https://api.medzoid.com/api/DoctorDetails/' + docId,
+                data: {},
+                headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                dataType: 'json',
+                success: function (data) {
+                    // console.log(data);
+                    var doc = JSON.parse(sessionStorage.getItem("DocList"));
+
+
+                      var rating = (data.Data.Rating / 2);
+                        
+                        var rate = "";
+                        rating = Math.round(rating);
+
+                        if (rating == 0) {
+                            rate = "<i class=\"icon_star \"></i><i class=\"icon_star\"></i><i class=\"icon_star \"></i><i class=\"icon_star \"></i><i class=\"icon_star\"></i>"
+                        }
+                       else if (rating == 1) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star\"></i><i class=\"icon_star \"></i><i class=\"icon_star \"></i><i class=\"icon_star\"></i>"
+                        }
+                       else if (rating == 2) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star \"></i><i class=\"icon_star \"></i><i class=\"icon_star\"></i>"
+                        }
+                        else if (rating == 3) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star \"></i><i class=\"icon_star\"></i>"
+                        }
+                        else if (rating == 4) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star\"></i>"
+                        }
+                        else if (rating == 5) {
+                            rate = "<i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i><i class=\"icon_star voted\"></i>"
+                        }
+
+                    $('#dvrating').append(rate);
+
+                    $('#imgDr').attr('src', 'https://api.medzoid.com/Documents/UserImages/' + docId + ".jpg")
+                    $("#deptName").html(data.Data.deptName);
+                    $("#name").html(data.Data.name);
+                    $("#address").html(data.Data.hospital_affiliation);
+                    $("#about").html(data.Data.AboutUs);
+                    $("#fee").html(data.Data.Fee);
+                    $("#hdDocId").val(docId);
+                    $("#ratingbyCount").html(data.Data.RatingByCount);
+
+
+                    var deptCount = data.Data.deptName.split(',').length;
+                    for (var i = 0; i < deptCount; i++) {
+                        $("#specialization1").append("<li>" + data.Data.deptName.split(',')[i] + "</li>")
+                    }
+
+
+                    for (var i = 0; i < data.Data.qualifications.length; i++) {
+                        $("#qualification").append("<li><strong>" + data.Data.qualifications[i].college + "</strong> - " + data.Data.qualifications[i].name + "</li>");
+                    }
+
+                    for (var i = 0; i < data.Data.DoctorClinics.length; i++) {
+                        if (data.Data.DoctorClinics[i].id == doc.clinicId) {
+                            $("#clinics").append("<tr><td><input type='hidden' id='hdClinicId' value=" + data.Data.DoctorClinics[i].id + ">"
+                                + data.Data.DoctorClinics[i].hospital_name + "</td><td>" + data.Data.DoctorClinics[i].hospital_address + "</td></tr>");
+                            GetTime(docId, doc.clinicId)
+                        }
+                    }
+                }
+            });
+
+            function GetTime(docId, ClinicId) {
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://api.medzoid.com/api/GetTimeSchedule',
+                    data: { docId: docId, clinicId: ClinicId },
+                    headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                    dataType: 'json',
+                    success: function (data) {
+                        for (var j = 0; j < data.Data.length; j++) {
+                            $("#ulSchedule").append("<li><div class='checkbox'><input type='checkbox' class='css-checkbox' id='visit1' name='visit1' value=" + data.Data[j].id + ">" +
+                                "<label for= 'visit1' class= 'css-label' > " + data.Data[j].StartTime + "-" + data.Data[j].EndTime + "</label ></div ></li > ")
+
+                        }
+                    }
+                });
+            }
+
+        });
+
+        function BookNow() {
+            var userString = sessionStorage.getItem('details');
+            var user = JSON.parse(userString);
+
+            if (user == null) {
+                location.href = "/Login?redirectUrl=DocDetails";
+            }
+            else {
+                Validate(user);
+            }
+        };
+
+        function Validate(user) {
+            if ($('#txtPatient').val() == "") {
+                alert('Please enter Patient Name');
+            }
+            else if ($('#txtAge').val() == "") {
+                alert('Please enter Age');
+            }
+            else if (!$('#visit1').is(':checked')) {
+                alert('Please select Time');
+            }
+            else {
+                MakeAppointment(user);
+            }
+        }
+
+        function MakeAppointment(user) {
+
+            $.ajax({
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                dataType: 'json',
+                url: 'https://api.medzoid.com/api/Appointment',
+                data: {
+                    user_id: user.userDetails.Id, doctor_id: $("#hdDocId").val(), clinic_id: $("#hdClinicId").val(), date: $('#booking_date').val(), scheduleId: $("#visit1").val(), PatientName: $("#txtPatient").val(),
+                    PatientAge: $("#txtAge").val(), PatientSex: $("#ddlgender").val(), AppointmentType: "1"
+                },
+                headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+                success: function (data) {
+                    if (data.Status == true) {
+                        alert('Appointment Booked Successfully');
+                        $('#txtPatient').val("");
+                        $('#txtAge').val("");
+                        $("#visit1").prop("checked", false);
+                    }
+                    else if (data.Status == false) {
+                        alert(data.Message);
+                    }
+                },
+                error: function (xhr) {
+                    alert(xhr.responseText)
+                }
+            });
+        }
+
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+    </script>
+}
+<div id="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/index">Home</a></li>
+
+
+        </ul>
+        <ul style="float: right;top: -15px;position: relative;text-align: right;">
+            <li style="max-width:400px"><a href="javascript:void(0)" data-toggle="modal" data-target="#mylocation" id="location">Location</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container margin_60">
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 wow fadeIn">
+            <nav id="secondary_nav">
+                <div class="container">
+                    <ul class="clearfix">
+                        <li><a href="#section_1" class="active">General info</a></li>
+                        @*<li><a href="#section_2">Reviews</a></li>*@
+                        <li><a href="#sidebar">Booking</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="section_1">
+                <div class="box_general_3">
+                    <div class="profile">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-4">
+                                <figure>
+                                    <img src="" alt="" class="img-fluid" id="imgDr" onerror="this.src='https://api.medzoid.com/Documents/UserImages/NoUser.png'">
+                                </figure>
+                            </div>
+                            <div class="col-lg-7 col-md-8">
+
+                                <h1 id="name">DR.</h1>
+                                <span class="rating">
+                                    <span id="dvrating">
+
+                                    </span>
+                                    
+                                    <small id="ratingbyCount"></small>
+                                </span>
+                                <ul class="statistic">
+                                    <li>854 Views</li>
+                                    <li>124 Patients</li>
+                                </ul>
+                                <ul class="contacts">
+                                    <li>
+                                        <h6>Address</h6>
+                                        <p id="address"> 2726 Shinn Street, New York - </p>
+                                        @*<a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"> <strong>View on map</strong></a>*@
+                                        <a href="#" target="_blank"> <strong>View on map</strong></a>
+                                    </li>
+                                    <li>
+                                        @*<h6>Phone</h6> <a href="tel://000434323342">+00043 4323342</a> - <a href="tel://000434323342">+00043 4323342</a>*@
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- /profile -->
+                    <div class="indent_title_in">
+                        <i class="pe-7s-user"></i>
+                        <h3>Professional statement</h3>
+                        <small id="deptName">Primary care - Internist</small>
+                    </div>
+                    <div class="wrapper_indent">
+                        <p id="about">Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Nullam mollis. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapi.</p>
+                        <h6>Specializations</h6>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="bullets" id="specialization1">
+                                    @*<li>Abdominal Radiology</li>
+                                        <li>Addiction Psychiatry</li>
+                                        <li>Adolescent Medicine</li>
+                                        <li>Cardiothoracic Radiology </li>*@
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="bullets" id="specialization2">
+                                    @*<li>Abdominal Radiology</li>
+                                        <li>Addiction Psychiatry</li>
+                                        <li>Adolescent Medicine</li>
+                                        <li>Cardiothoracic Radiology </li>*@
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /row-->
+                    </div>
+                    <!-- /wrapper indent -->
+
+                    <hr>
+
+                    <div class="indent_title_in">
+                        <i class="pe-7s-news-paper"></i>
+                        <h3>Education</h3>
+                        @*<p>Mussum ipsum cacilds, vidis litro abertis.</p>*@
+                    </div>
+                    <div class="wrapper_indent">
+                        @*<p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Nullam mollis. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapi.</p>*@
+                        <h6>Curriculum</h6>
+                        <ul class="list_edu" id="qualification">
+                        </ul>
+                    </div>
+                    <!--  End wrapper indent -->
+
+                    <hr>
+
+                    <div class="indent_title_in">
+                        <i class="pe-7s-cash"></i>
+                        <h3>Clinic Details</h3>
+                        @*<p>Mussum ipsum cacilds, vidis litro abertis.</p>*@
+                    </div>
+                    <div class="wrapper_indent">
+                        @*<p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p>*@
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="width:30%">Hospital Name</th>
+                                        <th>Address</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="clinics">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--  /wrapper_indent -->
+                </div>
+                <!-- /section_1 -->
+            </div>
+            <!-- /box_general -->
+            @*<div id="section_2">
+                    <div class="box_general_3">
+                        <div class="reviews-container">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div id="review_summary">
+                                        <strong>4.7</strong>
+                                        <div class="rating">
+                                            <i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i>
+                                        </div>
+                                        <small>Based on 4 reviews</small>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-9">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-3"><small><strong>5 stars</strong></small></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-10 col-9">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-3"><small><strong>4 stars</strong></small></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-10 col-9">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-3"><small><strong>3 stars</strong></small></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-10 col-9">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-3"><small><strong>2 stars</strong></small></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-10 col-9">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-3"><small><strong>1 stars</strong></small></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <hr>
+
+                            <div class="review-box clearfix">
+                                <figure class="rev-thumb">
+                                    <img src="http://via.placeholder.com/150x150.jpg" alt="">
+                                </figure>
+                                <div class="rev-content">
+                                    <div class="rating">
+                                        <i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i>
+                                    </div>
+                                    <div class="rev-info">
+                                        Admin – April 03, 2016:
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>
+                                            Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="review-box clearfix">
+                                <figure class="rev-thumb">
+                                    <img src="http://via.placeholder.com/150x150.jpg" alt="">
+                                </figure>
+                                <div class="rev-content">
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i>
+                                    </div>
+                                    <div class="rev-info">
+                                        Ahsan – April 01, 2016
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>
+                                            Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="review-box clearfix">
+                                <figure class="rev-thumb">
+                                    <img src="http://via.placeholder.com/150x150.jpg" alt="">
+                                </figure>
+                                <div class="rev-content">
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i>
+                                    </div>
+                                    <div class="rev-info">
+                                        Sara – March 31, 2016
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>
+                                            Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr>
+                        <div class="text-right"><a href="submit-review.html" class="btn_1">Submit review</a></div>
+                    </div>
+                </div>*@
+
+        </div>
+        <!-- /col -->
+        <aside class="col-xl-4 col-lg-4 wow fadeIn" id="sidebar">
+            <div class="box_general_3 booking">
+                <form>
+                    <div class="title">
+                        <h3>Book a Visit</h3>
+                        @*<small>Monday to Friday 09.00am-06.00pm</small>*@
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="hidden" id="hdDocId" />
+                                <input type="text" placeholder="Patient Name" id="txtPatient" class="form-control" />
+                                @*<input class="form-control" type="text" id="booking_date" data-lang="en" data-min-year="2017" data-max-year="2020" data-disabled-days="10/17/2017,11/18/2017">*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="text" placeholder="Age" id="txtAge" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                @*<input type="text" placeholder="Age" id="txtAge" class="form-control" />*@
+                                <select class="form-control" id="ddlgender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+
+                                <input class="form-control" type="text" id="booking_date" data-lang="en" data-min-year="2017" data-max-year="2020" data-disabled-days="10/17/2017,11/18/2017">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /row -->
+                    <ul class="treatments clearfix" id="ulSchedule">
+                    </ul>
+                    <hr>
+                    <a href="#" class="btn_1 full-width" onclick="BookNow()">Book Now</a>
+                </form>
+            </div>
+            <!-- /box_general -->
+        </aside>
+        <!-- /asdide -->
+    </div>
+    <!-- /row -->
+</div>

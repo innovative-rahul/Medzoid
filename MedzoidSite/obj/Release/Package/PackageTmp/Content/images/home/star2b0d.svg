@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="35px" viewBox="0 0 116 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-6" transform="translate(-199.000000, -992.000000)">
+            <g id="Group-2" transform="translate(199.889623, 992.097484)">
+                <g id="Group" transform="translate(41.488836, 0.000000)" fill="#D8D8D8">
+                    <path d="M0,13.1286771 L12.4861139,11.3143386 L18.0700738,5.68434189e-14 L23.140521,10.4767793 C16.3514219,16.512474 14.3553978,22.5218912 18.0700738,28.5 L6.90215402,34.3713229 L9.0350369,21.9356614 L0,13.1286771 Z" id="Path-2"></path>
+                    <path d="M27.4881817,11.935675 L36.1401476,13.1286771 L27.1051107,21.9356614 L28.9259372,33.1086203 C18.4090155,31.028714 16.1138323,20.6313907 27.4881817,11.935675 Z" id="Path-3"></path>
+                </g>
+                <line x1="78.5" y1="31.9257365" x2="113.522327" y2="31.9257365" id="Line" stroke="#D8D8D8" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="0.5" y1="31.9257365" x2="35.522327" y2="31.9257365" id="Line" stroke="#D8D8D8" stroke-width="2" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

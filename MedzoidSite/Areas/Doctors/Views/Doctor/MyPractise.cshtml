@@ -1,0 +1,266 @@
+﻿
+@{
+    ViewBag.Title = "MyPractise";
+    Layout = "~/Areas/Doctors/Views/Shared/_Layout.cshtml";
+}
+
+
+@section afterjs{
+    <script src="~/Scripts/PageScripts/Layout.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="~/Scripts/PageScripts/MyPractise.js"></script>
+}
+
+<!-- begin:: Subheader -->
+<div class="kt-subheader   kt-grid__item" id="kt_subheader">
+    <div class="kt-container  kt-container--fluid ">
+        <div class="kt-subheader__main">
+            <h3 class="kt-subheader__title">
+                My Practise
+            </h3>
+
+            @*<span class="kt-subheader__separator kt-hidden"></span>*@
+            <div class="kt-subheader__breadcrumbs">
+                <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
+                <span class="kt-subheader__breadcrumbs-separator"></span>
+                @*<a href="#" class="kt-subheader__breadcrumbs-link">
+                        Apps
+                    </a>
+                    <span class="kt-subheader__breadcrumbs-separator"></span>
+                    <a href="#" class="kt-subheader__breadcrumbs-link">
+                        Users
+                    </a>
+                    <span class="kt-subheader__breadcrumbs-separator"></span>
+                    <a href="#" class="kt-subheader__breadcrumbs-link">
+                        Profile 3
+                    </a>*@
+                <!-- <span class="kt-subheader__breadcrumbs-link kt-subheader__breadcrumbs-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="kt-subheader__toolbar">
+            <div class="kt-subheader__wrapper">
+                <a href="#" class="btn kt-subheader__btn-primary">
+                    Actions &nbsp;
+                    <!--<i class="flaticon2-calendar-1"></i>-->
+                </a>
+
+                <div class="dropdown dropdown-inline" data-toggle="kt-tooltip" title="Quick actions" data-placement="left">
+                    <a href="#" class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--success kt-svg-icon--md">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <polygon points="0 0 24 0 24 24 0 24" />
+                                <path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                <path d="M11,14 L9,14 C8.44771525,14 8,13.5522847 8,13 C8,12.4477153 8.44771525,12 9,12 L11,12 L11,10 C11,9.44771525 11.4477153,9 12,9 C12.5522847,9 13,9.44771525 13,10 L13,12 L15,12 C15.5522847,12 16,12.4477153 16,13 C16,13.5522847 15.5522847,14 15,14 L13,14 L13,16 C13,16.5522847 12.5522847,17 12,17 C11.4477153,17 11,16.5522847 11,16 L11,14 Z" fill="#000000" />
+                            </g>
+                        </svg>                        <!--<i class="flaticon2-plus"></i>-->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-fit dropdown-menu-md dropdown-menu-right">
+                        <!--begin::Nav-->
+                        <ul class="kt-nav">
+                            <li class="kt-nav__head">
+                                Add anything or jump to:
+                                <i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+                            </li>
+                            <li class="kt-nav__separator"></li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-drop"></i>
+                                    <span class="kt-nav__link-text">Order</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-calendar-8"></i>
+                                    <span class="kt-nav__link-text">Ticket</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-telegram-logo"></i>
+                                    <span class="kt-nav__link-text">Goal</span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__item">
+                                <a href="#" class="kt-nav__link">
+                                    <i class="kt-nav__link-icon flaticon2-new-email"></i>
+                                    <span class="kt-nav__link-text">Support Case</span>
+                                    <span class="kt-nav__link-badge">
+                                        <span class="kt-badge kt-badge--success">5</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="kt-nav__separator"></li>
+                            <li class="kt-nav__foot">
+                                <a class="btn btn-label-brand btn-bold btn-sm" href="#">Upgrade plan</a>
+                                <a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Learn more</a>
+                            </li>
+                        </ul>
+                        <!--end::Nav-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end:: Subheader -->
+<!-- begin:: Content -->
+<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+    <!--Begin::Section-->
+    <div class="row">
+        <div class="col-xl-12">
+            <!--begin:: Widgets/Applications/User/Profile3-->
+            <div class="kt-portlet kt-portlet--height-fluid">
+                <div class="kt-portlet__body">
+                    <div class="kt-widget kt-widget--user-profile-3">
+                        <div class="kt-widget__top">
+                            @*<div class="kt-widget__media kt-hidden-">
+                                    <img src="../../../../../themes/metronic/theme/default/demo1/dist/assets/media/users/100_13.jpg" alt="image">
+                                </div>*@
+                            @*<div class="kt-widget__pic kt-widget__pic--danger kt-font-danger kt-font-boldest kt-font-light kt-hidden">
+                                    JM
+                                </div>*@
+                            <div class="kt-widget__content">
+                                @*<div class="kt-widget__head">
+                                        <a href="#" class="kt-widget__username" id="h4Username">
+                                            Jason Muller
+                                            <i class="flaticon2-correct"></i>
+                                        </a>
+
+                                    </div>
+
+                                    <div class="kt-widget__subhead">
+                                        Email :    <a href="#" id="liEmail"><i class="flaticon2-new-email"></i>jason@siastudio.com</a>
+                                    </div>*@
+
+
+
+                                <div class="kt-widget__subhead">
+
+                                    <div class="kt-widget__progress" style="margin-left:2%">
+                                        <div class="form-group row">
+                                            <label class="col-xl-3 col-lg-2 col-form-label">Clinic </label>
+                                            <div class="col-lg-10 col-xl-6">
+                                                <select class="form-control " id="ddlClinic" name="param" style="width:100%">
+                                                    <option value="0">--Select---</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-xl-3 col-lg-3 col-form-label">Month</label>
+                                            <div class="col-lg-6 col-xl-3">
+                                                <div class="input-group">
+                                                    <select class="form-control kt-select2" id="ddlMonth" name="param">
+                                                        <option value="0">---Select---</option>
+                                                        <option value="1">January</option>
+                                                        <option value="2">February</option>
+                                                        <option value="3">March</option>
+                                                        <option value="4">April</option>
+                                                        <option value="5">May</option>
+                                                        <option value="6">June</option>
+                                                        <option value="7">July</option>
+                                                        <option value="8">August</option>
+                                                        <option value="9">September</option>
+                                                        <option value="10">October</option>
+                                                        <option value="11">November</option>
+                                                        <option value="12">December</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label class="col-xl-1 col-lg-1 col-form-label">Year</label>
+                                            <div class="col-lg-6 col-xl-2">
+                                                <div class="input-group">
+                                                    <select class="form-control kt-select2" id="ddlYear" name="param">
+                                                        <option value="0">---Select---</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-xl-3 col-lg-3 col-form-label">Time Schedule</label>
+                                            <div class="col-lg-9 col-xl-6">
+                                                <div class="input-group">
+                                                    <select class="form-control " id="ddlTimeSchedule" name="param" style="width:100%">
+                                                        <option value="0">---Select---</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-xl-3 col-lg-3 col-form-label">Appointment Type</label>
+                                            <div class="col-lg-9 col-xl-6">
+                                                <div class="input-group">
+                                                    <select class="form-control " id="ddlAppointmentStatus" name="param" style="width:100%">
+                                                        <option value="0">---Select---</option>
+                                                        <option value="Request Accepted">Request Accepted</option>
+                                                        <option value="Request Ongoing">Request Ongoing</option>
+                                                        <option value="Request Pending">Request Pending</option>
+                                                        <option value="Request Cancelled">Request Cancelled</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kt-widget__progress">
+                                        <div>
+                                            <div id="piechart_3d" style="width: 700px; height: 600px;margin-left:2%"></div>
+                                        </div>
+
+                                        <div>
+                                            <table class="table table-striped- table-bordered table-hover" id="kt_table_1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Total Appointment</th>
+                                                        <th>Offline Appointments</th>
+                                                        <th>online Appointments</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td id="tdTotal"></td>
+                                                        <td id="tdOffline"></td>
+                                                        <td id="tdOnline"></td>
+                                                    </tr>
+
+
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--end:: Widgets/Applications/User/Profile3-->
+        </div>
+    </div>
+    <!--End::Section-->
+
+
+</div>
+<!-- end:: Content -->
